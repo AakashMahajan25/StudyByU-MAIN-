@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #ECECEE; /* Define a variable for primary color */
+    --secondary-color: #6181f6; /* Define a variable for secondary color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.navbar {
+  /* float: left; */
+  height: 90vh;
+  width: 5%;
+  position: fixed;
+  /* z-index: 1; */
+  /* top: 0; */
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 1px solid black;
+}
+
+.navbar-container {
+  height: 100vh;
+  width: 5%;
+  position: fixed;
+  /* z-index: 1; */
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo {
+    color: #6181f6;
+}
+
+.dashboard-icon-container, .home-icon-container, .user-icon {
+    width: 50px;/* Make the logo container take up 100% of available space */
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    border-radius: 50%;
+    margin: 5px 0;
+    background-color: white;
+    color: #7f8394;
+    /* transition: color 0.04s ease-in-out; */
+}
+
+.dashboard-icon-container:hover, .home-icon-container {
+    background-color: #6181f6;
+    color: white;
+    box-shadow: 0 3px 10px 0 var(--secondary-color);
+}
+
+.user-image {
+    background-color: #ECECEE;
+}
