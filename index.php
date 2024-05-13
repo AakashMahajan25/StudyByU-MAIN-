@@ -3,20 +3,16 @@ session_start();
 include('./components/header.html');
 ?>
 
-<!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
-
     <div>
         <div classname="section-1"></div>
         <div classname="main-section">
-            <canvas class="pdf-canvas"></canvas>
+            <div class="pdf-viewer" id="pdf-viewer"></div>
         </div>
         <div classname="section-3"></div>
     </div>
 
 
-<?php
-include('./components/footer.html');
-?>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+<script>const pdfUrl = 'dummy.pdf';</script>
+<script src="javascript/pdf-viewer.js"></script>
+<?php include('./components/footer.html');?>
