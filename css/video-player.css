@@ -1,10 +1,9 @@
-
-
 video, .video-container, #video-thumbnail {
     border-radius: 0 20px 0 20px;
+    overflow: hidden;
 }
   
- .gfg { 
+.gfg { 
     padding-bottom: 10px; 
     display: flex; 
     justify-content: space-around; 
@@ -39,24 +38,23 @@ img {
     height: 100%; 
 } 
   
-.controls { 
-    position: absolute; 
-    bottom: 0px; 
-    left: 0; 
-    right: 0; 
-    height: 40px; 
+.controls {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 40px;
     background-color: rgba( 
         0, 
         0, 
         0, 
         0.7
-    ); 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px; 
-    opacity: 0; 
-    transition: opacity 0.3s ease-in-out; 
+    );
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 } 
   
 .controls button { 
@@ -130,13 +128,13 @@ input {
     cursor: pointer; 
 } 
   
-.playback-line { 
-    position: relative; 
-    top: 2.7px; 
-    height: 4px; 
-    background-color: #ddd; 
-    width: 40%; 
-    cursor: pointer; 
+.playback-line {
+    position: relative;
+    top: 2.7px;
+    height: 4px;
+    background-color: #ddd;
+    width: -webkit-fill-available;
+    cursor: pointer;
 } 
   
 .progress-bar { 
@@ -217,7 +215,6 @@ img {
     height: 40px;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
     opacity: 0;
@@ -228,7 +225,7 @@ img {
     background-color: transparent;
     border: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 9px;
     cursor: pointer;
     outline: none;
 }
@@ -237,6 +234,8 @@ img {
     width: 70px;
     display: flex;
     justify-content: space-between;
+    line-height: 0;
+    gap: 7px;
 }
 
 .video-timer {
@@ -289,15 +288,17 @@ img {
     margin-left: 10px;
     background-color: transparent;
     border: 1px solid #fff;
-    color: black;
+    color: white;
     padding: 5px;
     cursor: pointer;
     outline: none;
+    font-size: 12px;
+}
+
+#playback-speed option{
+    color:black
 }
 
 #mute {
     z-index: 1;
 }
- 
-
- 
