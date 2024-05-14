@@ -9,7 +9,7 @@ pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
 
             // Set canvas dimensions to match the PDF viewer div width and viewport height
             const viewerWidth = pdfViewer.offsetWidth;
-            const viewport = page.getViewport({ scale: 1.7 });
+            const viewport = page.getViewport({ scale: 1.8 });
             const viewerHeight = viewport.height * (viewerWidth / viewport.width); // Maintain aspect ratio
             canvas.width = viewerWidth;
             canvas.height = viewerHeight;
@@ -25,4 +25,27 @@ pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
             pdfViewer.appendChild(canvas);
         });
     }
+});
+
+
+
+// Javascript for Playlist Logic
+document.addEventListener('DOMContentLoaded', function() {
+    const videos = document.querySelectorAll('.playlist-body .video');
+
+    videos.forEach(video => {
+        video.addEventListener('click', function() {
+            // Remove active class from all videos
+            videos.forEach(v => v.classList.remove('active'));
+
+            // Add active class to the clicked video
+            this.classList.add('active');
+
+            // Get the video id
+            const videoId = this.getAttribute('data-video-id');
+
+            // Perform any additional actions, such as loading the selected video
+            console.log(`Video ${videoId} clicked`);
+        });
+    });
 });

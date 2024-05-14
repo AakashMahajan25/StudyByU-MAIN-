@@ -1,54 +1,93 @@
-.main-section{
+:root {
+    --primary-color: #ECECEE; /* Define a variable for primary color */
+    --secondary-color: #6181f6; /* Define a variable for secondary color */
+    --tertiary-color: #062c60;
+}
+
+.main-section {
     width: 70%;
-}
-.section-3{
-    width: 30%;
-    margin: 1rem 1rem 1rem 1.6rem;
-}
-.playlist{
-    border: 1px solid #bcbcbc;
-    border-radius: 15px;
-    overflow:hidden
-}
-.playlist-header{
-    background: #dadada;
     padding: 1rem;
+    /* background-color: aqua; */
 }
-.playlist-header .chapter{
+
+.subject {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-number {
+    color: grey;
+}
+
+.playlist {
+    border: 1px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.playlist-header {
+    background-color: var(--tertiary-color);
+    padding: 1rem;
+    color: white;
+}
+
+.playlist-header .chapter {
     font-size: 1.5rem;
 }
-.playlist-header .subject span{
-    color:grey
+
+.playlist-header .subject span {
+    color: grey;
 }
-.playlist-body{
+
+.playlist-body {
+    height: 300px; /* Fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
     margin-bottom: 1rem;
 }
-.playlist-body .video{
+
+.playlist-body .video {
     display: flex;
     gap: 10px;
     align-items: center;
     padding: 0 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.playlist-body .video .numbering{
-    min-width:10px
+
+.playlist-body .video:hover {
+    background-color: #f0f0f0;
 }
-.playlist-body .video:first-child{
+
+.playlist-body .video .numbering {
+    min-width: 20px;
+}
+
+.playlist-body .video:first-child {
     margin-top: 0;
 }
-.playlist-body .video:last-child{
+
+.playlist-body .video:last-child {
     margin-bottom: 0;
 }
-.playlist-body .active{
-    background-color: rgb(220 228 255);
+
+.playlist-body .active {
+    background-color: #B2CDF4;
+    color: white;
 }
-.playlist-body .thumbnail{
+
+.playlist-body .thumbnail {
     height: 56px;
     width: 100px;
 }
-.playlist-body .thumbnail img{
+
+.playlist-body .thumbnail img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.playlist-body .video-title {
+    flex-grow: 1;
 }

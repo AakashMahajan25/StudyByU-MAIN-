@@ -3,18 +3,7 @@
     --secondary-color: #6181f6; /* Define a variable for secondary color */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-}
 
-html, body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-}
 
 body {
     background-color: var(--primary-color);
