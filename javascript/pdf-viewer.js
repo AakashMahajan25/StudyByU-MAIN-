@@ -16,14 +16,20 @@ pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
             // Create a new viewport with the calculated scale
             const scaledViewport = page.getViewport({ scale: scale });
 
-            // Set canvas dimensions to match the scaled viewport
-            canvas.width = scaledViewport.width;
-            canvas.height = scaledViewport.height;
+            // Set canvas dimensions to a higher resolution to maintain quality
+            const outputScale = window.devicePixelRatio || 1;
+            canvas.width = scaledViewport.width * outputScale;
+            canvas.height = scaledViewport.height * outputScale;
+
+            // Apply CSS transform to scale the canvas display size
+            canvas.style.width = `${scaledViewport.width}px`;
+            canvas.style.height = `${scaledViewport.height}px`;
 
             // Render the PDF page onto the canvas
             const renderContext = {
                 canvasContext: context,
-                viewport: scaledViewport
+                viewport: scaledViewport,
+                transform: [outputScale, 0, 0, outputScale, 0, 0] // scale the rendering context
             };
             page.render(renderContext);
 
