@@ -32,6 +32,8 @@ pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
 // Javascript for Playlist Logic
 document.addEventListener('DOMContentLoaded', function() {
     const videos = document.querySelectorAll('.playlist-body .video');
+    const videoNumberElement = document.getElementById('video-number');
+    const playlist = document.getElementById('playlist-body');
 
     videos.forEach(video => {
         video.addEventListener('click', function() {
@@ -41,8 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add active class to the clicked video
             this.classList.add('active');
 
-            // Get the video id
-            const videoId = this.getAttribute('data-video-id');
+            // Parse video ID
+            const videoId = parseInt(this.querySelector('.numbering').textContent.trim(), 10);
+
+            // Count the number of direct child videos
+            const videoCount = Array.from(playlist.children).filter(child => child.classList.contains('video')).length;
+
+            // Update video number element
+            videoNumberElement.textContent = `${videoId}/${videoCount}`;
 
             // Perform any additional actions, such as loading the selected video
             console.log(`Video ${videoId} clicked`);

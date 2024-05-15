@@ -22,7 +22,7 @@
     justify-content: space-between;
 }
 
-.video-number {
+#video-number {
     color: grey;
 }
 
@@ -63,8 +63,17 @@
     transition: background-color 0.3s;
 }
 
+.playlist-body .active {
+    background-color: #B2CDF4;
+    color: white;
+}
+
 .playlist-body .video:hover {
     background-color: #f0f0f0;
+}
+
+.playlist-body .active:hover {
+    background-color: #B2CDF4;
 }
 
 .playlist-body .video .numbering {
@@ -77,11 +86,6 @@
 
 .playlist-body .video:last-child {
     margin-bottom: 0;
-}
-
-.playlist-body .active {
-    background-color: #B2CDF4;
-    color: white;
 }
 
 .playlist-body .thumbnail {

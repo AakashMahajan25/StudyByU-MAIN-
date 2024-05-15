@@ -8,77 +8,76 @@ include('./components/header.html');
             <div class="pdf-viewer" id="pdf-viewer"></div>
         </div>
         <div class="section-3">
-
             
-                <div class="playlist">
-            <div class="playlist-header">
-                <div class="chapter">Chapter-1</div>
-                <div class="subject"><div>Science</div><div class="video-number"> 1/5</div></div>
-            </div>
-            <div class="playlist-body">
-                <div class="video active" data-video-id="1">
-                    <div class="numbering">1</div>
-                    <div class="thumbnail">
-                        <img src="assets/dummy-thumbnail.jpg" alt="Video 1 Thumbnail">
-                    </div>
-                    <div class="video-title">Video Title 1</div>
+            <div class="playlist">
+                <div class="playlist-header">
+                    <div class="chapter">Chapter-1</div>
+                    <div class="subject"><div>Science</div><div id="video-number"> 1/5</div></div>
                 </div>
-                <div class="video" data-video-id="2">
-                    <div class="numbering">2</div>
-                    <div class="thumbnail">
-                        <img src="assets/dummy-thumbnail.jpg" alt="Video 2 Thumbnail">
+                <div class="playlist-body" id="playlist-body">
+                    <div class="video active">
+                        <div class="numbering">1</div>
+                        <div class="thumbnail">
+                            <img src="assets/dummy-thumbnail.jpg" alt="Video 1 Thumbnail">
+                        </div>
+                        <div class="video-title">Video Title 1</div>
                     </div>
-                    <div class="video-title">Video Title 2</div>
-                </div>
-                <div class="video" data-video-id="3">
-                    <div class="numbering">3</div>
-                    <div class="thumbnail">
-                        <img src="assets/dummy-thumbnail.jpg" alt="Video 3 Thumbnail">
+                    <div class="video">
+                        <div class="numbering">2</div>
+                        <div class="thumbnail">
+                            <img src="assets/dummy-thumbnail.jpg" alt="Video 2 Thumbnail">
+                        </div>
+                        <div class="video-title">Video Title 2</div>
                     </div>
-                    <div class="video-title">Video Title 3</div>
-                </div>
-                <div class="video" data-video-id="4">
-                    <div class="numbering">4</div>
-                    <div class="thumbnail">
-                        <img src="assets/dummy-thumbnail.jpg" alt="Video 4 Thumbnail">
+                    <div class="video">
+                        <div class="numbering">3</div>
+                        <div class="thumbnail">
+                            <img src="assets/dummy-thumbnail.jpg" alt="Video 3 Thumbnail">
+                        </div>
+                        <div class="video-title">Video Title 3</div>
                     </div>
-                    <div class="video-title">Video Title 4</div>
-                </div>
-                <div class="video" data-video-id="5">
-                    <div class="numbering">5</div>
-                    <div class="thumbnail">
-                        <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                    <div class="video">
+                        <div class="numbering">4</div>
+                        <div class="thumbnail">
+                            <img src="assets/dummy-thumbnail.jpg" alt="Video 4 Thumbnail">
+                        </div>
+                        <div class="video-title">Video Title 4</div>
                     </div>
-                    <div class="video-title">Video Title 5</div>
-                </div>
-                <div class="video" data-video-id="5">
-                    <div class="numbering">5</div>
-                    <div class="thumbnail">
-                        <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                    <div class="video">
+                        <div class="numbering">5</div>
+                        <div class="thumbnail">
+                            <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                        </div>
+                        <div class="video-title">Video Title 5</div>
                     </div>
-                    <div class="video-title">Video Title 5</div>
-                </div>
-                <div class="video" data-video-id="5">
-                    <div class="numbering">5</div>
-                    <div class="thumbnail">
-                        <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                    <div class="video">
+                        <div class="numbering">5</div>
+                        <div class="thumbnail">
+                            <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                        </div>
+                        <div class="video-title">Video Title 5</div>
                     </div>
-                    <div class="video-title">Video Title 5</div>
-                </div>
-                <div class="video" data-video-id="5">
-                    <div class="numbering">5</div>
-                    <div class="thumbnail">
-                        <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                    <div class="video">
+                        <div class="numbering">5</div>
+                        <div class="thumbnail">
+                            <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                        </div>
+                        <div class="video-title">Video Title 5</div>
                     </div>
-                    <div class="video-title">Video Title 5</div>
-                </div>
-                <div class="video" data-video-id="5">
-                    <div class="numbering">5</div>
-                    <div class="thumbnail">
-                        <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                    <div class="video">
+                        <div class="numbering">5</div>
+                        <div class="thumbnail">
+                            <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                        </div>
+                        <div class="video-title">Video Title 5</div>
                     </div>
-                    <div class="video-title">Video Title 5</div>
-                </div>
+                    <div class="video">
+                        <div class="numbering">5</div>
+                        <div class="thumbnail">
+                            <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                        </div>
+                        <div class="video-title">Video Title 5</div>
+                    </div>
             </div>
         </div>
 
