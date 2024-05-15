@@ -1,23 +1,29 @@
 pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
     const pdfViewer = document.getElementById('pdf-viewer');
 
-    // Render each page in the PDF
-    for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+    function renderPage(pageNumber) {
         pdf.getPage(pageNumber).then(function(page) {
             const canvas = document.createElement('canvas');
             const context = canvas.getContext('2d');
 
-            // Set canvas dimensions to match the PDF viewer div width and viewport height
+            // Get the viewport at scale 1
+            const viewport = page.getViewport({ scale: 1.0 });
+
+            // Calculate the scale to fit the width of the viewer
             const viewerWidth = pdfViewer.offsetWidth;
-            const viewport = page.getViewport({ scale: 1.45 });
-            const viewerHeight = viewport.height * (viewerWidth / viewport.width); // Maintain aspect ratio
-            canvas.width = viewerWidth;
-            canvas.height = viewerHeight;
+            const scale = viewerWidth / viewport.width;
+
+            // Create a new viewport with the calculated scale
+            const scaledViewport = page.getViewport({ scale: scale });
+
+            // Set canvas dimensions to match the scaled viewport
+            canvas.width = scaledViewport.width;
+            canvas.height = scaledViewport.height;
 
             // Render the PDF page onto the canvas
             const renderContext = {
                 canvasContext: context,
-                viewport: viewport
+                viewport: scaledViewport
             };
             page.render(renderContext);
 
@@ -25,8 +31,23 @@ pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
             pdfViewer.appendChild(canvas);
         });
     }
-});
 
+    // Render each page in the PDF
+    for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+        renderPage(pageNumber);
+    }
+
+    // Handle window resize to re-render the pages with the new scale
+    window.addEventListener('resize', function() {
+        // Clear the current PDF viewer
+        pdfViewer.innerHTML = '';
+        
+        // Re-render each page with the new dimensions
+        for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+            renderPage(pageNumber);
+        }
+    });
+});
 
 
 // Javascript for Playlist Logic
