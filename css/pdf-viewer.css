@@ -4,10 +4,17 @@
     --tertiary-color: #062c60;
 }
 
+#pdf-viewer {margin-left: 5rem;}
+
+#pdf-viewer canvas{
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
 .main-section {
     width: 70%;
     padding: 1rem;
-    /* background-color: aqua; */
+    padding-top: 0;
 }
 
 .subject {

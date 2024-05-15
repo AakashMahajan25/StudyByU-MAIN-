@@ -9,7 +9,7 @@ pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
 
             // Set canvas dimensions to match the PDF viewer div width and viewport height
             const viewerWidth = pdfViewer.offsetWidth;
-            const viewport = page.getViewport({ scale: 1.8 });
+            const viewport = page.getViewport({ scale: 1.45 });
             const viewerHeight = viewport.height * (viewerWidth / viewport.width); // Maintain aspect ratio
             canvas.width = viewerWidth;
             canvas.height = viewerHeight;

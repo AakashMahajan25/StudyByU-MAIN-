@@ -4,7 +4,7 @@ include('./components/header.html');
 ?>
 
     <div class="content-wrapper flex">
-        <div class="main-section bg-red-500">
+        <div class="main-section">
             <div class="pdf-viewer" id="pdf-viewer"></div>
         </div>
         <div class="section-3">
