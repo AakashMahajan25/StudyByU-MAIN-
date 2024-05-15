@@ -15,52 +15,52 @@ include('./components/header.html');
                     <div class="subject"><div>Science</div><div id="video-number"> 1/5</div></div>
                 </div>
                 <div class="playlist-body" id="playlist-body">
-                    <div class="video active">
+                    <div class="video">
                         <div class="numbering">1</div>
                         <div class="thumbnail">
-                            <img src="assets/dummy-thumbnail.jpg" alt="Video 1 Thumbnail">
+                            <img src="assets/new.webp" alt="Video 5 Thumbnail">
                         </div>
-                        <div class="video-title">Video Title 1</div>
+                        <div class="video-title">Physics</div>
                     </div>
                     <div class="video">
                         <div class="numbering">2</div>
                         <div class="thumbnail">
-                            <img src="assets/dummy-thumbnail.jpg" alt="Video 2 Thumbnail">
+                            <img src="assets/new2.webp" alt="Video 5 Thumbnail">
                         </div>
-                        <div class="video-title">Video Title 2</div>
+                        <div class="video-title">Science</div>
                     </div>
-                    <div class="video">
+                    <div class="video active">
                         <div class="numbering">3</div>
                         <div class="thumbnail">
-                            <img src="assets/dummy-thumbnail.jpg" alt="Video 3 Thumbnail">
+                            <img src="assets/new3.webp" alt="Video 1 Thumbnail">
+                        </div>
+                        <div class="video-title">Graphics</div>
+                    </div>
+                    <div class="video">
+                        <div class="numbering">4</div>
+                        <div class="thumbnail">
+                            <img src="assets/new4.webp" alt="Video 2 Thumbnail">
+                        </div>
+                        <div class="video-title">Accountancy</div>
+                    </div>
+                    <div class="video">
+                        <div class="numbering">5</div>
+                        <div class="thumbnail">
+                            <img src="assets/new5.webp" alt="Video 3 Thumbnail">
                         </div>
                         <div class="video-title">Video Title 3</div>
                     </div>
                     <div class="video">
                         <div class="numbering">4</div>
                         <div class="thumbnail">
-                            <img src="assets/dummy-thumbnail.jpg" alt="Video 4 Thumbnail">
+                            <img src="assets/icon4.jpg" alt="Video 4 Thumbnail">
                         </div>
                         <div class="video-title">Video Title 4</div>
                     </div>
                     <div class="video">
                         <div class="numbering">5</div>
                         <div class="thumbnail">
-                            <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
-                        </div>
-                        <div class="video-title">Video Title 5</div>
-                    </div>
-                    <div class="video">
-                        <div class="numbering">5</div>
-                        <div class="thumbnail">
-                            <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
-                        </div>
-                        <div class="video-title">Video Title 5</div>
-                    </div>
-                    <div class="video">
-                        <div class="numbering">5</div>
-                        <div class="thumbnail">
-                            <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+                            <img src="assets/icon5.avif" alt="Video 5 Thumbnail">
                         </div>
                         <div class="video-title">Video Title 5</div>
                     </div>
