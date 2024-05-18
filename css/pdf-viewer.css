@@ -36,6 +36,7 @@
     background-color: var(--tertiary-color);
     padding: 1rem;
     color: white;
+    /* margin-bottom: 5px; */
 }
 
 .playlist-header .chapter {
@@ -49,7 +50,7 @@
 .playlist-body {
     height: 300px; /* Fixed height */
     overflow-y: auto; /* Enable vertical scrolling */
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .playlist-body .video {
@@ -63,8 +64,14 @@
     transition: background-color 0.3s;
 }
 
+.thumbnail {
+    border-radius: 5px;
+    overflow: hidden;
+    /* box-shadow: 0 3.56158px 0 black; */
+}
+
 .playlist-body {
-    background-color: aliceblue;
+    background-color: whitesmoke;
     color: var(--tertiary-color);
 }
 

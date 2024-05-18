@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    .classes-container {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .individual-classes {
+        background-color: #f3f2f3;
+        padding: 50px;
+        padding-top: 0;
+        text-align: center;
+        align-items: center;
+        border-radius: 15px;
+        margin-top: 50px;
+    }
+
+    .individual-classes-heading {
+        margin: auto;
+        background-color: #5e71ff;
+        color: white;
+        width: fit-content;
+        padding: 6px 35px;
+        margin-bottom: 25px;
+        border-radius: 0 0 10px 10px;
+        left: 50%;
+        top: 0;
+        /* transform: translateX(-50%); */
+    }
+
+    .individual-classes-body {
+        display: flex;
+    }
+
+    .individual-classes-body-image img {
+        min-width: 210px;
+        height: 201px;
+    }
+
+    .individual-classes-body-content-button {
+        color: white;
+        padding: 10px 60px;
+        border-radius: 10px;
+        background: linear-gradient(to right, #21273f, #070e20);
+    }
+
+    .individual-classes-body-content-text {
+        text-align: center;
+    }
+
+    .individual-classes-body-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 10px;
+        left: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        margin: 0 60px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        align-items: center;
+        transition: background 0.3s, color 0.1s, top 0.3s, left 0.3s, right 0.3s, padding 0.3s, margin 0.3s, box-shadow 0.3s;
+        z-index: 1000;
+        background-color: white;
+      }
+
+      .navbar.sticky {
+        background: #0C0C27;
+        color: #ff4081;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .navbar a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: 600;
+        margin: 0 15px;
+        transition: color 0.3s;
+      }
+</style>
+
+<body>
+
+    <div class="navbar" id="navbar">
+        <div class="logo">
+          <a href="#" style="font-size: 20px;">Landing Stars</a>
+        </div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+    <div class="classes-container">
+        <div class="individual-classes">
+            <div class="individual-classes-heading">
+                Class IX
+            </div>
+            <div class="individual-classes-body">
+                <div class="individual-classes-body-image">
+                    <img src="assets/english.png"
+                        alt="">
+                </div>
+                <div class="individual-classes-body-content">
+                    <div class="individual-classes-body-content-text">
+                        <div class="individual-classes-body-content-text-1">Specially crafted</div>
+                        <div class="individual-classes-body-content-text-1">early learning program</div>
+                        <div class="individual-classes-body-content-text-1">for young minds</div>
+                    </div>
+
+
+
+                    <div class="individual-classes-body-content-button-container">
+                        <button class="individual-classes-body-content-button">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="individual-classes">
+            <div class="individual-classes-heading">
+                Class X
+            </div>
+            <div class="individual-classes-body">
+                <div class="individual-classes-body-image">
+                    <img src="assets/english.png"
+                        alt="">
+                </div>
+                <div class="individual-classes-body-content">
+                    <div class="individual-classes-body-content-text">
+                        <div class="individual-classes-body-content-text-1">Specially crafted</div>
+                        <div class="individual-classes-body-content-text-1">early learning program</div>
+                        <div class="individual-classes-body-content-text-1">for young minds</div>
+                    </div>
+
+
+
+                    <div class="individual-classes-body-content-button-container">
+                        <button class="individual-classes-body-content-button">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+<script>
+    window.onscroll = function() {stickNavbar()};
+
+    const navbar = document.getElementById("navbar");
+    const sticky = navbar.offsetTop;
+
+    function stickNavbar() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</html>

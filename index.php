@@ -132,6 +132,6 @@ include('./components/header.html');
 
 <script src="javascript/video-player.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
-<script>const pdfUrl = 'dummy.pdf';</script>
+<script>const pdfUrl = 'chemistry.pdf';</script>
 <script src="javascript/pdf-viewer.js"></script>
 <?php include('./components/footer.html');?>
