@@ -4,242 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapters Section</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chapters.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
-
-.chapters-section {
-    max-width: 55vw;
-    margin: 20px auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.chapters-header {
-    background-color: #2196F3;
-    color: #ffffff;
-    padding: 15px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    text-align: center;
-}
-
-.chapters-header h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-.title {
-    text-align: center;
-    
-}
-
-.chapters {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.chapters-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    padding: 15px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.chapters-item:last-child {
-    border-bottom: none;
-}
-
-.chapter-number {
-    font-weight: bold;
-    color: #2196F3;
-}
-
-.chapter-title {
-    flex: 1;
-    margin-left: 10px;
-}
-
-.title {
-    margin-left: -90px;
-}
-
-.redirect {
-    color: #757575;
-}
-
-.thumbnail-container img {
-    width: 150px;
-}
-
-.classes-container {
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-    }
-
-    .individual-classes {
-        background-color: #f3f2f3;
-        padding: 50px;
-        padding-bottom: 0;
-        padding-top: 0;
-        text-align: center;
-        align-items: center;
-        border-radius: 15px;
-        margin-top: 50px;
-    }
-
-    .individual-classes-heading {
-        margin: auto;
-        background-color: #5e71ff;
-        color: white;
-        width: fit-content;
-        padding: 6px 35px;
-        /* margin-bottom: 25px; */
-        border-radius: 0 0 10px 10px;
-        left: 50%;
-        top: 0;
-        /* transform: translateX(-50%); */
-    }
-
-    .individual-classes-body {
-        display: flex;
-    }
-
-    .individual-classes-body-image img {
-        min-width: 210px;
-        height: 201px;
-    }
-
-    .individual-classes-body-content-button {
-        color: white;
-        padding: 10px 60px;
-        border-radius: 10px;
-        background: linear-gradient(to right, #21273f, #070e20);
-    }
-
-    .individual-classes-body-content-text {
-        text-align: center;
-    }
-
-    .individual-classes-body-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .individual-classes-body-content-button {
-        cursor: pointer;
-    }
-
-    .individual-classes {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .chapter-element-left-section {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
-
-    .redirect {
-        border-radius: 100%;
-        background-color: #5e71ff;
-        color: white;
-        padding: 10px;
-    }    
-
-</style>
 <body>
-    <div class="chapters-main-container">
-        <div class="classes-container">
-            <div class="individual-classes">
-                <div class="individual-classes-heading">
-                    Chemistry
-                </div>
-                <div class="individual-classes-body">
-                    <div class="individual-classes-body-image">
-                        <img src="assets/chemistry-big.png"
-                            alt="">
+    <div class="container mx-auto p-4">
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full lg:w-2/3 px-4">
+                
+                <div class="banner mb-5">
+                    <div class="banner-content">
+                        <h1 class="banner-title">Get  <span>Science Notes for Class 9th</span></h1>
+                        <p>
+                            Purchase comprehensive Science notes for Standard 9th with detailed video explanations for only ₹500.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i> Buy Now</a>
                     </div>
-                    <div class="individual-classes-body-content">
-                        <div class="individual-classes-body-content-text">
-                            <div class="individual-classes-body-content-text-1">Buy Full Class IX</div>
-                            <div class="individual-classes-body-content-text-1">Chemistry Course</div>
-                            <div class="individual-classes-body-content-text-1">At Just Rs.500</div>
-                            <div class="individual-classes-body-content-text-1">NOW!</div>
-                        </div>
-                        <div class="individual-classes-body-content-button-container">
-                            <button class="individual-classes-body-content-button">Buy Now!</button>
-                        </div>
-                    </div>
+                    <div class="circle"></div>
                 </div>
+
+                <section class="chapters-section">
+                    <header class="chapters-header">
+                        <h2>Class 9 Science Notes</h2>
+                    </header>
+                    <ul class="chapters">
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 1 - Matter in Our Surroundings</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 2 - Is Matter Around Us Pure</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 3 - Atoms and Molecules</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 5 - The Fundamental Unit of Life</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 6 - Tissues</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 7 - Diversity in Living Organisms</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 8 - Motion</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 9 - Force and Laws of Motion</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 10 - Gravitation</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 11 - Work and Energy</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 12 - Sound</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 13 - Why Do We Fall ill</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 14 - Natural Resources</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                        <li class="chapters-item">
+                            <h2 class="title">Chapter 15 - Improvement in Food Resources</h2>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="w-full lg:w-1/3 px-4">
+                <div class="bg-white p-4">Content 2</div>
             </div>
         </div>
-        <section class="chapters-section">
-            <header class="chapters-header">
-                <h1>Chapters</h1>
-            </header>
-            <ul class="chapters">
-                <li class="chapters-item">
-                    <div class="chapter-element-left-section">
-                        <div class="chapter-number">1.</div>
-                        <div class="thumbnail-container"><img class="thumbnail" src="assets/new.webp" alt=""></div>
-                    </div>
-                    <div class="title"><h1>Atoms and Molecules</h1></div>
-                    <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
-                </li>
-                <li class="chapters-item">
-                    <div class="chapter-element-left-section">
-                        <div class="chapter-number">1.</div>
-                        <div class="thumbnail-container"><img class="thumbnail" src="assets/new.webp" alt=""></div>
-                    </div>
-                    <div class="title"><h1>Atoms and Molecules</h1></div>
-                    <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
-                </li>
-                <li class="chapters-item">
-                    <div class="chapter-element-left-section">
-                        <div class="chapter-number">1.</div>
-                        <div class="thumbnail-container"><img class="thumbnail" src="assets/new.webp" alt=""></div>
-                    </div>
-                    <div class="title"><h1>Atoms and Molecules</h1></div>
-                    <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
-                </li>
-                <li class="chapters-item">
-                    <div class="chapter-element-left-section">
-                        <div class="chapter-number">1.</div>
-                        <div class="thumbnail-container"><img class="thumbnail" src="assets/new.webp" alt=""></div>
-                    </div>
-                    <div class="title"><h1>Atoms and Molecules</h1></div>
-                    <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
-                </li>
-                <li class="chapters-item">
-                    <div class="chapter-element-left-section">
-                        <div class="chapter-number">1.</div>
-                        <div class="thumbnail-container"><img class="thumbnail" src="assets/new.webp" alt=""></div>
-                    </div>
-                    <div class="title"><h1>Atoms and Molecules</h1></div>
-                    <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
-                </li>
-                <li class="chapters-item">
-                    <div class="chapter-element-left-section">
-                        <div class="chapter-number">1.</div>
-                        <div class="thumbnail-container"><img class="thumbnail" src="assets/new.webp" alt=""></div>
-                    </div>
-                    <div class="title"><h1>Atoms and Molecules</h1></div>
-                    <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
-                </li>
-            </ul>
-        </section>
     </div>
 </body>
 </html>
