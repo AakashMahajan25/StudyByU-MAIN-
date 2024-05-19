@@ -58,11 +58,22 @@ body {
 }
 .banner .circle{
     border-radius: 100px;
-    background-color: white;
-    width: 125px;
-    height: 125px;
+    /* background-color: white; */
+    width: 200px;
+    height: 200px;
+    position: absolute;
 }
 
+
+.circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    /* border-radius: 100px; */
+}
 .chapters-section {
     background-color: #ffffff;
     border-radius: 8px;
@@ -197,4 +208,29 @@ body {
     padding: 10px;
     font-size: 12px;
     line-height: 0;
+}
+
+.sidebar-widget{
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.sidebar-widget-header{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: #062c60;
+}
+
+.sidebar-widget-body{
+    padding: 0.5rem 1rem;
+}
+
+.sidebar-widget img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 }
