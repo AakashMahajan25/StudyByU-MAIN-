@@ -1,8 +1,65 @@
+/* 1. Chemistry */
 :root {
     --color-dark: #062c60;
     --color-medium: #6181f6;
-    --color-light: #91b4eb;
+    --color-light: #91b5ea;
 }
+
+/* 2. Mathematics */
+/* :root {
+    --color-dark: #604e06;
+    --color-medium: #f6e881;
+    --color-light: #ead591;
+} */
+
+/* 3. Physics */
+/* :root {
+    --color-dark: #3e2c1c;
+    --color-medium: #a67c52;
+    --color-light: #d2b48c;
+} */
+
+/* 4. Biology */
+/* :root {
+    --color-dark: #0b3d12;
+    --color-medium: #81f68b;
+    --color-light: #91ea9e;
+} */
+
+/* 5. Geography */
+/* :root {
+    --color-dark: #001f54;
+    --color-medium: #4c6ef5;
+    --color-light: #637dce;
+} */
+
+/* 6. History */
+/* :root {
+    --color-dark: #5a2e0c;
+    --color-medium: #e6a97f;
+    --color-light: #b86d4e;
+} */
+
+/* 7. Civics */
+/* :root {
+    --color-dark: #1a1a1a;
+    --color-medium: #7a7a7a;
+    --color-light: #4d4d4d;
+} */
+
+/* 8. Economics */
+/* :root {
+    --color-dark: #4a4a4a;
+    --color-medium: #d3d3d3;
+    --color-light: #a9a9a9;
+} */
+
+/* 9. English */
+/* :root {
+    --color-dark: #600606;
+    --color-medium: #f68181;
+    --color-light: #ea9191;
+} */
 
 #pdf-viewer {margin-left: 5rem;}
 
