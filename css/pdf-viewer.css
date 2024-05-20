@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #ECECEE; /* Define a variable for primary color */
-    --secondary-color: #6181f6; /* Define a variable for secondary color */
-    --tertiary-color: #062c60;
+    --color-dark: #062c60;
+    --color-medium: #6181f6;
+    --color-light: #91b4eb;
 }
 
 #pdf-viewer {margin-left: 5rem;}
@@ -33,7 +33,7 @@
 }
 
 .playlist-header {
-    background-color: var(--tertiary-color);
+    background-color: var(--color-dark);
     padding: 1rem;
     color: white;
     /* margin-bottom: 5px; */
@@ -72,11 +72,11 @@
 
 .playlist-body {
     background-color: whitesmoke;
-    color: var(--tertiary-color);
+    color: var(--color-dark);
 }
 
 .playlist-body .active {
-    background-color: #91b4eb;
+    background-color: var(--color-light);
     color: white;
 }
 

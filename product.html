@@ -6,100 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        body {
-            font-family: "Poppins", sans-serif;
-            color: #3a3d3d;
-        }
-        del {
-            margin: 0 3px;
-        }
-        .hero {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .product-image img {
-            width: 30vw;
-        }
-        .product-main-details {
-            max-width: 60vw;
-        }
-        .product-heading {
-            line-height: 70px;
-            text-transform: capitalize;
-            font-size: 60px;
-            font-weight: 700;
-            color: black;
-        }
-        .product-about {
-            font-size: 18px;
-            margin-top: 30px;
-        }
-        .product-price {
-            font-size: 40px;
-        }
-        .product-buy-button button {
-            color: white;
-            font-size: 20px;
-            background-color: #0057d3;
-            padding: 11px 32px 13px 32px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .number-of-buyers {
-            font-size: 16px;
-        }
-        .description-section {
-            display: flex;
-            margin-top: 20px;
-            margin-top: 10px;
-            font-size: 18px;
-        }
-        .description-content {
-            display: none;
-            margin-top: 10px;
-            font-size: 18px;
-        }
-        .toggle-button {
-            cursor: pointer;
-            color: #0057d3;
-            font-size: 18px;
-            background: none;
-            border: none;
-            padding: 0;
-            text-decoration: underline;
-        }
-
-        .company-name {
-            font-size: 15px;
-            line-height: 1px;
-        }
-        
-        .commerce {
-            padding: 0 50px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .product-buy-button button {
-            margin-left: -300px;
-        }
-        .product-buy-button button:hover {
-            color: #0057d3;
-            background-color: white;
-        }
-        .description-heading {
-            margin-top: 25px;
-            color: black;
-            font-size: 30px;
-            font: bold;
-            font-weight: 500;
-        }
-    </style>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="main-page">
+    <div class="main-page container px-4 md:px-8 mx-auto">
         <div class="hero">
             <div class="product-image"><img src="assets/product-image.jpg" alt="Product Image"></div>
             <div class="product-main-details">
@@ -120,7 +31,7 @@
                         <div class="product-price"><b>₹<del>50</del>48</b></div>
                         <div class="price-taxes-include">(Inclusive of All Taxes)</div>
                     </div>
-                    <div class="product-buy-button"><button>Buy Now</button></div>
+                    <button class="product-buy-button mt-2">Buy Now</button>
                 </div>
                 <!-- <div class="number-of-buyers"><b>413,038</b> already enrolled</div> -->
             </div>
