@@ -1,0 +1,29 @@
+/* CSS for two-banners ahead */
+.two-banners {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.first-banner, .second-banner {
+    height: 40vh;
+    width: 40vw;
+    border-radius: 20px;
+}
+
+.first-banner {
+    background-color: #02212a;
+}
+
+.first-banner-first-heading {
+    color: white;
+}
+
+.second-banner {
+    background-color: #cddeff;
+}
+
+.first-banner-second-heading {
+    /* color: ; */
+}

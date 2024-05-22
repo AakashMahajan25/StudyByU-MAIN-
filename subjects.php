@@ -2,206 +2,38 @@
 session_start();
 include('./secondary-navbar.html');
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/subjects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="https://cdn.tailwindcss.com"></script>
 </head>
-<style>
-    body {
-        font-family: "Poppins", sans-serif;
-    }
-    .subjects {
-        margin: auto;
-        margin-top: -60px;
-        /* background-color: #efeeec; */
-        background-color: white;
-        border: 1px solid #ecedef;
-        padding: 25px 25px;
-        width:fit-content;
-        box-shadow: 0 3.56158px 0 #f6f6f6;
-        z-index: 200;
-    }
-    .subjects-heading {
-        color: white;
-        background-color: #5e71ff;
-        border-radius: 20px;
-        padding: 4px 10px;
-        margin-bottom: 18px;
-        font-size: 20px;
-        font-weight: 600;
-        width: fit-content;
-    }
-    .subjects-container {
-        display: flex;
-        justify-content: space-around;
-        width: 70vw;
-        cursor: pointer;
-        font-weight: 500;
-        font-size: 14px;
-        overflow-x: auto; 
-        white-space: nowrap; 
-    }
-    .subject-element {
-        border-radius: 8px;
-        padding: 12px;
-        padding-bottom: 30px;
-        margin-bottom: 4px;
-        margin-right: 16px; 
-        width: 164px;
-        color: #01202b;
-        display: inline-block; 
-    }
-    .subject-element-content {
-        display: flex;
-        justify-content: space-between;
-    }
-    .subject-logo img {
-        height: auto;
-        width: 40px;
-    }
-    .subject-heading {
-        margin-top: 3px;
-        font-weight: 600;
-        font-size: 18px;
-    }
-    .subject-link-logo img {
-        width: 10px;
-        height: auto;
-    }
-    .subject-1 {
-        background-color: #e8dfff;   
-    }
-    .subject-2 {
-        background-color: rgb(255, 240, 203);   
-    }
-    .subject-3 {
-        background-color: rgb(182, 255, 228);   
-    }
-    .subject-4 {
-        background-color: rgb(252, 228, 236);   
-    }
-    .subject-5 {
-        background-color: rgb(205, 222, 255);   
-    }
-    .hero {
-        display: flex;
-        justify-content: center;
-        margin-top
-    }
-    .hero-banner {
-        height: 35vh;
-        width: 80vw;
-        border-radius: 20px;
-        background-color: #ccdefe;
-        z-index: -1;
-    }
 
-    /* Four Element Container CSS Below */
-    .four-element-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    position: relative; /* Added to position the background image */
-    overflow: hidden; /* Added to ensure the background image doesn't affect the four-element-container's size */
-}
-
-.four-element-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -200px; /* Adjust this value to position the image as desired */
-    width: 40vw;
-    height: 100%;
-    background: url('assets/chemistry.png') no-repeat ;
-    /* background-size: cover; */
-    z-index: -1; /* Ensures the image is behind other content */
-    /* margin-left: -50px; */
-}
-
-h1 {
-    font-size: 36px;
-    color: #333;
-}
-
-.highlight {
-    color: #ff6f3d;
-    text-decoration: underline;
-}
-
-.courses {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-    width: 50vw;
-}
-
-.course-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    text-align: left;
-    position: relative;
-    width: 20vw;
-}
-
-.course-card h2 {
-    font-size: 18px;
-    color: #333;
-}
-
-.course-card h3 {
-    font-size: 20px;
-    color: #ff6f3d;
-}
-
-.course-card p {
-    font-size: 14px;
-    color: #666;
-}
-
-.course-card button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.course-card button:hover {
-    background-color: #555;
-}
-
-.new::before {
-    content: "NEW";
-    color: #fff;
-    background-color: #ff6f3d;
-    padding: 3px 8px;
-    border-radius: 5px;
-    font-size: 12px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.bg-four-element-container {
-    /* z-index: 100; */
-    width: 30vw;
-    background-image: url(assets/biology.png);
-}
-
-</style>
 <body>
     <div class="hero">
         <div class="hero-banner">
+            <div class="hero-banner-content">
+                <div class="hero-banner-content-heading">
+                    Maximize Your Preparation
+                </div>
+                <div class="hero-banner-content-text">
+                    Buy our Courses Today and Get,
+                </div>
+                <div class="hero-banner-content-list">
+                    <i class="fa-regular fa-circle-check"></i> Animated Videos
+                </div>
+                <div class="hero-banner-content-list">
+                    <i class="fa-regular fa-circle-check"></i> Visually Rich Notes
+                </div>
+                <div class="hero-banner-content-list">
+                    <i class="fa-regular fa-circle-check"></i> Live Doubt Clearing Sessions
+                </div>
+            </div>
+            <div class="hero-banner-image"><img src="assets/banner-astronaut.png" alt=""></div>
         </div>
     </div>
     <div class="subjects">
@@ -246,7 +78,7 @@ h1 {
         </div>
     </div>
 
-    <div class="four-element-container">
+    <!-- <div class="four-element-container">
         <h1>Courses for <span class="highlight">Kids</span></h1>
         <div class="component">
             <div class="courses">
@@ -276,7 +108,39 @@ h1 {
                 </div>
             </div>
             <div class="bg-four-element-container"></div>
-        </div>
+        </div> -->
+
+        <section class="bg-[#cddeff]">
+            <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 my-4">
+                <div class="mt-4 md:mt-0">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-[#003366]">Empower Your Learning with Dedicated Doubt Clearing Sessions</h2>
+                    <p class="mb-6 font-light text-[#333333] md:text-lg">StudyByU's LIVE Doubt Clearing Sessions offer a this facility to address your questions and enhance your understanding. Engage with experts in interactive sessions designed to ensure no query is left unresolved.</p>
+                    <a href="#" class="inline-flex items-center text-white bg-[#28a745] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+                        Get Started
+                        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+                <img class="w-1/2 hidden dark:block mx-auto" src="assets/teacher.png" alt="dashboard image">
+            </div>
+        </section>
+
+        <section class="">
+            <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                <img class="w-2/3 hidden dark:block mx-auto" src="assets/mental-health.png" alt="dashboard image">
+                <div class="mt-4 md:mt-0">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-[#003366]">Prioritize Your Well-being with Dedicated Mental Health Sessions</h2>
+                    <p class="mb-6 font-light text-[#333333] md:text-lg">StudyByU's Mental Health Sessions provide a supportive environment to address your concerns and enhance your well-being. Connect with experts in interactive sessions designed to ensure your mental health needs are met with care and understanding.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-white bg-[#28a745] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+                        Get Started
+                        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
 
 </body>
 </html>
+<?php include('./footer.html');?>
