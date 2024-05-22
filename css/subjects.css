@@ -110,37 +110,27 @@ body {
     margin-bottom: 2px;
 }
 
+
+
 /* Four Element Container CSS Below */
 .four-element-container {
 max-width: 1200px;
 margin: 0 auto;
 padding: 20px;
-text-align: center;
 position: relative; /* Added to position the background image */
 overflow: hidden; /* Added to ensure the background image doesn't affect the four-element-container's size */
 }
 
-.four-element-container::before {
-content: "";
-position: absolute;
-top: 0;
-right: -200px; /* Adjust this value to position the image as desired */
-width: 40vw;
-height: 100%;
-background: url('assets/4-element-image.webp') no-repeat center center;
-background-size: cover;
-z-index: -1; /* Ensures the image is behind other content */
-/* margin-left: -50px; */
-}
+.four-element-container::before {content: "";position: absolute;top: 0;right: 0; /* Adjust this value to position the image as desired */width: 40vw;height: 100%;background: url('../assets/4-element-image.webp') no-repeat center center;background-size: 95%; /* Ensures the image is behind other content */}
 
 h1 {
 font-size: 36px;
 color: #333;
+font-weight: 600;
 }
 
 .highlight {
-color: #ff6f3d;
-text-decoration: underline;
+color: var(--secondary-color);
 }
 
 .courses {
@@ -168,7 +158,7 @@ color: #333;
 
 .course-card h3 {
 font-size: 20px;
-color: #ff6f3d;
+color: var(--secondary-color);
 }
 
 .course-card p {
@@ -193,7 +183,7 @@ background-color: #555;
 .new::before {
 content: "NEW";
 color: #fff;
-background-color: #ff6f3d;
+background-color: var(--secondary-color);
 padding: 3px 8px;
 border-radius: 5px;
 font-size: 12px;

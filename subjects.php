@@ -8,6 +8,7 @@ include('./secondary-navbar.html');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/subjects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script defer src="https://cdn.tailwindcss.com"></script>
@@ -78,7 +79,7 @@ include('./secondary-navbar.html');
         </div>
     </div>
 
-    <!-- <div class="four-element-container">
+    <div class="four-element-container">
         <h1>Courses for <span class="highlight">Kids</span></h1>
         <div class="component">
             <div class="courses">
@@ -108,7 +109,8 @@ include('./secondary-navbar.html');
                 </div>
             </div>
             <div class="bg-four-element-container"></div>
-        </div> -->
+        </div>
+    </div>
 
         <section class="bg-[#cddeff]">
             <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 my-4">
