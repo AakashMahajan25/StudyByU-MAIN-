@@ -4,13 +4,12 @@ body {
 .subjects {
     margin: auto;
     margin-top: -20px;
-    /* background-color: #efeeec; */
     background-color: white;
     border: 1px solid #ecedef;
     padding: 25px 25px;
     width:fit-content;
-    box-shadow: 0 3.56158px 0 #f6f6f6;
-    z-index: 200;
+    border-radius: 15px;
+    box-shadow: 0 3.56158px 0 #f3f3f3;
 }
 .subjects-heading {
     color: white;
@@ -96,7 +95,7 @@ body {
 }
 
 .hero-banner-content-heading {
-    color: #b22713;
+    color: #003366;
     font-size: 35px;
     font-weight: 800;
 }
@@ -208,6 +207,3 @@ right: 10px;
 width: 30vw;
 background-image: url(assets/biology.png);
 }
-
-
-
