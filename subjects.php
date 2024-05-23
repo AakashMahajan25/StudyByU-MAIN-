@@ -80,31 +80,35 @@ include('./secondary-navbar.html');
     </div>
 
     <div class="four-element-container">
-        <h1>Courses for <span class="highlight">Kids</span></h1>
+        <h1>Our <span class="highlight">Offerings</span></h1>
         <div class="component">
             <div class="courses">
-                <div class="course-card new">
-                    <h2>Class LKG - 5</h2>
-                    <h3>Summer Camp</h3>
-                    <p>4 fun and exciting courses to choose from this summer</p>
+                <div class="course-card bg-[#FCE4EC]">
+                    <h2>Class IX</h2>
+                    <h3>All Subjects</h3>
+                    <p>Join our comprehensive Class 9 course Today!</p>
+                    <img style="width: 60px; height: auto;" src="assets/9.png" alt="">
                     <button>Explore</button>
                 </div>
-                <div class="course-card">
-                    <h2>Class LKG - 5</h2>
-                    <h3>Learn English</h3>
-                    <p>Level based holistic English Program</p>
+                <div class="course-card bg-[#CDDEFF]">
+                    <h2>Class X</h2>
+                    <h3>All Subjects</h3>
+                    <p>Join our comprehensive Class 10 course Today!</p>
+                    <img style="width: 70px; height: auto;" src="assets/10.png" alt="">
                     <button>Explore</button>
                 </div>
-                <div class="course-card">
-                    <h2>Class 1 and 2</h2>
-                    <h3>Learn math</h3>
-                    <p>Turn your child into a Math wizard</p>
+                <div class="course-card bg-[#FFF0CB]">
+                    <h2>LIVE</h2>
+                    <h3>Doubt Clearing Sessions</h3>
+                    <p>Get personalized help in our doubt clearing sessions.</p>
+                    <img style="width: 70px; height: auto;" src="assets/doubt.png" alt="">
                     <button>Explore</button>
                 </div>
-                <div class="course-card">
-                    <h2>Class 1 - 8</h2>
-                    <h3>Coding classes</h3>
-                    <p>Learn to build apps and games, be future ready</p>
+                <div class="course-card new bg-[#B6FFE4]">
+                    <h2>LIVE</h2>
+                    <h3>Mental Health Sessions</h3>
+                    <p>Enhance well-being with our mental health sessions.</p>
+                    <img style="width: 70px; height: auto;" src="assets/m-health.png" alt="">
                     <button>Explore</button>
                 </div>
             </div>
@@ -112,7 +116,7 @@ include('./secondary-navbar.html');
         </div>
     </div>
 
-        <section class="bg-[#cddeff]">
+        <section class="bg-[aliceblue]">
             <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 my-4">
                 <div class="mt-4 md:mt-0">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-[#003366]">Empower Your Learning with Dedicated Doubt Clearing Sessions</h2>

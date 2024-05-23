@@ -1,43 +1,19 @@
-del {
-    margin: 0 3px;
+body {
+    background-color: #f3f5f7;
 }
-.hero {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.product-image img {
-    width: 30vw;
-}
-.product-main-details {
-    max-width: 55vw;
-}
-.product-heading {
-    line-height: 70px;
-    text-transform: capitalize;
-    font-size: 60px;
-    font-weight: 700;
-    color: black;
-}
-.product-about {
-    font-size: 18px;
-    margin-top: 30px;
-}
-.product-price {
-    font-size: 40px;
-}
-.number-of-buyers {
-    font-size: 16px;
+.description {
+    background-color: white;
 }
 .description-section {
     display: flex;
     margin-top: 20px;
-    margin-top: 10px;
+    margin: 10px;
     font-size: 18px;
 }
 .description-content {
     display: none;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin: 10px;
     font-size: 18px;
 }
 .toggle-button {
@@ -50,27 +26,124 @@ del {
     text-decoration: underline;
 }
 
-.company-name {
-    font-size: 15px;
-    line-height: 1px;
-}
-.product-buy-button {
-    color: white;
-    font-size: 20px;
-    background-color: #0057d3;
-    border: 2px solid #0057d3;
-    padding: 11px 32px 13px 32px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.product-buy-button:hover {
-    color: #0057d3;
-    background-color: white;
-}
 .description-heading {
     margin-top: 25px;
-    color: black;
+    margin-left: 10px;
+    color: #003267;
     font-size: 30px;
     font: bold;
+    font-weight: 600;
+}
+
+.image-container img {
+    height: auto;
+    /* width: 300px; */
+}
+
+.company-name {
     font-weight: 500;
+}
+
+.subject-heading {
+    color: #003267;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.subject-price {
+    font-size: 30px;
+}
+
+.subject-about { 
+    font-size: 15px;
+    color: #333333;
+}
+
+.hero {
+    display: flex;
+    gap: 30px;
+    /* justify-content: space-between; */
+    /* margin: auto; */
+}
+
+.buy-now-button button {
+    display: flex;
+    justify-content: center;
+    background-color: #29a645;
+    font-size: 20px;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+.image-container {
+    width: 40vw;
+    height: fit-content;
+    background-color: white;
+}
+
+.content {
+    padding: 30px 10px;
+    width: 50vw;
+    background-color: white;
+}
+
+
+
+/* CSS for two-banners ahead */
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hero-banner {
+    height: 35vh;
+    width: 80vw;
+    border-radius: 20px;
+    background-color: aliceblue;
+    z-index: -1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-banner img {
+    height: auto;
+    width: 10vw;
+}
+
+.hero-banner-content-heading {
+    color: #003366;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.hero-banner-content-text {
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.hero-banner-content-list {
+    margin-bottom: 2px;
+}
+
+.banner-button-get-started button {
+    display: flex;
+    justify-content: center;
+    background-color: #29a645;
+    font-size: 15px;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    align-items: center;
+}
+
+.button-right-arrow {
+    margin-left: 2px;
 }
