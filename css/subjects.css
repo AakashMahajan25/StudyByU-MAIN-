@@ -98,6 +98,7 @@ body {
   .subjects-container {
     flex-direction: column;
     align-items: center;
+    overflow-x: visible !important;
   }
 
   .subject-element {
@@ -113,6 +114,7 @@ body {
     flex-direction: column !important;
     justify-content: center !important;
     width: 100%;
+    margin-left: 0px !important;
   }
 
   .four-element-container::before {
