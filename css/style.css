@@ -40,6 +40,10 @@ body{
     gap: 15px;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 
 /* Custom Scrollbar */
 /* scrollbar */
