@@ -9,6 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <body>
+<?php
+session_start();
+include('./secondary-navbar.html');
+?>
     <div class="container mx-auto p-4">
         <div class="flex flex-wrap -mx-4">
             <div class="w-full lg:w-2/3 px-4">
@@ -36,7 +40,7 @@
                     <ul class="chapters">
                         <li class="chapters-item">
                             <h2 class="title">Chapter 1 - Matter in Our Surroundings</h2>
-                            <div class="redirect"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="redirect"><i class="fa-solid fa-arrow-right" ></i></div>
                         </li>
                         <li class="chapters-item">
                             <h2 class="title">Chapter 2 - Is Matter Around Us Pure</h2>
@@ -114,6 +118,8 @@
             </div>
         </div>
     </div>
+
+    <?php include('./footer.html');?>
 </body>
 </html> 
 
