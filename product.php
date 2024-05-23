@@ -1,9 +1,6 @@
-<?php
-session_start();
-include('./secondary-navbar-white.html');
-?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +10,19 @@ include('./secondary-navbar-white.html');
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <?php
+    session_start();
+    include('./secondary-navbar-white.html');
+    ?>
     <div class="main-page container px-4 md:px-8 mx-auto mt-20">
-        
-        <div class="hero">
+
+        <div class="hero  respo-hero">
             <div class="image-container">
                 <img src="assets/product-image.jpg" alt="">
             </div>
-            <div class="content">
+            <div class="content rounded-2xl">
                 <div class="company-name">
                     StudyByU
                 </div>
@@ -31,7 +33,7 @@ include('./secondary-navbar-white.html');
                     Rs.499
                 </div>
                 <div class="subject-about">
-                    This is a collection of articles written by the coordinating author and many of his dear friends. These articles were arranged in this book so that math lovers and anyone interested in expanding their mathematical horizons can benefit from it. Articles range from intermediate to advanced. 
+                    This is a collection of articles written by the coordinating author and many of his dear friends. These articles were arranged in this book so that math lovers and anyone interested in expanding their mathematical horizons can benefit from it. Articles range from intermediate to advanced.
                 </div>
                 <div class="buy-now-button">
                     <button>Buy Now</button>
@@ -52,38 +54,38 @@ include('./secondary-navbar-white.html');
             <div class="description-content">
                 Certainly! Here is a specifications list for a doubt-solving sessions program: <br>
 
-Doubt-Solving Sessions Specifications: <br>
+                Doubt-Solving Sessions Specifications: <br>
 
-1. Expert Tutors:<br>
-    - Highly qualified and experienced in their respective fields.<br>
-    - Specialize in personalized tutoring and doubt resolution.<br>
+                1. Expert Tutors:<br>
+                - Highly qualified and experienced in their respective fields.<br>
+                - Specialize in personalized tutoring and doubt resolution.<br>
 
-2. One-on-One Sessions:<br>
-    - Individual attention to address specific doubts and questions.<br>
-    - Tailored explanations and teaching methods.<br>
+                2. One-on-One Sessions:<br>
+                - Individual attention to address specific doubts and questions.<br>
+                - Tailored explanations and teaching methods.<br>
 
-3. Flexible Scheduling:<br>
-    - Sessions available at convenient times for students.<br>
-    - Easy to book through an online portal.<br>
+                3. Flexible Scheduling:<br>
+                - Sessions available at convenient times for students.<br>
+                - Easy to book through an online portal.<br>
 
-4. Interactive Platform:<br>
-    - Use of advanced online tools for real-time interaction.<br>
-    - Virtual whiteboards, screen sharing, and annotation features.<br>
+                4. Interactive Platform:<br>
+                - Use of advanced online tools for real-time interaction.<br>
+                - Virtual whiteboards, screen sharing, and annotation features.<br>
 
-5. Comprehensive Coverage:<br>
-    - Addressing doubts across various subjects and topics.<br>
-    - Including STEM subjects, humanities, languages, and more.<br>
+                5. Comprehensive Coverage:<br>
+                - Addressing doubts across various subjects and topics.<br>
+                - Including STEM subjects, humanities, languages, and more.<br>
 
-6. Instant Doubt Resolution:<br>
-    - Quick response time for resolving urgent academic queries.<br>
+                6. Instant Doubt Resolution:<br>
+                - Quick response time for resolving urgent academic queries.<br>
             </div>
-            <button class="toggle-button" onclick="toggleDescription()">Show more</button>
+            <button class="toggle-button" id="toggle-btn" onclick="toggleDescription()">Show more</button>
         </div>
 
-       
+
     </div>
 
-    <div class="hero">
+    <div class="hero hero-2">
         <div class="hero-banner">
             <div class="hero-banner-content">
                 <div class="hero-banner-content-heading">
@@ -100,12 +102,13 @@ Doubt-Solving Sessions Specifications: <br>
         </div>
     </div>
 
-
+    
+    <?php include('./footer.html'); ?>
     <script>
         function toggleDescription() {
             var content = document.querySelector('.description-content');
             var button = document.querySelector('.toggle-button');
-            if (content.style.display === "none") {
+            if (content.style.display === "none" || content.style.display === "") {
                 content.style.display = "inline-block";
                 button.textContent = "Show less";
             } else {
@@ -115,8 +118,5 @@ Doubt-Solving Sessions Specifications: <br>
         }
     </script>
 </body>
+
 </html>
-
-<?php include('./footer.html');?>
-
-

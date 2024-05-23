@@ -1,7 +1,4 @@
-<?php
-session_start();
-include('./secondary-navbar.html');
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +12,10 @@ include('./secondary-navbar.html');
 </head>
 
 <body>
+<?php
+session_start();
+include('./secondary-navbar.html');
+?>
     <div class="hero">
         <div class="hero-banner">
             <div class="hero-banner-content">
@@ -146,7 +147,7 @@ include('./secondary-navbar.html');
         </section>
 
         
-
+        <?php include('./footer.html');?>
 </body>
 </html>
-<?php include('./footer.html');?>
+
