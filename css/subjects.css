@@ -90,9 +90,7 @@ body {
   }
 
   .hero-banner img {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    display: none;
   }
 
   .subjects-container {
@@ -105,10 +103,18 @@ body {
     width: 100%;
     border-radius: 8px !important;
     padding: 15px;
-    
+    display: flex !important;
   }
 
-  .courses{
+  .subject-element-content {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100%;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .courses {
     display: flex !important;
     align-items: center !important;
     flex-direction: column !important;
@@ -122,19 +128,29 @@ body {
     width: 0vw !important;
     background-size: 0% !important;
     height: 0% !important;
-    
   }
 
-  .four-element-container{
+  .four-element-container {
     width: 100% !important;
   }
 
-  .course-card{
+  .course-card {
     width: 100% !important;
     margin: 10px 0px;
     /* background:  black !important; */
     margin: auto;
   }
+
+  .component > img {
+    display: none;
+  }
+}
+
+.standard {
+  font-size: 70px !important;
+  padding: 0px;
+  line-height: 75px;
+  color: #4b4a4b !important;
 }
 
 .hero-banner {
@@ -171,23 +187,14 @@ body {
 
 /* Four Element Container CSS Below */
 .four-element-container {
-  max-width: 1200px;
+  max-width: max-content;
   margin: 0 auto;
   padding: 20px;
   position: relative; /* Added to position the background image */
   overflow: hidden; /* Added to ensure the background image doesn't affect the four-element-container's size */
 }
 
-.four-element-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0; /* Adjust this value to position the image as desired */
-  width: 40vw;
-  height: 100%;
-  background: url("../assets/4-element-image.webp") no-repeat center center;
-  background-size: 95%; /* Ensures the image is behind other content */
-}
+
 
 h1 {
   font-size: 36px;
@@ -197,6 +204,23 @@ h1 {
 
 .highlight {
   color: var(--secondary-color);
+}
+
+.our-offer{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.component{
+  display: flex;
+  overflow: visible;
+  align-items: center;
+}
+
+.component> img {
+  margin-left: -100px;
+  width: 50vw;
+  
 }
 
 .courses {
@@ -272,4 +296,11 @@ h1 {
 
 .four-element-container h1 {
   margin-left: 30px;
+}
+
+
+
+
+@media only screen and (min-width:1600px){
+
 }

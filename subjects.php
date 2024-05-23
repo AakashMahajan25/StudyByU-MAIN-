@@ -81,21 +81,23 @@ include('./secondary-navbar.html');
     </div>
 
     <div class="four-element-container">
-        <h1>Our <span class="highlight">Offerings</span></h1>
+        <div class="our-offer">Our <span class="highlight">Offerings</span></div>
         <div class="component">
             <div class="courses">
                 <div class="course-card bg-[#FCE4EC]">
                     <h2>Class IX</h2>
                     <h3>All Subjects</h3>
                     <p>Join our comprehensive Class 9 course Today!</p>
-                    <img style="width: 60px; height: auto;" src="assets/9.png" alt="">
+                    <!-- <img style="width: 60px; height: auto;" src="assets/9.png" alt=""> -->
+                    <p class="standard">9 </p>
                     <button>Explore</button>
                 </div>
                 <div class="course-card bg-[#CDDEFF]">
                     <h2>Class X</h2>
                     <h3>All Subjects</h3>
                     <p>Join our comprehensive Class 10 course Today!</p>
-                    <img style="width: 70px; height: auto;" src="assets/10.png" alt="">
+                    <!-- <img style="width: 70px; height: auto;" src="assets/10.png" alt=""> -->
+                    <p class="standard">10</p>
                     <button>Explore</button>
                 </div>
                 <div class="course-card bg-[#FFF0CB]">
@@ -113,7 +115,8 @@ include('./secondary-navbar.html');
                     <button>Explore</button>
                 </div>
             </div>
-            <div class="bg-four-element-container"></div>
+            <img src="assets/4-element-image.webp" alt="">
+            
         </div>
     </div>
 
