@@ -40,7 +40,7 @@ body{
     gap: 15px;
 }
 
-.dropdown:hover .dropdown-menu {
+#dropdownNavbarLink:hover #dropdownNavbar {
   display: block;
 }
 

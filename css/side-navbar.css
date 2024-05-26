@@ -53,3 +53,7 @@ body {
 .user-image {
     background-color: #ECECEE;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
