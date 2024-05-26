@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+
+        body{
+            background: rgb(246, 246, 248);
+        }
+      .description {
+        background-color: transparent;
+        box-shadow: 0px 0px 10px 2px rgb(230, 230, 230);
+        margin: 30px 10px 10px 40px;
+        border-radius: 20px;
+        padding: 18px 14px 18px 24px;
+      }
+      .description-section {
+        display: flex;
+        /* margin-top: 20px; */
+        margin: 10px;
+        font-size: 18px;
+      }
+      .description-content {
+        display: none;
+        margin-top: 20px;
+        margin: 10px;
+        font-size: 18px;
+        /* color: rgb(119, 119, 119); */
+      }
+      .toggle-button {
+        cursor: pointer;
+        color: #0057d3;
+        font-size: 18px;
+        background: none;
+        border: none;
+        display: block;
+        padding: 0px 0px 0px 10px;
+        text-decoration: underline;
+      }
+
+      .description-heading {
+        /* margin-top: 25px; */
+        margin-left: 10px;
+        color: #003267;
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      .buy-now-btn{
+        background: #062c60;
+        
+      }
+
+      .fixed{
+        background: #e4ecfa;
+      }
+
+      .other-ch{
+        color: #062c60;
+        font-weight: 500;
+      }
+
+      .ch-title{
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="pb-6 pt-4 text-xl px-10 other-ch">Chapter 4 </h1>
+      <div class="flex  w-2/3">
+        <div class="w-1/3 px-10">
+          <img
+            src="https://wallpapers.com/images/hd/physics-1651-x-2550-picture-bonim27whwjunncg.jpg"
+            alt=""
+            class="rounded-lg"
+          />
+        </div>
+        <div class="pr-[44px]  w-[60%] flex flex-col justify-around ">
+          <h1 class="text-4xl ch-title"> Linear Equations in Two Variables</h1>
+          <div class="text-xl mb-4">Rs. 150 <del class="text-xs">Rs. 200</del></div>
+          <div class="text-[14px] text-gray-600">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+            neque recusandae aliquid officiis dolores mollitia quod ipsam sunt
+            quo dolor laudantium vero, debitis iste aut? Tempore debitis
+            doloremque quasi minima.
+          </div>
+          <div><button class="buy-now-btn py-2 px-8 text-white rounded-3xl">Buy Now</button></div>
+        </div>
+      </div>
+
+      <!-- Description Section -->
+      <div class="description w-[60%]">
+        <div class="description-heading">Description</div>
+        <div class="description-section">
+          This specialization provides a comprehensive introduction to machine
+          learning, data mining, and statistical pattern recognition. The
+          courses draw 
+        </div>
+        <div class="description-content">
+          Certainly! Here is a specifications list for a doubt-solving sessions
+          program: <br />
+
+          Doubt-Solving Sessions Specifications: <br />
+
+          1. Expert Tutors:<br />
+          - Highly qualified and experienced in their respective fields.<br />
+          - Specialize in personalized tutoring and doubt resolution.<br />
+
+          2. One-on-One Sessions:<br />
+          - Individual attention to address specific doubts and questions.<br />
+          - Tailored explanations and teaching methods.<br />
+
+          3. Flexible Scheduling:<br />
+          - Sessions available at convenient times for students.<br />
+          - Easy to book through an online portal.<br />
+
+          4. Interactive Platform:<br />
+          - Use of advanced online tools for real-time interaction.<br />
+          - Virtual whiteboards, screen sharing, and annotation features.<br />
+
+          5. Comprehensive Coverage:<br />
+          - Addressing doubts across various subjects and topics.<br />
+          - Including STEM subjects, humanities, languages, and more.<br />
+
+          6. Instant Doubt Resolution:<br />
+          - Quick response time for resolving urgent academic queries.<br />
+        </div>
+        <button
+          class="toggle-button"
+          id="toggle-btn"
+          onclick="toggleDescription()"
+        >
+          Show more
+        </button>
+      </div>
+    </div>
+    <div class="fixed px-4 bottom-0 right-0 top-0 w-1/3 z-10">
+      <div class="py-5 other-ch px-2 text-xl">Other Chapters</div>
+
+      <div>
+        <div class="flex items-center justify-between">
+          <div class="w-20 p-2">
+            <img
+              src="https://wallpapers.com/images/hd/physics-1651-x-2550-picture-bonim27whwjunncg.jpg"
+              alt=""
+              class="w-full rounded-lg"
+            />
+          </div>
+          <div class="w-2/3">name</div>
+          <div class="px-4">></div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="w-20 p-2">
+            <img
+              src="https://wallpapers.com/images/hd/physics-1651-x-2550-picture-bonim27whwjunncg.jpg"
+              alt=""
+              class="w-full rounded-lg"
+            />
+          </div>
+          <div class="w-2/3">name</div>
+          <div class="px-4">></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleDescription() {
+        var content = document.querySelector(".description-content");
+        var button = document.querySelector(".toggle-button");
+        if (content.style.display === "none" || content.style.display === "") {
+          content.style.display = "inline-block";
+          button.textContent = "Show less";
+        } else {
+          content.style.display = "none";
+          button.textContent = "Show more";
+        }
+      }
+    </script>
+  </body>
+</html>
