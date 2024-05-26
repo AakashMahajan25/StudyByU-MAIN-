@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .hero {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url(https://zenfy-wp.egenslab.com/wp-content/plugins/zenfy-core//inc/theme-options/images/breadcrumb/breadcrumb-bg.png),
+          linear-gradient(180deg, #121212 0%, #121212 100%);
+      }
+
+      .hero-astronaut {
+        z-index: 999;
+        width: 60%;
+        padding-top: 50%;
+        translate: 0% -50%;
+        margin: auto;
+      }
+      .hero-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -10;
+      }
+
+      .hero-text {
+        position: absolute;
+        color: white;
+        z-index: 99;
+        top: 10%;
+        left: 60%;
+      }
+
+      .hero-text p{
+        font-size: large;
+        padding: 10px 0px;
+      }
+
+      .hero-text button {
+        border: 1px solid rgb(219, 219, 219);
+        padding: 5px 40px;
+        border-radius: 50px;
+        color: rgb(170, 169, 169);
+        transition: all 0.35s;
+        margin: 10px 0px;
+      }
+
+      
+
+      .hero-text button:hover {
+        background: #121212;
+        color: whitesmoke;
+        border-color: aliceblue;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <img src="/assets/astronaut-hero.png" class="hero-astronaut" alt="" />
+      <img
+        src="https://zenfy-wp.egenslab.com/wp-content/plugins/zenfy-core//inc/theme-options/images/breadcrumb/breadcrumb-bg.png"
+        class="hero-img"
+        alt=""
+      />
+      <div class="hero-text">
+        <p>Explore a new height <br> <span>in education</span></p>
+        <hr>
+        <button>Explore</button>
+      </div>
+    </div>
+  </body>
+</html>
