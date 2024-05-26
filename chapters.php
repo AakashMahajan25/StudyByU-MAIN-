@@ -11,9 +11,9 @@
 <body>
 <?php
 session_start();
-include('./secondary-navbar.html');
+include('./secondary-navbar-white.html');
 ?>
-    <div class="container mx-auto p-4">
+    <div class="container mx-auto p-4 mt-20">
         <div class="flex flex-wrap -mx-4">
             <div class="w-full lg:w-2/3 px-4">
                 
