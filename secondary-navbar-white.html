@@ -6,6 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', function () {
+          const toggleButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+          const menu = document.getElementById('navbar-sticky');
+  
+          toggleButton.addEventListener('click', function () {
+              menu.classList.toggle('hidden');
+          });
+      });
+  </script>
+  
 </head>
 <body>
 
