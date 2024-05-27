@@ -14,9 +14,10 @@
 
         body{
             background: rgb(246, 246, 248);
+            padding-top: 100px;
         }
       .description {
-        background-color: transparent;
+        background-color: white;
         box-shadow: 0px 0px 10px 2px rgb(230, 230, 230);
         margin: 30px 10px 10px 40px;
         border-radius: 20px;
@@ -71,11 +72,191 @@
       .ch-title{
         font-weight: 500;
       }
+
+      .ch-name{
+        font-weight: 600;
+      }
+
+      /* CSS for two-banners ahead */
+.hero {
+    display: flex;
+    /* background: #000; */
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 66vw;
+    padding: 0px 38px 0px 38px ;
+}
+
+@media only screen and (max-width:1024px){
+    .respo-hero{
+        display: block;
+    }
+
+    .image-container{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+        margin-top: 10px;
+        
+    }
+
+    .description-content{
+        color: rgb(100, 100, 100);
+    }
+
+    .description-section{
+        color: rgb(109, 109, 109);
+    }
+
+    .hero-banner{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        padding: 20px !important;
+        height: 30vh !important;
+    }
+
+    
+
+    .hero-banner img{
+        display: none;
+    }
+
+    .hero-banner-content-heading{
+       font-size: 25px !important;
+       /* text-align: center !important; */
+       padding-left: 0px;
+    }
+
+    .hero-banner-content-text{
+        margin-left: 0px !important;
+        padding: 5px 0px !important;
+    }
+
+    .banner-button-get-started button{
+        margin: 0px !important;
+        margin: 10px 0px !important;
+    }
+}
+
+
+.hero-banner {
+    height: 34vh;
+    width: 100%;
+    border-radius: 20px;
+    background-color: aliceblue;
+    z-index: -1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px rgb(230, 230, 230);
+    padding: 0px 20px;
+}
+
+.hero-banner img {
+    height: auto;
+    width: 19vw;
+}
+
+.hero-banner-content-heading {
+    color: #003366;
+    font-size: 2.4vw;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.hero-banner-content-text {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px 0px;
+}
+
+.hero-banner-content-list {
+    margin-bottom: 2px;
+}
+
+.banner-button-get-started button {
+    display: flex;
+    justify-content: center;
+    background: #062c60;
+    font-size: 15px;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 40px;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.button-right-arrow {
+    margin-left: 2px;
+}
+
+.blue-bg:hover{
+  background-color: rgb(246, 246, 248);
+}
     </style>
   </head>
   <body>
+    <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="assets/logo.png" class="h-10" alt="StudyByU Logo">
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="hover:bg-blue-800 hover:text-white focus:ring-4 border-solid border-2 border-blue-500 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign In</button>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
+                <li>
+                    <a href="#" class="block py-2 px-3 text-black rounded md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:border-gray-700" aria-current="page">Home</a>
+                </li>
+                <!-- Dropdown Added Below -->
+                <li class="relative">
+                    <button id="dropdownNavbarLink" class="dropdown flex items-center justify-between w-full py-2 px-3 rounded md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto md:dark:hover:text-blue-500 dark:border-gray-700">
+                        Classes
+                        <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar" class="dropdown-menu absolute left-0 z-10 hidden font-normal bg-white  rounded-lg shadow w-44 divide-y divide-gray-100dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm" aria-labelledby="dropdownNavbarLink">
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Class IX</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Class X</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-black rounded md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500   dark:border-gray-700">Doubt Clearing Sessions</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-black rounded  md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500   dark:border-gray-700">Mental Health</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-black rounded  md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500   dark:border-gray-700">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-black rounded  md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500   dark:border-gray-700">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     <div>
-      <h1 class="pb-6 pt-4 text-xl px-10 other-ch">Chapter 4 </h1>
+      <!-- <h1 class="pb-6 pt-4 text-xl px-10 other-ch">StudyByU </h1> -->
       <div class="flex  w-2/3">
         <div class="w-1/3 px-10">
           <img
@@ -85,15 +266,20 @@
           />
         </div>
         <div class="pr-[44px]  w-[60%] flex flex-col justify-around ">
-          <h1 class="text-4xl ch-title"> Linear Equations in Two Variables</h1>
-          <div class="text-xl mb-4">Rs. 150 <del class="text-xs">Rs. 200</del></div>
-          <div class="text-[14px] text-gray-600">
+        <div>
+          <h1 class="text-[3vw] ch-title leading-10 2xl:leading-[60px]">
+            <span class="  text-xl leading-none  other-ch block xl:mb-4">Chapter 4 </span>
+             Linear Equations in Two Variables</h1>
+             <div class="text-[1.5vw] ">Rs. 150 <del class="text-[1vw]">Rs. 200</del></div>
+        </div>
+          
+          <div class="text-[1.1vw] text-gray-600">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
             neque recusandae aliquid officiis dolores mollitia quod ipsam sunt
             quo dolor laudantium vero, debitis iste aut? Tempore debitis
             doloremque quasi minima.
           </div>
-          <div><button class="buy-now-btn py-2 px-8 text-white rounded-3xl">Buy Now</button></div>
+          <div><button class="buy-now-btn py-2 px-8 text-white text-[1vw] rounded-3xl">Buy Now</button></div>
         </div>
       </div>
 
@@ -143,33 +329,82 @@
         </button>
       </div>
     </div>
-    <div class="fixed px-4 bottom-0 right-0 top-0 w-1/3 z-10">
+
+    <div class="hero hero-2">
+      <div class="hero-banner">
+          <div class="hero-banner-content">
+              <div class="hero-banner-content-heading">
+                  Unravel Your Doubts, Excel in Your Studies!
+              </div>
+              <div class="hero-banner-content-text">
+                  Get our Doubt Solving Sessions Today!
+              </div>
+              <div class="banner-button-get-started">
+                  <button>Get Started <div class="button-right-arrow"><i class="fa-solid fa-arrow-right"></div></i></button>
+              </div>
+          </div>
+          <div class="hero-banner-image"><img src="assets/doubt.png" alt=""></div>
+      </div>
+  </div>
+
+    <div class="fixed px-4 bottom-0 right-0 top-16 w-1/3 z-10">
       <div class="py-5 other-ch px-2 text-xl">Other Chapters</div>
 
-      <div>
-        <div class="flex items-center justify-between">
-          <div class="w-20 p-2">
+      <div class="overflow-y-scroll h-[70vh]">
+        <div class="flex items-center justify-between blue-bg  rounded-2xl my-1">
+          <div class="w-[15vh] p-2">
             <img
               src="https://wallpapers.com/images/hd/physics-1651-x-2550-picture-bonim27whwjunncg.jpg"
               alt=""
               class="w-full rounded-lg"
             />
           </div>
-          <div class="w-2/3">name</div>
+          <h2 class="w-2/3 font-ch-name">
+            <span class="block block text-sm other-ch">Chapter - 1</span>
+            Number Systems</h2>
           <div class="px-4">></div>
         </div>
-        <div class="flex items-center justify-between">
-          <div class="w-20 p-2">
+        <div class="flex items-center justify-between  blue-bg rounded-2xl my-1">
+          <div class="w-[15vh] p-2">
             <img
               src="https://wallpapers.com/images/hd/physics-1651-x-2550-picture-bonim27whwjunncg.jpg"
               alt=""
               class="w-full rounded-lg"
             />
           </div>
-          <div class="w-2/3">name</div>
+          <h2 class="w-2/3 font-ch-name">
+             <span class="block text-sm other-ch">Chapter - 1</span>
+            Polynomials</h2>
+          <div class="px-4">></div>
+        </div>
+        <div class="flex items-center justify-between  blue-bg rounded-2xl my-1">
+          <div class="w-[15vh] p-2">
+            <img
+              src="https://wallpapers.com/images/hd/physics-1651-x-2550-picture-bonim27whwjunncg.jpg"
+              alt=""
+              class="w-full rounded-lg"
+            />
+          </div>
+          <h2 class="w-2/3 font-ch-name">
+             <span class="block text-sm other-ch">Chapter - 1</span>
+            Coordinate Geometry</h2>
+          <div class="px-4">></div>
+        </div>
+        <div class="flex items-center justify-between blue-bg rounded-2xl my-1">
+          <div class="w-[15vh] p-2">
+            <img
+              src="https://wallpapers.com/images/hd/physics-1651-x-2550-picture-bonim27whwjunncg.jpg"
+              alt=""
+              class="w-full rounded-lg"
+            />
+          </div>
+          <h2 class="w-2/3 font-ch-name">
+             <span class="block text-sm other-ch">Chapter - 1</span>
+            Linear Equations in Two Variables</h2>
           <div class="px-4">></div>
         </div>
       </div>
+      <div class="p-4 text-center"><a href="" class="underline text-blue-900">View all ></a></div>
     </div>
 
     <script>
@@ -185,5 +420,35 @@
         }
       }
     </script>
+        <script >
+          document.addEventListener('DOMContentLoaded', function () {
+              const toggleButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+              const menu = document.getElementById('navbar-sticky');
+      
+              toggleButton.addEventListener('click', function () {
+                  menu.classList.toggle('hidden');
+              });
+      
+              // Dropdown functionality
+              const dropdownButton = document.getElementById('dropdownNavbarLink');
+              const dropdownMenu = document.getElementById('dropdownNavbar');
+      
+              // Function to open dropdown on mouseenter
+              const openDropdown = function () {
+                  dropdownMenu.classList.remove('hidden');
+              };
+      
+              // Function to close dropdown on mouseleave
+              const closeDropdown = function () {
+                  dropdownMenu.classList.add('hidden');
+              };
+      
+              // Add event listeners for mouseenter and mouseleave
+              dropdownButton.addEventListener('mouseenter', openDropdown);
+              dropdownButton.addEventListener('mouseleave', closeDropdown);
+              dropdownMenu.addEventListener('mouseenter', openDropdown);
+              dropdownMenu.addEventListener('mouseleave', closeDropdown);
+          });
+      </script>
   </body>
 </html>
