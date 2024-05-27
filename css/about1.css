@@ -100,3 +100,15 @@
     margin: 20px 0;
     line-height: 44px;
 }  
+
+
+.accordion-collapse {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+.accordion-collapse.expanding {
+  max-height: 1000px; /* Arbitrary max height large enough to accommodate content */
+  opacity: 1;
+}

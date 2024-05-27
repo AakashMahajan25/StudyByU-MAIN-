@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+.sticky{
+    position: sticky;
+}
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="left-content w-[66vw] bg-red-500">
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="trigger h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+            <div class="card h-40 border bg-blue-500">
+                i am card
+            </div>
+        </div>
+        <div class="right-content sticky top-0 right-0 w-[34vw]">
+            <div class="card-right bg-orange-500 h-56">i am righ card</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const rightContent = document.querySelector(".right-content")
+            const trigger = document.querySelector(".trigger")
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        rightContent.classList.remove('fixed')
+                    }else{
+                        console.log("left")
+                    }
+                })
+            })
+
+            observer.observe(trigger);
+        })
+    </script>
+</body>
+</html>
