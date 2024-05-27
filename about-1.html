@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/about1.css">
+</head>
+<body>
+  <div class="about-us">
+    <div class="container mx-auto max-w-screen-lg px-4">
+      <div class="flex flex-wrap">
+        <div class="lg:w-1/2 lg:ml-1/12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-4 border-b">
+              <h2 class="accordion-header mb-0" id="headingOne">
+                <button class="accordion-button flex items-center justify-between w-full py-4 text-left" type="button" aria-expanded="true" aria-controls="collapseOne">
+                  Where shall we begin?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse block" aria-labelledby="headingOne">
+                <div class="accordion-body p-4">
+                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-4 border-b">
+              <h2 class="accordion-header mb-0" id="headingTwo">
+                <button class="accordion-button flex items-center justify-between w-full py-4 text-left collapsed" type="button" aria-expanded="false" aria-controls="collapseTwo">
+                  How do we work together?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse hidden" aria-labelledby="headingTwo">
+                <div class="accordion-body p-4">
+                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-4 border-b">
+              <h2 class="accordion-header mb-0" id="headingThree">
+                <button class="accordion-button flex items-center justify-between w-full py-4 text-left collapsed" type="button" aria-expanded="false" aria-controls="collapseThree">
+                  Why SCHOLAR is the best?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse hidden" aria-labelledby="headingThree">
+                <div class="accordion-body p-4">
+                  There are more than one hundred responsive HTML templates to choose from <strong>Template</strong>Mo website. You can browse by different tags or categories.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-4 border-b">
+              <h2 class="accordion-header mb-0" id="headingFour">
+                <button class="accordion-button flex items-center justify-between w-full py-4 text-left collapsed" type="button" aria-expanded="false" aria-controls="collapseFour">
+                  Do we get the best support?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse hidden" aria-labelledby="headingFour">
+                <div class="accordion-body p-4">
+                  You can also search on Google with specific keywords such as <code>templatemo business templates, templatemo gallery templates, admin dashboard templatemo, 3-column templatemo, etc.</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2 lg:ml-auto lg:self-center">
+          <div class="section-heading mb-8">
+            <h6 class="text-lg font-medium">About Us</h6>
+            <h2 class="text-3xl font-semibold mb-4">What makes us the best academy online?</h2>
+            <p class="text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repellendus vitae cum soluta animi ullam, corporis voluptatum consequatur? Quae, illum cum ipsam magnam dolor autem! Non eaque nostrum iure cum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repellendus vitae cum soluta animi ullam, corporis voluptatum consequatur? Quae, illum cum ipsam magnam dolor autem! Non eaque nostrum iure cum.
+            </p>
+            <div class="main-button mt-6">
+              <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-full">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.querySelectorAll('.accordion-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const collapse = button.parentElement.nextElementSibling;
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Collapse all other accordion items
+        document.querySelectorAll('.accordion-collapse').forEach(item => {
+          if (item !== collapse) {
+            item.classList.add('hidden');
+            item.classList.remove('block');
+            item.style.maxHeight = '0';
+            const siblingButton = item.previousElementSibling.querySelector('.accordion-button');
+            siblingButton.classList.add('collapsed');
+            siblingButton.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Toggle the clicked accordion item
+        button.classList.toggle('collapsed', expanded);
+        button.setAttribute('aria-expanded', !expanded);
+
+        if (expanded) {
+          collapse.classList.add('hidden');
+          collapse.classList.remove('block');
+          collapse.style.maxHeight = '0';
+        } else {
+          collapse.classList.remove('hidden');
+          collapse.classList.add('block');
+          collapse.style.maxHeight = collapse.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
