@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pdf-viewer.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .playlist {
+            transition: transform 0.3s ease-in-out;
+        }
+        .closed {
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+<body class="relative">
+
+    <div class="playlist fixed bottom-0 left-0 right-0 bg-white shadow-lg rounded-t-xl closed">
+        <div class="playlist-header text-end p-4 bg-gray-900 text-white rounded-t-xl">
+            <i class="fa-solid fa-xmark cursor-pointer text-black absolute top-10 right-10" id="close-playlist"></i>
+        </div>
+        <div class="playlist-body p-4" id="playlist-body">
+            <div class="video flex items-center gap-4 mb-4">
+                <div class="numbering">1</div>
+                <div class="thumbnail">
+                    <img src="assets/new.webp" alt="Video 5 Thumbnail">
+                </div>
+                <div class="video-title">Physics</div>
+            </div>
+            
+<div class="video">
+    <div class="numbering">2</div>
+    <div class="thumbnail">
+        <img src="assets/new2.webp" alt="Video 5 Thumbnail">
+    </div>
+    <div class="video-title">Science</div>
+</div>
+<div class="video active">
+    <div class="numbering">3</div>
+    <div class="thumbnail">
+        <img src="assets/new3.webp" alt="Video 1 Thumbnail">
+    </div>
+    <div class="video-title">Graphics</div>
+</div>
+<div class="video">
+    <div class="numbering">4</div>
+    <div class="thumbnail">
+        <img src="assets/new4.webp" alt="Video 2 Thumbnail">
+    </div>
+    <div class="video-title">Accountancy</div>
+</div>
+<div class="video">
+    <div class="numbering">5</div>
+    <div class="thumbnail">
+        <img src="assets/new5.webp" alt="Video 3 Thumbnail">
+    </div>
+    <div class="video-title">Video Title 3</div>
+</div>
+<div class="video">
+    <div class="numbering">4</div>
+    <div class="thumbnail">
+        <img src="assets/icon4.jpg" alt="Video 4 Thumbnail">
+    </div>
+    <div class="video-title">Video Title 4</div>
+</div>
+<div class="video">
+    <div class="numbering">5</div>
+    <div class="thumbnail">
+        <img src="assets/icon5.avif" alt="Video 5 Thumbnail">
+    </div>
+    <div class="video-title">Video Title 5</div>
+</div>
+<div class="video">
+    <div class="numbering">5</div>
+    <div class="thumbnail">
+        <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+    </div>
+    <div class="video-title">Video Title 5</div>
+</div>
+<div class="video">
+    <div class="numbering">5</div>
+    <div class="thumbnail">
+        <img src="assets/dummy-thumbnail.jpg" alt="Video 5 Thumbnail">
+    </div>
+    <div class="video-title">Video Title 5</div>
+</div>
+        </div>
+    </div>
+
+    <div class="bottom-bar fixed bottom-0 bg-blue-950 flex w-full justify-between items-center pr-10 pl-4 py-2">
+        <div class="text-white">
+            <div>Subject</div>
+            <div>Chapter Name</div>
+        </div>
+        <div>
+            <button id="open-playlist"><i class="fa-solid fa-play text-white"></i></button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('close-playlist').addEventListener('click', function() {
+            document.querySelector('.playlist').classList.add('closed');
+        });
+
+        document.getElementById('open-playlist').addEventListener('click', function() {
+            document.querySelector('.playlist').classList.remove('closed');
+        });
+    </script>
+</body>
+</html>
+
+
+

@@ -1,13 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <?php
 session_start();
 include('./components/header.html');
 ?>
 
-    <div class="content-wrapper flex">
+    <div class="content-wrapper flex ">
         <div class="main-section">
             <div class="pdf-viewer" id="pdf-viewer"></div>
         </div>
-        <div class="section-3">
+        <div class="section-3 ">
             
             <div class="playlist">
                 <div class="playlist-header">
@@ -130,9 +138,15 @@ include('./components/header.html');
     </div> 
 </div>
 
+
+
+
+
 <script src="javascript/video-player.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js" ></script> -->
 <script src="./javascript/pdf-viewer-cdn.js"></script>
 <script>const pdfUrl = 'chemistry.pdf';</script>
 <script src="javascript/pdf-viewer.js"></script>
 <?php include('./components/footer.html');?>
+</body>
+</html>

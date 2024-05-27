@@ -61,7 +61,7 @@
     --color-light: #ea9191;
 } */
 
-#pdf-viewer {margin-left: 5rem;}
+#pdf-viewer {margin-left: 5rem;background: #000;}
 
 #pdf-viewer canvas{
     border-radius: 15px;
@@ -74,6 +74,29 @@
     padding-top: 0;
 }
 
+@media only screen and (max-width:1024px){
+
+    .section-3{
+        display: none;
+    }
+
+    body{
+        background-color: whitesmoke;
+    }
+
+
+    .playlist-body{
+        height: 100vh !important;
+    }
+
+    .playlist-header{
+        background-color: whitesmoke !important;
+    }
+
+    .video{
+        margin: 14px 0px !important;
+    }
+}
 .subject {
     display: flex;
     justify-content: space-between;
@@ -158,8 +181,9 @@
 }
 
 .playlist-body .thumbnail {
-    height: 56px;
-    width: 100px;
+    height: auto;
+    width: 150px;
+    aspect-ratio: 4/2.4;
 }
 
 .playlist-body .thumbnail img {

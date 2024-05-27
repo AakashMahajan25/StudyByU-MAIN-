@@ -22,6 +22,12 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width:1024px){
+    .navbar-container{
+        display: none;
+    }
+}
+
 .options {
     display: flex;
     flex-direction: column;
