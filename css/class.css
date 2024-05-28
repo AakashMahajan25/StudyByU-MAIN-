@@ -137,3 +137,59 @@
     .info-icon img {
         width: 10vw;
     }
+
+
+    @media only screen and (max-width:1024px){
+        .classes-hero-banner{
+            display: block;
+            padding: 20px 40px;
+            height: 42vh;
+           position: relative;
+        }
+
+        .classes-hero-banner-image img{
+      position: absolute;
+      top: 25%;
+      right: 6%;
+            width: 34vw;
+           
+        }
+
+        .hero-banner-content-heading{
+            padding-bottom: 50px;
+            line-height: 40px;
+        }
+
+        .classes-container{
+            display: block;
+        }
+        
+        .individual-classes{
+            margin: 15px 45px;
+            padding: 0px 0px 50px 0px;
+        }
+
+        .individual-classes-body{
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .individual-classes-body-image-1 img, .individual-classes-body-image-2 img{
+            width: 19vw !important;
+        }
+        .individual-classes-body-content{
+            line-height: 20px;
+            padding-top: -200px;
+            font-size: larger;
+            color: rgb(56, 56, 56);
+            line-height: 25px;
+        }
+
+        .individual-classes-body-content-text{
+            text-align: left;
+        }
+
+        .individual-classes-body-content-button{
+            margin-top: 40px;
+        }
+    }

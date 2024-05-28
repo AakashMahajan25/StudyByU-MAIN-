@@ -26,7 +26,7 @@
   .accordion {
     margin-top: -40px;
     margin-bottom: -40px;
-    background-color: #7a6ad8;
+    background-color: #6181f6;
     border-radius: 40px;
     padding: 80px 50px 50px 50px;
   }
@@ -45,7 +45,7 @@
   }
   
   .accordion-button:not(.collapsed) {
-    color: #7a6ad8;
+    color: #6181f6;
     background-color: #fff;
   }
   
@@ -67,7 +67,7 @@
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
-    background-color: #7a6ad8;
+    background-color: #6181f6;
     color: #fff;
   }
   
@@ -87,6 +87,12 @@
   .about-us .section-heading {
     margin-left: 60px;
     margin-bottom: 0px;
+  }
+
+  @media only screen and (max-width:1024px){
+    .section-heading{
+      margin-left: 0px !important;
+    }
   }
   
   .about-us .section-heading .main-button {
@@ -111,4 +117,205 @@
 .accordion-collapse.expanding {
   max-height: 1000px; /* Arbitrary max height large enough to accommodate content */
   opacity: 1;
+}
+
+
+
+
+/* func facts css */
+
+
+.fun-facts {
+  position: relative;
+  padding: 120px 0px 80px 0px;
+  overflow: hidden;
+  background-color: #6181f6;
+}
+
+.section-2 {
+    width: 80vw;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+}
+
+.fun-facts:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 95%;
+  height: 100%;
+  content: '';
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+
+.fun-facts:after {
+  background: url("/assets/contact-dec-01.png");
+  position: absolute;
+  left: 15%;
+  opacity: 0.5;
+  top: 0;
+  width: 318px;
+  height: 119px;
+  content: '';
+  z-index: 2;
+}
+
+.fun-facts .counter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fun-facts h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.fun-facts h2::after {
+  content: '+';
+  margin-left: 5px;
+}
+
+.fun-facts p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+
+
+  /* SECTIONCSS */
+  .services-2 .service-item:hover .icon img {
+    margin-top: -10px;
+  }
+  
+  .services-2 .service-item {
+    position: relative;
+    margin-top: 95px;
+  }
+  
+  .services-2 .service-item .icon {
+      width: 190px;
+    height: 190px;
+    display: flex;
+    text-align: center;
+    line-height: 190px;
+    background-color: #6181f6;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -95px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .services-2 .service-item .icon img {
+    max-width: 86px;
+    transition: all .2s;
+  }
+  
+  .services-2 .service-item .main-content {
+    border-radius: 25px;
+    padding: 80px 30px 50px 30px;
+    background-color: #f1f0fe;
+    margin-bottom: 30px;
+   
+    transition: all .4s;
+  }
+  
+  .services-2 .service-item h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 30px;
+    transition: all .4s;
+  }
+  
+  .services-2 .service-item p {
+    color: #4a4a4a;
+    margin-bottom: 25px;
+  }
+  
+  .main-button{
+      background: white;
+      width: fit-content;
+      padding: 8px 20px;
+      border-radius: 20px;
+  }
+  
+
+
+        /* 
+---------------------------------------------
+Team Style
+--------------------------------------------- 
+*/
+
+.team {
+  margin-top: 100px;
+  padding-top: 140px;
+}
+
+.team-member {
+  position: relative;
+}
+
+.team-member:hover img {
+  top: -120px;
+}
+
+.team-member img {
+  max-width: 220px;
+  border-radius: 50%;
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-110px);
+  transition: all 0.3s;
+}
+
+.team-member .main-content {
+  border-radius: 25px;
+  padding: 140px 30px 40px 30px;
+  background-color: #f1f0fe;
+  text-align: center;
+}
+
+.team-member .main-content span.category {
+  color: #6181f6;
+  font-size: 15px;
+}
+
+.team-member .main-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.team-member .main-content ul li {
+  display: inline-block;
+  margin: 0px 2px;
+}
+
+.team-member .main-content ul li a {
+  background-color: #fff;
+  color: #6181f6;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.team-member .main-content ul li a:hover {
+  background-color: #6181f6;
+  color: #fff;
 }

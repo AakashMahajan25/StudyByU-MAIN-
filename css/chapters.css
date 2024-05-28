@@ -18,6 +18,10 @@ body {
     max-width: 586px;
 }
 
+.other-sub{
+    border-radius: 0px !important;
+}
+
 .banner-title{
     font-weight: 600;
     font-size: 24px;
