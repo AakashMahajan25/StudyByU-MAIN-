@@ -17,7 +17,7 @@ include('./components/header.html');
     </div>
     <div class="section-3 ">
         
-        <div class="playlist">
+        <div class="playlist closed">
             <div class="playlist-header">
                 <div class="chapter">Chapter-1</div>
                 <div class="subject"><div>Science</div><div id="video-number"> 1/5</div></div>
@@ -91,7 +91,7 @@ include('./components/header.html');
         </div>
 
         <!-- bottom bar plalist mobile -->
-        <div class="bottom-bar fixed bottom-0 bg-blue-950 flex w-full justify-between items-center pr-10 pl-4 py-2">
+        <div class="bottom-bar fixed bottom-0 bg-blue-950 flex w-full justify-between items-center pr-10 pl-4 py-2 lg:hidden">
             <div class="text-white">
                 <div>Subject</div>
                 <div>Chapter Name</div>
@@ -157,13 +157,9 @@ include('./components/header.html');
 <script src="javascript/pdf-viewer.js"></script>
 
 <script>
-    document.getElementById('close-playlist').addEventListener('click', function() {
-        document.querySelector('.playlist').classList.add('closed');
-    });
-
-    document.getElementById('open-playlist').addEventListener('click', function() {
-        document.querySelector('.playlist').classList.remove('closed');
-    });
+document.getElementById('open-playlist').addEventListener('click', function() {
+    document.querySelector('.playlist').classList.toggle('closed');
+});
 </script>
 
 <?php include('./components/footer.html');?>

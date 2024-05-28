@@ -74,7 +74,7 @@
     padding-top: 0;
 }
 
-@media only screen and (max-width:1024px){
+@media only screen and (max-width: 1024px){
     .main-section{
         width:100%
     }
@@ -97,7 +97,6 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
-        display: none; /* Initially closed */
       }
       
       /* To open the playlist, you can add another class like .open */
@@ -125,6 +124,15 @@
 
     .video{
         margin: 14px 0px !important;
+    }
+    .playlist {
+        transition: transform 0.3s ease-in-out;
+    }
+    .closed {
+        transform: translateY(100%);
+    }
+    .playlist-body .thumbnail{
+        width: 150px;
     }
 }
 .subject {
@@ -212,7 +220,7 @@
 
 .playlist-body .thumbnail {
     height: auto;
-    width: 150px;
+    width: 100px;
     aspect-ratio: 4/2.4;
 }
 
