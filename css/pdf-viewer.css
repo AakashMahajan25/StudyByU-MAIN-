@@ -61,7 +61,7 @@
     --color-light: #ea9191;
 } */
 
-#pdf-viewer {margin-left: 5rem;background: #000;}
+#pdf-viewer {margin-left: 5rem;}
 
 #pdf-viewer canvas{
     border-radius: 15px;
@@ -75,8 +75,38 @@
 }
 
 @media only screen and (max-width:1024px){
+    .main-section{
+        width:100%
+    }
+    #pdf-viewer{
+        margin-left: 0;
+    }
 
     .section-3{
+        width: 100%;
+        margin-right:0;
+        height:fit-content;
+    }
+
+    .playlist {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        display: none; /* Initially closed */
+      }
+      
+      /* To open the playlist, you can add another class like .open */
+      .playlist.open {
+        display: block;
+      }
+      
+
+    .video-container{
         display: none;
     }
 
