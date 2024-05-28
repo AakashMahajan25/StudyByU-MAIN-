@@ -15,106 +15,13 @@
     <style></style>
   </head>
   <body>
-    <nav class="">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a
-          href="https://flowbite.com/"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img src="assets/logo.png" class="h-12" alt="Flowbite Logo" />
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white flex items-center"
-          >
-            <li>
-              <a
-                href=""
-                class="hover:text-blue-500 active:text-blue-500 items-center"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:text-blue-500 active:text-blue-500 items-center"
-                >Classes</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:text-blue-500 active:text-blue-500 flex items-center"
-              >
-                <!-- <img class="navbar-image w-8" src="assets/thinking.png" alt=""> -->
-                Doubt Clearing</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:text-blue-500 active:text-blue-500 flex items-center"
-                >Mental Health</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:text-blue-500 active:text-blue-500 items-center"
-                >Signin</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:text-blue-500 active:text-blue-500 items-center"
-                >AboutUs</a
-              >
-            </li>
-            <li class="hover:blue-500 hover:bg-white">
-              <div
-                class="bg-blue-500 px-5 py-1 text-white rounded-full items-center hover:bg-white hover:border-2"
-              >
-                <a
-                  href=""
-                  class="hover:text-blue-500 active:text-blue-500 hover:bg-white items-center"
-                  >ContactUs</a
-                >
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    
+    <?php
+    session_start();
+    include('./secondary-navbar-white.html');
+    ?>
 
-
-    <section class="bg-blue-400 font-bold py-16">
+    <section class="bg-blue-400 font-bold py-16 mt-16">
       <div class="text-center">
         <h2 class="text-4xl text-white">About StudyByu</h2>
       </div>
@@ -522,5 +429,41 @@
         </div>
       </div>
     </div>
+    <?php include('./footer.html');?>
   </body>
+
+  <script>
+    document.querySelectorAll('.accordion-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const collapse = button.parentElement.nextElementSibling;
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Collapse all other accordion items
+        document.querySelectorAll('.accordion-collapse').forEach(item => {
+          if (item !== collapse) {
+            item.classList.add('hidden');
+            item.classList.remove('expanding');
+            item.style.maxHeight = '0';
+            const siblingButton = item.previousElementSibling.querySelector('.accordion-button');
+            siblingButton.classList.add('collapsed');
+            siblingButton.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Toggle the clicked accordion item
+        button.classList.toggle('collapsed', expanded);
+        button.setAttribute('aria-expanded', !expanded);
+
+        if (expanded) {
+          collapse.classList.add('hidden');
+          collapse.classList.remove('expanding');
+          collapse.style.maxHeight = '0';
+        } else {
+          collapse.classList.remove('hidden');
+          collapse.classList.add('expanding');
+          collapse.style.maxHeight = collapse.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
 </html>

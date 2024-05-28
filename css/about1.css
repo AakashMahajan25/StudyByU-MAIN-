@@ -7,6 +7,7 @@
     position: relative;
     padding: 0px;
     margin-top: 130px;
+    margin-bottom: 130px;
   }
   
   .about-us:before {
@@ -17,7 +18,7 @@
     z-index: -1;
     width: 84%;
     height: 100%;
-    background-color: #f1f0fe;
+    background-color: aliceblue;
     content: '';
     border-top-left-radius: 500px;
     border-bottom-left-radius: 500px;
@@ -26,7 +27,7 @@
   .accordion {
     margin-top: -40px;
     margin-bottom: -40px;
-    background-color: #6181f6;
+    background-color: #91a7ef;
     border-radius: 40px;
     padding: 80px 50px 50px 50px;
   }
@@ -46,7 +47,7 @@
   
   .accordion-button:not(.collapsed) {
     color: #6181f6;
-    background-color: #fff;
+    /* background-color: #fff; */
   }
   
   h2.accordion-header button {

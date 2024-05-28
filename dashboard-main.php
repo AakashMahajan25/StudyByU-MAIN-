@@ -52,10 +52,10 @@ include('./components/header.html');
             <div></div>
         </div> -->
 
-        <div class="w-[30vw] border-4 border-indigo-500  px-5 py-4 rounded-lg bg-white shadow-lg mt-3">
+        <div class="w-[30vw] border-1 border-indigo-500  px-5 py-4 rounded-lg bg-white shadow-lg mt-3">
             <div class="text-3xl font-semibold mb-4 text-[#013266]">Upcoming Appointments</div>
             <div class="h-[30vh] space-y-4 overflow-y-auto">
-                <div class="bg-gray-200 p-4 rounded-lg shadow-sm ">
+                <div class="bg-[#ededee] p-4 rounded-lg shadow-sm ">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <img class="w-12 h-12 mr-4 rounded-full" src="./assets/user.png" alt="Doctor Profile">
@@ -77,7 +77,7 @@ include('./components/header.html');
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-200 p-4 rounded-lg shadow-sm ">
+                <div class="bg-[#ededee] p-4 rounded-lg shadow-sm ">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <img class="w-12 h-12 mr-4 rounded-full" src="./assets/user.png" alt="Doctor Profile">
@@ -99,7 +99,7 @@ include('./components/header.html');
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-200 p-4 rounded-lg shadow-sm ">
+                <div class="bg-[#ededee] p-4 rounded-lg shadow-sm ">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <img class="w-12 h-12 mr-4 rounded-full" src="./assets/user.png" alt="Doctor Profile">
@@ -121,7 +121,7 @@ include('./components/header.html');
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-200 p-4 rounded-lg shadow-sm ">
+                <div class="bg-[#ededee] p-4 rounded-lg shadow-sm ">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <img class="w-12 h-12 mr-4 rounded-full" src="./assets/user.png" alt="Doctor Profile">
@@ -143,7 +143,7 @@ include('./components/header.html');
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-200 p-4 rounded-lg shadow-sm ">
+                <div class="bg-[#ededee] p-4 rounded-lg shadow-sm ">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <img class="w-12 h-12 mr-4 rounded-full" src="./assets/user.png" alt="Doctor Profile">
