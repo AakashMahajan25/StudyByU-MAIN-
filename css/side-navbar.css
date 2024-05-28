@@ -4,7 +4,7 @@ body {
 
 .navbar {
   height: 90vh;
-  width: 5%;
+  width: vw;
   position: fixed;
   display: flex;
   flex-direction: column;
