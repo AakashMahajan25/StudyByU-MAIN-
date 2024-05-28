@@ -21,7 +21,7 @@
     include('./secondary-navbar-white.html');
     ?>
 
-  <div class="bg-gradient-to-b from-green-50 to-green-100">
+  <div class="bg-gradient-to-b from-[#627de3] to-[#aec1f8]">
       <header class="">
           <div class="px-4 mx-auto sm:px-6 lg:px-8">
               <div class="flex items-center justify-between h-16 lg:h-20">
@@ -66,26 +66,26 @@
           <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
                   <div>
-                      <h1 class="text-4xl font-bold text-black sm:text-6xl lg:text-7xl">
-                          Collaborate remotely, with
+                      <h1 class="text-4xl font-bold text-white sm:text-6xl lg:text-7xl">
+                      Transform Your Learning Experience with
                           <div class="relative inline-flex">
-                              <span class="absolute inset-x-0 bottom-0 border-b-[30px] border-[#4ADE80]"></span>
-                              <h1 class="relative text-4xl font-bold text-black sm:text-6xl lg:text-7xl">Postcrafts.</h1>
+                              <span class="absolute inset-x-0 bottom-0 border-b-[20px] border-blue-500"></span>
+                              <h1 class="relative text-4xl font-bold text-white sm:text-6xl lg:text-7xl">StudyByU.</h1>
                           </div>
                       </h1>
 
-                      <p class="mt-8 text-base text-black sm:text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
+                      <p class="mt-8 text-base text-[#333333] sm:text-xl">Connect, Collaborate, and Succeed: Revolutionize Your Study Sessions with StudyByU.</p>
 
                       <div class="mt-10 sm:flex sm:items-center sm:space-x-8">
-                          <a href="#" title="" class="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-orange-500 hover:bg-orange-600 focus:bg-orange-600" role="button"> Start exploring </a>
+                          <a href="#" title="" class="rounded-lg inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-500 hover:bg-blue-600 focus:bg-orange-600" role="button"> Get Started </a>
 
-                          <a href="#" title="" class="inline-flex items-center mt-6 text-base font-semibold transition-all duration-200 sm:mt-0 hover:opacity-80">
+                          <!-- <a href="#" title="" class="inline-flex items-center mt-6 text-base font-semibold transition-all duration-200 sm:mt-0 hover:opacity-80">
                               <svg class="w-10 h-10 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path fill="#F97316" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                               </svg>
                               Watch video
-                          </a>
+                          </a> -->
                       </div>
                   </div>
 
@@ -122,11 +122,7 @@
                   aria-labelledby="headingOne"
                 >
                   <div class="accordion-body p-4">
-                    Dolor <strong>almesit amet</strong>, consectetur adipiscing
-                    elit, sed doesn't eiusmod tempor incididunt ut labore
-                    consectetur <code>adipiscing</code> elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Quis
-                    ipsum suspendisse ultrices gravida.
+                    Our academy excels with expert instructors, interactive lessons, flexible schedules, and personalized support. We offer diverse courses, innovative technology, and a vibrant community, ensuring an exceptional online learning experience for every student.
                   </div>
                 </div>
               </div>
@@ -138,7 +134,7 @@
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    How do we work together?
+                  How does StudyBYU involves parents?
                   </button>
                 </h2>
                 <div
@@ -147,11 +143,7 @@
                   aria-labelledby="headingTwo"
                 >
                   <div class="accordion-body p-4">
-                    Dolor <strong>almesit amet</strong>, consectetur adipiscing
-                    elit, sed doesn't eiusmod tempor incididunt ut labore
-                    consectetur <code>adipiscing</code> elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Quis
-                    ipsum suspendisse ultrices gravida.
+                    DStudyBYU supports parents with regular progress updates, home learning resources, and open communication, ensuring they are informed and equipped to foster their child's educational success.
                   </div>
                 </div>
               </div>
@@ -163,7 +155,7 @@
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Why SCHOLAR is the best?
+                    Why StudyByU is the best?
                   </button>
                 </h2>
                 <div
@@ -172,9 +164,7 @@
                   aria-labelledby="headingThree"
                 >
                   <div class="accordion-body p-4">
-                    There are more than one hundred responsive HTML templates to
-                    choose from <strong>Template</strong>Mo website. You can
-                    browse by different tags or categories.
+                    StudyBYU is the best because it combines high-quality education with flexibility, expert faculty, and a supportive online community. Its diverse course offerings, innovative teaching methods, and personalized learning paths cater to various student needs, ensuring success.
                   </div>
                 </div>
               </div>
@@ -195,11 +185,7 @@
                   aria-labelledby="headingFour"
                 >
                   <div class="accordion-body p-4">
-                    You can also search on Google with specific keywords such as
-                    <code
-                      >templatemo business templates, templatemo gallery
-                      templates, admin dashboard templatemo, 3-column
-                      templatemo, etc.</code
+                    Yes, at StudyBYU, you receive the best support. Our dedicated team offers personalized assistance, timely responses, and comprehensive resources to ensure you succeed in your educational journey.
                     >
                   </div>
                 </div>
@@ -244,10 +230,9 @@
                 />
               </div>
               <div class="main-content">
-                <h4 class="text-xl font-semibold mb-2">Online Degrees</h4>
+                <h4 class="text-xl font-semibold mb-2">Global Collaboration</h4>
                 <p class="text-gray-700 mb-4">
-                  Whenever you need free templates in HTML CSS, you just
-                  remember TemplateMo website.
+                  Break geographical barriers and collaborate with students worldwide.
                 </p>
                 <div class="main-button">
                   <a href="#" class="text-blue-500 hover:text-blue-700"
@@ -267,10 +252,9 @@
                 />
               </div>
               <div class="main-content">
-                <h4 class="text-xl font-semibold mb-2">Short Courses</h4>
+                <h4 class="text-xl font-semibold mb-2">Efficient Communication</h4>
                 <p class="text-gray-700 mb-4">
-                  You can browse free templates based on different tags such as
-                  digital marketing, etc.
+                  Streamline your study sessions with seamless communication tools.
                 </p>
                 <div class="main-button">
                   <a href="#" class="text-blue-500 hover:text-blue-700"
@@ -290,10 +274,9 @@
                 />
               </div>
               <div class="main-content">
-                <h4 class="text-xl font-semibold mb-2">Web Experts</h4>
+                <h4 class="text-xl font-semibold mb-2">Empowering Education</h4>
                 <p class="text-gray-700 mb-4">
-                  You can start learning HTML CSS by modifying free templates
-                  from our website too.
+                  Access resources, support, and opportunities to excel academically with StudyByU.
                 </p>
                 <div class="main-button">
                   <a href="#" class="text-blue-500 hover:text-blue-700"
