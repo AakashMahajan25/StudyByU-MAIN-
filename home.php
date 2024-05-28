@@ -250,7 +250,7 @@ include('./secondary-navbar-white.html');
       </div>
     </section>
 
-    <div class="flex flex-col lg:flex-row items-center h-screen w-screen bg-[url('https://themewagon.github.io/eclipse/img/video-area-bg.png')] bg-cover p-6 lg:p-0">
+    <div class="flex flex-col lg:flex-row items-center h-screen w-screen bg-[url('assets/video-area-bg.png')] bg-cover p-6 lg:p-0">
         <div class="w-full lg:w-1/2 mt-14 lg:mt-0 lg:px-20 pb-10 lg:pb-40 text-center lg:text-left">
           <div class="text-2xl md:text-4xl font-bold text-white mb-6">
             Watch Our Trainers in Live Action
