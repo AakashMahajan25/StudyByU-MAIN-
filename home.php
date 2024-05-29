@@ -36,7 +36,7 @@ include('./secondary-navbar.html');
       </div>
 
     <!-- Four Element Below -->
-    <div class="four-element-container">
+    <div class="four-element-container container">
       <div class="our-offer">Our <span class="highlight">Offerings</span></div>
       <div class="component">
         <div class="courses">
