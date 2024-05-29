@@ -9,10 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <body>
-<!-- <?php
+<?php
 session_start();
 include('./secondary-navbar-white.html');
-?> -->
+?>
     <div class="container mx-auto p-4 mt-20">
         <div class="flex flex-wrap -mx-4">
             <div class="w-full lg:w-2/3 px-4">
@@ -145,7 +145,7 @@ include('./secondary-navbar-white.html');
         </div>
     </div>
 
-    <!-- <?php include('./footer.html');?> -->
+    <?php include('./footer.html');?>
 </body>
 </html> 
 

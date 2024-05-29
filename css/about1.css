@@ -27,7 +27,7 @@
   .accordion {
     margin-top: -40px;
     margin-bottom: -40px;
-    background-color: #91a7ef;
+    background-color: #032c61;
     border-radius: 40px;
     padding: 80px 50px 50px 50px;
   }
@@ -242,7 +242,7 @@
   }
   
   .main-button{
-      background: white;
+      /* background: white; */
       width: fit-content;
       padding: 8px 20px;
       border-radius: 20px;
