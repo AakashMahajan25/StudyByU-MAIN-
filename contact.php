@@ -18,7 +18,7 @@
 
   <?php
     session_start();
-    include('./secondary-navbar-white.html');
+    include('./secondary-navbar.html');
     ?>
 
   <div class="contact-us section my-20" id="contact">

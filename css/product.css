@@ -1,28 +1,94 @@
-body {
-    background-color: #f3f5f7;
-}
-.description {
+* {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    background: rgb(246, 246, 248);
+  }
+
+  .container {
+    height: 100%;
+
+    width: 992px;
+    margin: 0 auto;
+    padding: 25px;
+  }
+  section.one {
+    position: relative;
+  }
+  section.one:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .left {
+    width: calc(65% );
+    float: left;
+    margin-right: 25px;
+    margin-top: 70px;
+  }
+  
+  .right {
+    width: 33vw;
+    float: right;
+    margin-top: 70px;
+  }
+  .right-child {
+    background: #e4ecfa;
+    display: block;
+    float: right;
+    height: 90vh;
+  }
+
+  .other-ch {
+    color: #062c60;
+    font-weight: 600;
+  }
+
+  .ch-title {
+    font-weight: 600;
+  }
+
+  .ch-name {
+    font-weight: 600;
+  }
+
+  .right-child.posFix {
+    position: fixed;
+    top: 70px;
+    right: 0px;
+  }
+  .right-child.posAbs {
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
+  }
+
+  .description {
     background-color: white;
     box-shadow: 0px 0px 10px 2px rgb(230, 230, 230);
+    margin: 30px 10px 10px 40px;
     border-radius: 20px;
-    padding: 14px 14px 18px 14px;
-    
-}
-.description-section {
+    padding: 18px 14px 18px 24px;
+  }
+
+  .description-section {
     display: flex;
     /* margin-top: 20px; */
     margin: 10px;
     font-size: 18px;
+  }
 
-}
-.description-content {
+  .description-content {
     display: none;
     margin-top: 20px;
     margin: 10px;
     font-size: 18px;
-    color: rgb(119, 119, 119);
-}
-.toggle-button {
+    /* color: rgb(119, 119, 119); */
+  }
+
+  .toggle-button {
     cursor: pointer;
     color: #0057d3;
     font-size: 18px;
@@ -31,153 +97,19 @@ body {
     display: block;
     padding: 0px 0px 0px 10px;
     text-decoration: underline;
-}
+  }
 
-.description-heading {
+  .description-heading {
     /* margin-top: 25px; */
     margin-left: 10px;
     color: #003267;
-    font-size: 30px;
-    font: bold;
-    font-weight: 600;
-}
-
-.image-container img {
-    height: auto;
-    border-radius: 20px;
-    /* width: 300px; */
-}
-
-.company-name {
+    font-size: 22px;
     font-weight: 500;
-}
+  }
 
-.subject-heading {
-    color: #003267;
-    font-size: 40px;
-    font-weight: 700;
-}
-
-.subject-price {
-    font-size: 30px;
-    padding: 10px 0px;
-}
-
-.subject-about { 
-    font-size: 15px;
-    color: #333333;
-    padding: 0px 0px 10px 0px;
-   
-}
-
-.hero {
-    display: flex;
-    gap: 30px;
-    /* justify-content: space-between; */
-    /* margin: auto; */
-}
-
-
-.buy-now-button{
-padding: 10px 0px;
-}
-
-.buy-now-button button {
-    display: flex;
-    justify-content: center;
-    background-color: #29a645;
-    font-size: 20px;
-    color: white;
-    padding: 6px 8px;
-    border-radius: 10px;
-    
-}
-
-.image-container {
-    width: 40vw;
-    height: fit-content;
-    background-color: white;
-    box-shadow: 0px 0px 10px 2px rgb(230, 230, 230);
-    border-radius: 20px;
-    /* border-radius: 20px; */
-}
-
-.content {
-    padding: 30px 20px;
-    width: 50vw;
-    height: fit-content;
-    background-color: white;
-    box-shadow: 0px 0px 10px 2px rgb(230, 230, 230);
-}
-
-
-
-/* CSS for two-banners ahead */
-.hero {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-@media only screen and (max-width:1024px){
-    .respo-hero{
-        display: block;
-    }
-
-    .image-container{
-        width: 100%;
-    }
-
-    .content{
-        width: 100%;
-        margin-top: 10px;
-        
-    }
-
-    .description-content{
-        color: rgb(100, 100, 100);
-    }
-
-    .description-section{
-        color: rgb(109, 109, 109);
-    }
-
-    .hero-banner{
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: space-around !important;
-        padding: 20px !important;
-        height: 30vh !important;
-    }
-
-    
-
-    .hero-banner img{
-        display: none;
-    }
-
-    .hero-banner-content-heading{
-       font-size: 25px !important;
-       /* text-align: center !important; */
-       padding-left: 0px;
-    }
-
-    .hero-banner-content-text{
-        margin-left: 0px !important;
-        padding: 5px 0px !important;
-    }
-
-    .banner-button-get-started button{
-        margin: 0px !important;
-        margin: 10px 0px !important;
-    }
-}
-
-
-.hero-banner {
-    height: 35vh;
-    width: 80vw;
+  .hero-banner {
+    height: 34vh;
+    width: 90%;
     border-radius: 20px;
     background-color: aliceblue;
     z-index: -1;
@@ -185,42 +117,69 @@ padding: 10px 0px;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0px 0px 10px 2px rgb(230, 230, 230);
-}
+    padding: 0px 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
 
-.hero-banner img {
+  .hero-banner img {
     height: auto;
-    width: 10vw;
-}
+    width: 19vw;
+  }
 
-.hero-banner-content-heading {
+  .hero-banner-content-heading {
     color: #003366;
-    font-size: 35px;
-    font-weight: 800;
-}
+    font-size: 2.4vw;
+    font-weight: 700;
+    line-height: 40px;
+  }
 
-.hero-banner-content-text {
-    margin-left: 25px;
+  .hero-banner-content-text {
     font-size: 17px;
     font-weight: 500;
-    margin-bottom: 5px;
-}
+    padding: 5px 0px;
+  }
 
-.hero-banner-content-list {
+  .hero-banner-content-list {
     margin-bottom: 2px;
-}
+  }
 
-.banner-button-get-started button {
+  .banner-button-get-started button {
     display: flex;
     justify-content: center;
-    background-color: #29a645;
+    background: #062c60;
     font-size: 15px;
     color: white;
-    padding: 4px 6px;
-    border-radius: 10px;
-    margin: 10px 10px;
+    padding: 6px 10px;
+    border-radius: 40px;
+    margin: 10px 0px;
     align-items: center;
-}
+  }
 
-.button-right-arrow {
+  .button-right-arrow {
     margin-left: 2px;
-}
+  }
+
+  .blue-bg:hover {
+    background-color: rgb(246, 246, 248);
+  }
+
+  .buy-now-btn {
+    background: #062c60;
+  }
+
+
+  @media (max-width: 992px) {
+    .left {
+      width: 100%;
+    }
+    .container {
+      width: 100%;
+    }
+    .right {
+      width: 100%;
+    }
+    .right-child {
+      width: 100%;
+    }
+  }

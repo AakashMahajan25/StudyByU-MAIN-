@@ -18,7 +18,7 @@
     
     <?php
     session_start();
-    include('./secondary-navbar-white.html');
+    include('./secondary-navbar.html');
     ?>
 
   <div class="bg-gradient-to-b from-[#627de3] to-[#aec1f8]">

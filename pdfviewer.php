@@ -93,11 +93,13 @@ include('./components/header.html');
         <!-- bottom bar plalist mobile -->
         <div class="bottom-bar fixed bottom-0 bg-blue-950 flex w-full justify-between items-center pr-10 pl-4 py-2 lg:hidden">
             <div class="text-white">
-                <div>Subject</div>
-                <div>Chapter Name</div>
+                <div>Chapter-1</div>
+                <div>Science</div>
             </div>
             <div>
-                <button id="open-playlist"><i class="fa-solid fa-play text-white"></i></button>
+                <button id="open-playlist">
+                    <i class="fa-solid fa-chevron-up text-white"></i>
+                </button>
             </div>
         </div>
 
@@ -159,9 +161,13 @@ include('./components/header.html');
 <script>
 document.getElementById('open-playlist').addEventListener('click', function() {
     document.querySelector('.playlist').classList.toggle('closed');
+
+    // Toggle the icon class
+    var icon = this.querySelector('i');
+    icon.classList.toggle('fa-chevron-up');
+    icon.classList.toggle('fa-chevron-down');
 });
 </script>
-
 <?php include('./components/footer.html');?>
 </body>
 </html>

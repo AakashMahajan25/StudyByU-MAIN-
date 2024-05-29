@@ -19,7 +19,7 @@
   <body>
   <?php
 session_start();
-include('./secondary-navbar-white.html');
+include('./secondary-navbar.html');
 ?>
     <div class="bg-[url('./assets/home-banner-bg.webp')] mt-12 h-[100vh] w-[100vw] bg-cover flex flex-col lg:flex-row justify-around ">
         <div class="mt-16  lg:pl-24 flex flex-col gap-3 text-center lg:text-left px-4 lg:px-0">
