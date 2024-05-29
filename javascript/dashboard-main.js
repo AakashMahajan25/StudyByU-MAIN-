@@ -56,17 +56,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Cyan',], // Added 'Cyan' label
             datasets: [{
                 label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [12, 19, 3, 5, 2, 3, 8], // Adjusted data array to include 7 values
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.8)',
                     'rgba(54, 162, 235, 0.8)',
                     'rgba(255, 206, 86, 0.8)',
                     'rgba(75, 192, 192, 0.8)',
                     'rgba(153, 102, 255, 0.8)',
-                    'rgba(255, 159, 64, 0.8)'
+                    'rgba(255, 159, 64, 0.8)',
+                    'rgba(75, 192, 192, 0.8)' // Added a new color for the 'Cyan' bar
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 0)',
@@ -74,7 +75,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     'rgba(255, 206, 86, 0)',
                     'rgba(75, 192, 192, 0)',
                     'rgba(153, 102, 255, 0)',
-                    'rgba(255, 159, 64, 0)'
+                    'rgba(255, 159, 64, 0)',
+                    'rgba(75, 192, 192, 0)' // Added a new color for the 'Cyan' bar
                 ],
                 borderWidth: 0
             }]
@@ -88,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             plugins: {
                 roundedBar: {
-                    borderRadius: 10 // Adjust the borderRadius as needed
+                    borderRadius: 7 // Adjust the borderRadius as needed
                 }
             }
         }
