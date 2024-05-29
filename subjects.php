@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/subjects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 session_start();
 include('./secondary-navbar.html');
 ?>
-    <div class="hero">
+    <div class="hero mt-20">
         <div class="hero-banner">
             <div class="hero-banner-content">
                 <div class="hero-banner-content-heading">
@@ -101,14 +101,12 @@ include('./secondary-navbar.html');
                     <button>Explore</button>
                 </div>
                 <div class="course-card bg-[#FFF0CB]">
-                    <h2>LIVE</h2>
                     <h3>Doubt Clearing Sessions</h3>
                     <p>Get personalized help in our doubt clearing sessions.</p>
                     <img style="width: 70px; height: auto;" src="assets/doubt.png" alt="">
                     <button>Explore</button>
                 </div>
                 <div class="course-card new bg-[#B6FFE4]">
-                    <h2>LIVE</h2>
                     <h3>Mental Health Sessions</h3>
                     <p>Enhance well-being with our mental health sessions.</p>
                     <img style="width: 70px; height: auto;" src="assets/m-health.png" alt="">
