@@ -40,7 +40,9 @@ include('./secondary-navbar.html');
               quo dolor laudantium vero, debitis iste aut? Tempore debitis
               doloremque quasi minima.
             </div>
-            <div><button class="buy-now-btn py-2 px-8 text-white text-[1vw] rounded-3xl">Buy Now</button></div>
+            <div>
+              <button class="buy-now-btn">Buy Now</button>
+            </div>
           </div>
         </div>
 
@@ -96,83 +98,58 @@ include('./secondary-navbar.html');
 
       </div>
       <div class="right">
-        <div class="right-child">
-          <h2>
-            <div class="px-4 bottom-0 right-0 top-16 w-full -z-12">
-              <div class="py-5 other-ch px-2 text-xl">Other Chapters</div>
-              <div class="overflow-y-scroll h-[70vh] w-full">
-                <div
-                  class="flex items-center justify-between blue-bg rounded-2xl my-1"
-                >
-                  <div class="w-[15vh] p-2">
-                    <img
-                      src="assets/2.webp"
-                      alt=""
-                      class="w-full rounded-lg"
-                    />
+          <div class="right-child">
+              <div class="px-4 bottom-0 right-0 top-16 w-full -z-12">
+                  <div class="py-5 other-ch px-2 text-xl">Other Chapters</div>
+                  <div class="other-ch-body rounded-xl p-4 right-body overflow-y-scroll h-[70vh] w-full">
+                      <div class="flex items-center justify-between blue-bg rounded-2xl my-1">
+                          <div class="w-[15vh] p-2">
+                              <img src="assets/2.webp" alt="" class="w-full rounded-lg" />
+                          </div>
+                          <h2 class="w-2/3 font-ch-name">
+                              <span class="block block text-sm other-ch">Chapter - 1</span>
+                              Number Systems
+                          </h2>
+                          <div class="arrow-circle">></div>
+                      </div>
+                      <div class="flex items-center justify-between blue-bg rounded-2xl my-1">
+                          <div class="w-[15vh] p-2">
+                              <img src="assets/3.webp" alt="" class="w-full rounded-lg" />
+                          </div>
+                          <h2 class="w-2/3 font-ch-name">
+                              <span class="block text-sm other-ch">Chapter - 1</span>
+                              Polynomials
+                          </h2>
+                          <div class="arrow-circle">></div>
+                      </div>
+                      <div class="flex items-center justify-between blue-bg rounded-2xl my-1">
+                          <div class="w-[15vh] p-2">
+                              <img src="assets/4.webp" alt="" class="w-full rounded-lg" />
+                          </div>
+                          <h2 class="w-2/3 font-ch-name">
+                              <span class="block text-sm other-ch">Chapter - 1</span>
+                              Coordinate Geometry
+                          </h2>
+                          <div class="arrow-circle">></div>
+                      </div>
+                      <div class="flex items-center justify-between blue-bg rounded-2xl my-1">
+                          <div class="w-[15vh] p-2">
+                              <img src="assets/5.webp" alt="" class="w-full rounded-lg" />
+                          </div>
+                          <h2 class="w-2/3 font-ch-name">
+                              <span class="block text-sm other-ch">Chapter - 1</span>
+                              Linear Equations in Two Variables
+                          </h2>
+                          <div class="arrow-circle">></div>
+                      </div>
                   </div>
-                  <h2 class="w-2/3 font-ch-name">
-                    <span class="block block text-sm other-ch"
-                      >Chapter - 1</span
-                    >
-                    Number Systems
-                  </h2>
-                  <div class="px-4">></div>
-                </div>
-                <div
-                  class="flex items-center justify-between blue-bg rounded-2xl my-1"
-                >
-                  <div class="w-[15vh] p-2">
-                    <img
-                      src="assets/3.webp"
-                      alt=""
-                      class="w-full rounded-lg"
-                    />
+                  <div class="text-center underline text-blue-800 p-4">
+                      <a href="">View All ></a>
                   </div>
-                  <h2 class="w-2/3 font-ch-name">
-                    <span class="block text-sm other-ch">Chapter - 1</span>
-                    Polynomials
-                  </h2>
-                  <div class="px-4">></div>
-                </div>
-                <div
-                  class="flex items-center justify-between blue-bg rounded-2xl my-1"
-                >
-                  <div class="w-[15vh] p-2">
-                    <img
-                      src="assets/4.webp"
-                      alt=""
-                      class="w-full rounded-lg"
-                    />
-                  </div>
-                  <h2 class="w-2/3 font-ch-name">
-                    <span class="block text-sm other-ch">Chapter - 1</span>
-                    Coordinate Geometry
-                  </h2>
-                  <div class="px-4">></div>
-                </div>
-                <div
-                  class="flex items-center justify-between blue-bg rounded-2xl my-1"
-                >
-                  <div class="w-[15vh] p-2">
-                    <img
-                      src="assets/5.webp"
-                      alt=""
-                      class="w-full rounded-lg"
-                    />
-                  </div>
-                  <h2 class="w-2/3 font-ch-name">
-                    <span class="block text-sm other-ch">Chapter - 1</span>
-                    Linear Equations in Two Variables
-                  </h2>
-                  <div class="px-4">></div>
-                </div>
               </div>
-              <div class="text-center underline text-blue-800"><a href="">View All ></a></div>
-            </div>
-          </h2>
-        </div>
+          </div>
       </div>
+
     </section>
   <?php include('./footer.html'); ?>
 
