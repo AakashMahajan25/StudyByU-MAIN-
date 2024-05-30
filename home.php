@@ -19,7 +19,7 @@ session_start();
 include('./secondary-navbar.html');
 ?>
   <div
-    class="bg-[url('./assets/home-banner-bg-1.webp')] mt-12 h-[120vh] w-[100vw] bg-cover flex flex-col lg:flex-row justify-around ">
+    class="bg-[url('./assets/home-banner-bg.webp')] mt-12 h-[120vh] w-[100vw] bg-cover flex flex-col lg:flex-row justify-around ">
     <div class="mt-24  lg:pl-24 flex flex-col gap-3 text-center lg:text-left px-4 lg:px-0">
       <div class="text-white font-black text-[8vw]  lg:text-[3.5vw] mt-[-100px] lg:mt-0 leading-tight">
         Embark on your educational <br class="hidden lg:block"> journey with us today.
@@ -111,7 +111,7 @@ include('./secondary-navbar.html');
 
   <!-- Slider -->
   <div
-    class="flex flex-col lg:flex-row items-center h-screen w-screen bg-[url('assets/video-area-bg-1.webp')] bg-cover p-6 lg:p-0">
+    class="flex flex-col lg:flex-row items-center h-screen w-screen bg-[url('assets/video-area-bg.png')] bg-cover p-6 lg:p-0">
     <div class="w-full lg:w-1/2 mt-14 lg:mt-0 lg:px-20 pb-10 lg:pb-40 text-center lg:text-left">
       <div class="text-2xl md:text-4xl font-bold text-white mb-6">
         Watch Our Trainers in Live Action
