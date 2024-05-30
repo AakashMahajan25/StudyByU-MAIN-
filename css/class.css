@@ -3,7 +3,6 @@
     .classes-hero-banner {
         margin: auto;
         height: 45vh;
-        width: 100vw;
         border-radius: 20px;
         background-color: #ccdefe;
         z-index: -1;
@@ -51,7 +50,7 @@
 
     .individual-classes-heading {
         margin: auto;
-        background-color: #5e71ff;
+        /* background-color: #5e71ff; */
         color: white;
         width: fit-content;
         padding: 6px 35px;

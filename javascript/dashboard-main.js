@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Cyan',], // Added 'Cyan' label
+            labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
             datasets: [{
-                label: '# of Votes',
+                label: '# of Hours', // You can leave this as is or set to empty string
                 data: [12, 19, 3, 5, 2, 3, 8], // Adjusted data array to include 7 values
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.8)',
@@ -89,6 +89,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
             plugins: {
+                legend: {
+                    display: false // Disable the legend
+                },
                 roundedBar: {
                     borderRadius: 7 // Adjust the borderRadius as needed
                 }
