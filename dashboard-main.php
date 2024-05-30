@@ -2,7 +2,7 @@
 session_start();
 include('./components/header.html');
 ?>
-
+<link rel="stylesheet" href="css/style.css">
 <script src="./javascript/dashboard-main.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

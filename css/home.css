@@ -24,7 +24,7 @@
   font-size: 70px !important;
   padding: 0px;
   line-height: 75px;
-  color: #4b4a4b !important;
+  /* color: #4b4a4b !important; */
 }
 
 .four-element-container {
@@ -48,7 +48,7 @@
   }
   
   .our-offer{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
   }
   
@@ -107,22 +107,22 @@
   
   .course-card h2 {
     font-size: 18px;
-    color: #333;
+    /* color: #333; */
   }
   
   .course-card h3 {
     font-size: 20px;
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
   }
   
   .course-card p {
     font-size: 14px;
-    color: #666;
+    /* color: #666; */
   }
   
   .course-card button {
-    background-color: #333;
-    color: #fff;
+    /* background-color: #333; */
+    /* color: #fff; */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -130,9 +130,6 @@
     margin-top: 10px;
   }
   
-  .course-card button:hover {
-    background-color: #555;
-  }
   
   .course-card img {
     height: auto;

@@ -3,6 +3,7 @@
 :root {
     --primary-color: #ECECEE; /* Define a variable for primary color */
     --secondary-color: #6181f6; /* Define a variable for secondary color */
+    --dark-color: #02397c;
 }
 
 * {
@@ -19,6 +20,10 @@ html, body {
 
 body{
     font-family: "Poppins", sans-serif;
+}
+
+.dark-color {
+    color: var(--dark-color);
 }
 
 
