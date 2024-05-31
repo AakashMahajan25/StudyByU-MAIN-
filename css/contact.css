@@ -47,7 +47,7 @@ Contact Style
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #91a7ef;
+  background-color: var(--primary-color);
   width: 80px;
   padding: 30px 8px;
   line-height: 25px;
@@ -77,7 +77,7 @@ Contact Style
 
 .contact-us .special-offer h6 em {
   font-style: normal;
-  color: #91a7ef;
+  color: var(--primary-color);
   font-weight: 600;
 }
 
@@ -88,7 +88,7 @@ Contact Style
 
 .contact-us .special-offer h4 em {
   font-style: normal;
-  color: #91a7ef;
+  color: var(--primary-color);
 }
 
 .contact-us .special-offer a {
@@ -100,7 +100,7 @@ Contact Style
   display: inline-block;
   text-align: center;
   line-height: 50px;
-  background-color: #91a7ef;
+  background-color: var(--primary-color);
   color: #fff;
   border-radius: 50%;
 }
@@ -108,7 +108,7 @@ Contact Style
 .contact-us .contact-us-content {
   border-radius: 25px;
   padding: 80px;
-  background-color: #91a7ef;
+  background-color: var(--primary-color);
   position: relative;
   z-index: 1;
 }
@@ -185,7 +185,7 @@ Contact Style
   background-color: #fff;
   padding: 0px 25px;
   border-radius: 25px;
-  color: #91a7ef;
+  color: var(--primary-color);
   transition: all .4s;
   position: relative;
   z-index: 3;

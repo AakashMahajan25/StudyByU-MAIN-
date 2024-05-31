@@ -21,84 +21,48 @@
     include('./secondary-navbar.html');
     ?>
 
-  <div class="bg-gradient-to-b from-[#627de3] to-[#aec1f8]">
-      <header class="">
-          <div class="px-4 mx-auto sm:px-6 lg:px-8">
-              <div class="flex items-center justify-between h-16 lg:h-20">
-                  <div class="flex-shrink-0">
-                      <a href="#" title="" class="flex">
-                          <img class="w-auto h-8" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/logo.svg" alt="" />
-                      </a>
-                  </div>
+    <div class="overflow-x-hidden bg-[#f1f0fe] py-20">
+        <section class="pt-12 sm:pt-16">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h1 class="px-6 text-lg text-gray-600 font-inter">StudyByU - Your Ultimate Learning Companion</h1>
+                    <p class="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-4xl lg:leading-tight">
+                        Empower Your Journey with Tailored Resources
+                    </p>
 
-                  <button type="button" class="inline-flex p-1 text-black transition-all duration-200 border border-black lg:hidden focus:bg-gray-100 hover:bg-gray-100">
-                      <!-- Menu open: "hidden", Menu closed: "block" -->
-                      <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                      </svg>
+                    <div class="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
+                        <a
+                            href="#"
+                            title=""
+                            class="inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                            role="button"
+                        >
+                            Explore Resources
+                        </a>
 
-                      <!-- Menu open: "block", Menu closed: "hidden" -->
-                      <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                      </svg>
-                  </button>
+                        <a
+                            href="#"
+                            title=""
+                            class="bg-white inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold text-gray-900 transition-all duration-200 border-2 border-gray-400 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 focus:bg-gray-900 hover:text-white focus:text-white hover:border-gray-900 focus:border-gray-900"
+                            role="button"
+                        >
+                            <svg class="w-5 h-5 mr-2" viewBox="0 0 18 18" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.18003 13.4261C6.8586 14.3918 5 13.448 5 11.8113V5.43865C5 3.80198 6.8586 2.85821 8.18003 3.82387L12.5403 7.01022C13.6336 7.80916 13.6336 9.44084 12.5403 10.2398L8.18003 13.4261Z"
+                                    stroke-width="2"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            Watch Free Demo
+                        </a>
+                    </div>
 
-                  <div class="hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10">
-                      <a href="#" title="" class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"> Features </a>
-
-                      <a href="#" title="" class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"> Solutions </a>
-
-                      <a href="#" title="" class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"> Resources </a>
-
-                      <a href="#" title="" class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"> Pricing </a>
-
-                      <div class="w-px h-5 bg-black/20"></div>
-
-                      <a href="#" title="" class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"> Log in </a>
-
-                      <a href="#" title="" class="inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white" role="button"> Try for free </a>
-                  </div>
-              </div>
-          </div>
-      </header>
-
-      <section class="py-10 sm:py-16 lg:py-24">
-          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-                  <div>
-                      <h1 class="text-4xl font-bold text-white sm:text-6xl lg:text-7xl">
-                      Transform Your Learning Experience with
-                          <div class="relative inline-flex">
-                              <span class="absolute inset-x-0 bottom-0 border-b-[20px] border-blue-500"></span>
-                              <h1 class="relative text-4xl font-bold text-white sm:text-6xl lg:text-7xl">StudyByU.</h1>
-                          </div>
-                      </h1>
-
-                      <p class="mt-8 text-base text-[#333333] sm:text-xl">Connect, Collaborate, and Succeed: Revolutionize Your Study Sessions with StudyByU.</p>
-
-                      <div class="mt-10 sm:flex sm:items-center sm:space-x-8">
-                          <a href="#" title="" class="rounded-lg inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-500 hover:bg-blue-600 focus:bg-orange-600" role="button"> Get Started </a>
-
-                          <!-- <a href="#" title="" class="inline-flex items-center mt-6 text-base font-semibold transition-all duration-200 sm:mt-0 hover:opacity-80">
-                              <svg class="w-10 h-10 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                  <path fill="#F97316" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                              </svg>
-                              Watch video
-                          </a> -->
-                      </div>
-                  </div>
-
-                  <div>
-                      <img class="w-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/hero-img.png" alt="" />
-                  </div>
-              </div>
-          </div>
-      </section>
-  </div>
-
-
-
+                </div>
+            </div>
+        </section>
+    </div>
 
     <div class="about-us">
       <div class="container mx-auto max-w-screen-lg px-4">
@@ -207,7 +171,7 @@
               <div class="mt-6">
                 <a
                   href="#"
-                  class="inline-block bg-blue-500 text-white py-2 px-4 rounded-full"
+                  class="inline-block bg-primary hover:bg-blue-500 text-white py-2 px-4 rounded-full"
                   >Discover More</a
                 >
               </div>
@@ -290,7 +254,7 @@
       </div>
     </div>
 
-    <div class="section-2 fun-facts py-12 pt-20 mt-20">
+    <div class="section-2 fun-facts my-20">
       <div class="container mx-auto max-w-screen-lg px-4">
         <div class="flex flex-wrap justify-center">
           <div class="w-full lg:w-3/4">

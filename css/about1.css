@@ -18,7 +18,7 @@
     z-index: -1;
     width: 84%;
     height: 100%;
-    background-color: aliceblue;
+    background-color: #f1f0fe;
     content: '';
     border-top-left-radius: 500px;
     border-bottom-left-radius: 500px;
@@ -27,7 +27,7 @@
   .accordion {
     margin-top: -40px;
     margin-bottom: -40px;
-    background-color: #032c61;
+    background-color: var(--primary-color);
     border-radius: 40px;
     padding: 80px 50px 50px 50px;
   }
@@ -46,7 +46,7 @@
   }
   
   .accordion-button:not(.collapsed) {
-    color: #6181f6;
+    color: var(--primary-color);
     /* background-color: #fff; */
   }
   
@@ -68,7 +68,7 @@
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
-    background-color: #6181f6;
+    background-color: var(--primary-color);
     color: #fff;
   }
   
@@ -130,7 +130,7 @@
   position: relative;
   padding: 120px 0px 80px 0px;
   overflow: hidden;
-  background-color: #6181f6;
+  background-color: var(--primary-color);
 }
 
 .section-2 {
@@ -287,7 +287,7 @@ Team Style
 }
 
 .team-member .main-content span.category {
-  color: #6181f6;
+  color: var(--primary-color);
   font-size: 15px;
 }
 
@@ -305,7 +305,7 @@ Team Style
 
 .team-member .main-content ul li a {
   background-color: #fff;
-  color: #6181f6;
+  color: var(--primary-color);
   display: inline-block;
   text-align: center;
   line-height: 40px;
@@ -317,6 +317,6 @@ Team Style
 }
 
 .team-member .main-content ul li a:hover {
-  background-color: #6181f6;
+  background-color: var(--primary-color);
   color: #fff;
 }

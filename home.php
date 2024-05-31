@@ -18,96 +18,146 @@
 session_start();
 include('./secondary-navbar.html');
 ?>
-  <div
-    class="bg-[url('./assets/home-banner-bg.webp')] mt-12 h-[120vh] w-[100vw] bg-cover flex flex-col lg:flex-row justify-around ">
-    <div class="mt-24  lg:pl-24 flex flex-col gap-3 text-center lg:text-left px-4 lg:px-0">
-      <div class="text-white font-black text-[8vw]  lg:text-[3.5vw] mt-[-100px] lg:mt-0 leading-tight">
-        Embark on your educational <br class="hidden lg:block"> journey with us today.
+  <div class="bg-[url('./assets/home-banner-bg.webp')] bg-no-repeat mt-10 h-[139vh] w-[100vw] lg:px-12">
+      <section class="py-10 sm:py-16 lg:py-24">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+              <div class="grid items-center justify-between grid-cols-1 gap-12 lg:grid-cols-2">
+                  <div>
+                      <h1 class="text-4xl font-bold text-white sm:text-6xl lg:text-7xl">
+                      Elevating education with
+                          <div class="relative inline-flex">
+                              <span class="absolute inset-x-0 bottom-0 border-b-[20px] border-blue-500"></span>
+                              <span class="relative text-4xl font-bold text-white sm:text-6xl lg:text-7xl">joy and ease</span>
+                          </div>
+                      </h1>
+
+                      <p class="mt-8 text-base text-white sm:text-xl">Connect, Collaborate, and Succeed: Revolutionize Your Study Sessions with StudyByU.</p>
+
+                      <div class="mt-10 sm:flex sm:items-center sm:space-x-8">
+                          <a href="#" title="" class="rounded-lg inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-500 hover:bg-blue-600 focus:bg-orange-600" role="button"> Get Started </a>
+                      </div>
+                  </div>
+
+                  <div class="w-[35vw] lg:max-w-md ml-auto">
+                      <img src="assets/Hero.svg" alt="" />
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+
+  <div class="bg-[url('./assets/notebook-paper.jpg')] bg-contain py-20">
+    <div class="our-offer text-center">Our <span class="text-primary">Offerings</span></div>
+    <div class="flex justify-around gap-24">
+      <div class="component">
+        <div class="courses">
+          <div class="course-card bg-[#02397c]">
+            <h2 class="text-white">Class IX</h2>
+            <h3 class="text-[aliceblue]">All Subjects</h3>
+            <p class="text-white">Join our comprehensive Class 9 course Today!</p>
+            <!-- <img style="width: 60px; height: auto;" src="assets/9.png" alt=""> -->
+            <p class="standard text-white">9</p>
+            <button class="bg-white">Explore</button>
+          </div>
+          <div class="course-card bg-[#CDDEFF]">
+            <h2>Class X</h2>
+            <h3>All Subjects</h3>
+            <p>Join our comprehensive Class 10 course Today!</p>
+            <!-- <img style="width: 70px; height: auto;" src="assets/10.png" alt=""> -->
+            <p class="standard">10</p>
+            <button class="text-black bg-white">Explore</button>
+          </div>
+          <!-- <div class="course-card bg-[#FFF0CB]">
+            <h2>LIVE</h2>
+            <h3>Doubt Clearing Sessions</h3>
+            <p>Get personalized help in our doubt clearing sessions.</p>
+            <img style="width: 70px; height: auto" src="assets/doubt.png" alt="" />
+            <button>Explore</button>
+          </div>
+          <div class="course-card new bg-[#B6FFE4]">
+            <h2>LIVE</h2>
+            <h3>Mental Health Sessions</h3>
+            <p>Enhance well-being with our mental health sessions.</p>
+            <img style="width: 70px; height: auto" src="assets/m-health.png" alt="" />
+            <button>Explore</button>
+          </div> -->
+        </div>
+        <!-- <img src="assets/4-element-image.webp" class="" alt="" /> -->
       </div>
-      <div class="text-white font-semibold text-[4vw] lg:text-[1.4vw] pt-6">
-        In the realm of modern education, <br class="hidden lg:block"> few advancements rival the impact of our
-        platform. <br class="hidden lg:block"> Join us in exploring the vast universe of learning.
-      </div>
-    </div>
-    <div class="lg:mt-8 mt-[-16rem]  px-4 lg:px-0">
-      <img src="assets/Hero.svg" alt="Hero Image" class="w-[30vw]  lg:max-w-md">
     </div>
   </div>
 
 
-  <!-- Another Section -->
+  <!-- features Section -->
   <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
     <h2 class="mb-4 text-4xl tracking-tight text-center w-full font-semibold">
-      Tailored for <span class="dark-color">learners</span> like you,
+        Tailored for <span class="dark-color">learners</span> like you,
     </h2>
     <div class="services-2 section py-12 bg-white" id="services-2">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap -mx-4">
-          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="service-item rounded-lg p-6 ">
-              <div class="icon mb-4 bg-[#02397c]">
-                <img src="assets/service-02.png" alt="online degrees" class="w-full h-auto bg-[#02397c]" />
-              </div>
-              <div class="main-content">
-                <h4 class="text-xl font-semibold mb-2">Interactive Learning Hub</h4>
-                <li class="text-gray-700 mb-4">
-                  Engage with dynamic tools for immersive learning experiences.
-                </li>
-                <li class="text-gray-700 mb-4">
-                  Access diverse resources tailored to individual learning styles.
-                </li>
-                <li class="text-gray-700 mb-4">
-                  Collaborate with peers and educators in interactive study groups.
-                </li>
-              </div>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="service-item rounded-lg p-6">
+                        <div class="icon mb-4 bg-[#02397c]">
+                            <img src="assets/service-02.png" alt="study resources" class="w-full h-auto bg-[#02397c]" />
+                        </div>
+                        <div class="main-content">
+                            <h4 class="text-xl font-semibold mb-2">Comprehensive Study Resources</h4>
+                            <li class="text-gray-700 mb-4">
+                                Access a vast library of study materials and guides.
+                            </li>
+                            <li class="text-gray-700 mb-4">
+                                Utilize practice tests and quizzes to gauge understanding.
+                            </li>
+                            <li class="text-gray-700 mb-4">
+                                Enhance your knowledge with detailed explanations and examples.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="service-item rounded-lg p-6">
+                        <div class="icon mb-4 bg-[#02397c]">
+                            <img src="assets/service-01.png" alt="doubt clearing sessions" class="w-full h-auto bg-[#02397c]" />
+                        </div>
+                        <div class="main-content">
+                            <h4 class="text-xl font-semibold mb-2">Doubt Clearing Sessions</h4>
+                            <li class="text-gray-700 mb-4">
+                                Schedule sessions with subject matter experts to clarify doubts.
+                            </li>
+                            <li class="text-gray-700 mb-4">
+                                Participate in Q&A forums for real-time assistance.
+                            </li>
+                            <li class="text-gray-700 mb-4">
+                                Join interactive webinars to deepen your understanding of complex topics.
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="service-item rounded-lg p-6">
+                        <div class="icon mb-4 bg-[#02397c]">
+                            <img src="assets/service-03.png" alt="mental health support" class="w-full h-auto bg-[#02397c]" />
+                        </div>
+                        <div class="main-content">
+                            <h4 class="text-xl font-semibold mb-2">Mental Health Support</h4>
+                            <li class="text-gray-700 mb-4">
+                                Access resources for managing stress and anxiety.
+                            </li>
+                            <li class="text-gray-700 mb-4">
+                                Join support groups to share experiences and strategies.
+                            </li>
+                            <li class="text-gray-700 mb-4">
+                                Consult with mental health professionals for personalized guidance.
+                            </li>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="service-item rounded-lg p-6 ">
-              <div class="icon mb-4 bg-[#02397c]">
-                <img src="assets/service-01.png" alt="online degrees" class="w-full h-auto bg-[#02397c]" />
-              </div>
-              <div class="main-content">
-                <h4 class="text-xl font-semibold mb-2">Personalized Study Suite</h4>
-                <li class="text-gray-700 mb-4">
-                  Customize study plans to match your unique learning needs.
-                </li>
-                <li class="text-gray-700 mb-4">
-                  Track progress and receive tailored recommendations for improvement.
-                </li>
-                <li class="text-gray-700 mb-4">
-                  Utilize adaptive technology for personalized learning pathways.
-                </li>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="service-item rounded-lg p-6 ">
-              <div class="icon mb-4 bg-[#02397c]">
-                <img src="assets/service-03.png" alt="online degrees" class="w-full h-auto bg-[#02397c]" />
-              </div>
-              <div class="main-content">
-                <h4 class="text-xl font-semibold mb-2">Live Tutoring Network</h4>
-                <li class="text-gray-700 mb-4">
-                  Connect with expert tutors in real-time for personalized assistance.
-                </li>
-                <li class="text-gray-700 mb-4">
-                  Schedule one-on-one sessions or join group tutorials.
-                </li>
-                <li class="text-gray-700 mb-4">
-                  Receive instant feedback and guidance to enhance understanding.
-                </li>
-              </div>
-            </div>
-          </div>
-
-
         </div>
-      </div>
     </div>
-  </div>
-  </div>
-  </div>
+</div>
+
 
   <!-- Slider -->
   <div
@@ -152,48 +202,6 @@ include('./secondary-navbar.html');
     </div>
   </div>
 
-
-  <!-- Four Element Below -->
-  <div class="flex flex-col items-center mt-16">
-    <div class="our-offer">Our <span class="highlight">Offerings</span></div>
-    <div class="flex justify-around gap-24">
-      <div class="component">
-        <div class="courses">
-          <div class="course-card bg-[#02397c]">
-            <h2 class="text-white">Class IX</h2>
-            <h3 class="text-[aliceblue]">All Subjects</h3>
-            <p class="text-white">Join our comprehensive Class 9 course Today!</p>
-            <!-- <img style="width: 60px; height: auto;" src="assets/9.png" alt=""> -->
-            <p class="standard text-white">9</p>
-            <button class="bg-white">Explore</button>
-          </div>
-          <div class="course-card bg-[#CDDEFF]">
-            <h2>Class X</h2>
-            <h3>All Subjects</h3>
-            <p>Join our comprehensive Class 10 course Today!</p>
-            <!-- <img style="width: 70px; height: auto;" src="assets/10.png" alt=""> -->
-            <p class="standard">10</p>
-            <button class="text-black bg-white">Explore</button>
-          </div>
-          <!-- <div class="course-card bg-[#FFF0CB]">
-            <h2>LIVE</h2>
-            <h3>Doubt Clearing Sessions</h3>
-            <p>Get personalized help in our doubt clearing sessions.</p>
-            <img style="width: 70px; height: auto" src="assets/doubt.png" alt="" />
-            <button>Explore</button>
-          </div>
-          <div class="course-card new bg-[#B6FFE4]">
-            <h2>LIVE</h2>
-            <h3>Mental Health Sessions</h3>
-            <p>Enhance well-being with our mental health sessions.</p>
-            <img style="width: 70px; height: auto" src="assets/m-health.png" alt="" />
-            <button>Explore</button>
-          </div> -->
-        </div>
-        <!-- <img src="assets/4-element-image.webp" class="" alt="" /> -->
-      </div>
-    </div>
-  </div>
 
   <!-- AboutUS -->
   <div class="about-us mt-24">
@@ -303,7 +311,7 @@ include('./secondary-navbar.html');
             <div class="mt-6">
               <a
                 href="#"
-                class="inline-block bg-blue-500 text-white py-2 px-4 rounded-full"
+                class="inline-block bg-primary hover:bg-blue-500 text-white py-2 px-4 rounded-full"
                 >Discover More</a
               >
             </div>
@@ -313,8 +321,168 @@ include('./secondary-navbar.html');
     </div>
   </div>
 
+  <!-- testimonial -->
+  <section class="py-12 bg-gray-50 sm:py-16 lg:py-20">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center">
+            <div class="text-center">
+                <p class="text-lg font-medium text-gray-600 font-pj">Don't just take our words.</p>
+                <h2 class="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Over <span class="text-primary">1000+</span> people trust us.</h2>
+            </div>
+
+
+            <div class="relative mt-10 md:mt-24 md:order-2">
+                <div class="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
+                    <div class="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"></div>
+                </div>
+
+                <div class="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
+                    <div class="flex flex-col rounded-xl overflow-hidden shadow-xl">
+                        <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                            <div class="flex-1">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <blockquote class="flex-1 mt-8">
+                                    <p class="text-lg leading-relaxed text-gray-900 font-pj">“I've tried many online platforms, but StudyByU stands out for its quality study materials and interactive learning methods. Highly recommended!”</p>
+                                </blockquote>
+                            </div>
+
+                            <div class="flex items-center mt-8">
+                                <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png" alt="" />
+                                <div class="ml-4">
+                                    <p class="text-base font-bold text-gray-900 font-pj">Rahul Gupta</p>
+                                    <p class="mt-0.5 text-sm font-pj text-gray-600">High School Student</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col rounded-xl overflow-hidden shadow-xl">
+                        <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                            <div class="flex-1">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <blockquote class="flex-1 mt-8">
+                                    <p class="text-lg leading-relaxed text-gray-900 font-pj">“Thanks to StudyByU, I was able to ace my exams. The practice quizzes and video lectures helped me grasp difficult concepts with ease.”</p>
+                                </blockquote>
+                            </div>
+
+                            <div class="flex items-center mt-8">
+                                <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png" alt="" />
+                                <div class="ml-4">
+                                    <p class="text-base font-bold text-gray-900 font-pj">Akash Sharma</p>
+                                    <p class="mt-0.5 text-sm font-pj text-gray-600">High School Student</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col rounded-xl overflow-hidden shadow-xl">
+                        <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                            <div class="flex-1">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <blockquote class="flex-1 mt-8">
+                                    <p class="text-lg leading-relaxed text-gray-900 font-pj">“StudyByU has been a game-changer for me. The study resources provided here are comprehensive and easy to understand, making learning enjoyable”</p>
+                                </blockquote>
+                            </div>
+
+                            <div class="flex items-center mt-8">
+                                <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png" alt="" />
+                                <div class="ml-4">
+                                    <p class="text-base font-bold text-gray-900 font-pj">Priya Patel</p>
+                                    <p class="mt-0.5 text-sm font-pj text-gray-600">High School Student</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
   <!-- Quote -->
-  <div class="max-w-screen-xl mt-24 px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+  <div class="max-w-screen-xl my-10 px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
     <figure class="max-w-screen-md mx-auto">
       <svg class="h-12 mx-auto mb-3 text-[#6181f6] " viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
