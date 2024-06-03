@@ -1,168 +1,108 @@
-<link rel="stylesheet" href="css/class.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/class.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
     <?php
     session_start();
-    include('./secondary-navbar-white.html');
+    include('./secondary-navbar.html');
     ?>
     
-        <div class="classes-hero-banner mt-20">
-            <div class="hero-banner-content">
-                <div class="hero-banner-content-heading">
-                    Boost Your Classroom Success
-                </div>
-                <div class="hero-banner-content-text">
-                    Enroll Now and Enjoy:
-                </div>
-                <div class="hero-banner-content-list">
-                    <i class="fa-regular fa-circle-check"></i> Engaging Animated Lessons
-                </div>
-                <div class="hero-banner-content-list">
-                    <i class="fa-regular fa-circle-check"></i> Visually Appealing Class Materials
-                </div>
-                <div class="hero-banner-content-list">
-                    <i class="fa-regular fa-circle-check"></i> Live Doubt Clearing Sessions
-                </div>
-                <div class="hero-banner-content-list">
-                    <i class="fa-regular fa-circle-check"></i> Live Mental Health Sessions
-                </div>
-            </div>
-            <div class="classes-hero-banner-image"><img src="assets/banner-astronaut-class.png" alt=""></div>
-        
+    <div class="pt-[10rem] pb-[7rem] breadcrumbs bg-[url('./assets/bred.png')] bg-cover bg-center bg-no-repeat">
+        <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold">Classes</h2>
+        <nav>
+            <ol class="flex items-center justify-center space-x-3">
+            <li class="breadcrumb-item"><a href="index.html">Home </a></li>
+            <li class="breadcrumb-item">-</li>
+            <li class="text-primary">Courses </li>
+            </ol>
+        </nav>
+        </div>
     </div>
 
-    <div class="classes-container">
-        <div class="individual-classes">
-            <div class="individual-classes-heading">
-                Class IX
+    <!-- classes -->
+    <div class="py-20">
+      <div class="flex justify-around gap-24 bg-[url('assets/section-bg-14.png')] bg-no-repeat bg-center" style="background-size: 95%;">
+        <div class="component">
+          <div class="courses">
+            <div class="course-card bg-[#02397c] shadow-xl">
+              <h2 class="text-white">Class IX</h2>
+              <h3 class="text-[aliceblue]">All Subjects</h3>
+              <p class="text-white">Join our comprehensive Class 9 course Today!</p>
+              <p class="standard text-white">9</p>
+              <button class="bg-white">Explore</button>
             </div>
-            <div class="individual-classes-body">
-                <div class="individual-classes-body-image-1">
-                    <img src="assets/teacher-2.png"
-                        alt="">
-                </div>
-                <div class="individual-classes-body-content">
-                    <div class="individual-classes-body-content-text">
-                        <div class="individual-classes-body-content-text-1">Specially crafted
-                            </div>
-                        <div class="individual-classes-body-content-text-1">early learning program</div>
-                        <div class="individual-classes-body-content-text-1">for young minds</div>
-                    </div>
-
-
-
-                    <div class="individual-classes-body-content-button-container">
-                        <button class="individual-classes-body-content-button">Explore</button>
-                    </div>
-                </div>
+            <div class="course-card bg-[#CDDEFF] shadow-xl">
+              <h2>Class X</h2>
+              <h3 class="text-[#0057ff]">All Subjects</h3>
+              <p>Join our comprehensive Class 10 course Today!</p>
+              <p class="standard">10</p>
+              <button class="text-black bg-white">Explore</button>
             </div>
+          </div>
         </div>
-
-        <div class="individual-classes">
-            <div class="individual-classes-heading">
-                Class X
-            </div>
-            <div class="individual-classes-body">
-                <div class="individual-classes-body-image-2">
-                    <img src="assets/teacher-1.png"
-                        alt="">
-                </div>
-                <div class="individual-classes-body-content">
-                    <div class="individual-classes-body-content-text">
-                        <div class="individual-classes-body-content-text-1">Tailored curriculum</div>
-                        <div class="individual-classes-body-content-text-1">for budding intellects,</div>
-                        <div class="individual-classes-body-content-text-1">nurturing young minds</div>
-                    </div>
-
-
-
-                    <div class="individual-classes-body-content-button-container">
-                        <button class="individual-classes-body-content-button">Explore</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+      </div>
     </div>
 
-    <!-- <div class="second-section">
-        
-    </div>
 
-    <div class="4-info">
-        <div class="4-info-heading">
-            Why Study with Us?
-        </div>
-        <div class="upper">
-            <div class="upper-left">
-                <div class="info-icon-container">
-                    <div class="info-icon"></div>
-                </div>
-                <div class="info-content">
-                    <div class="info-heading"></div>
-                    <div class="info-text"></div>
-                </div>
-            </div>
-            <div class="upper-right">
-                <div class="info-icon-container">
-                    <div class="info-icon"><img src="assets/attention.png" alt=""></div>
-                </div>
-                <div class="info-content">
-                    <div class="info-heading"></div>
-                    <div class="info-text"></div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom">
-            <div class="bottom-left">
-                <div class="info-icon-container">
-                    <div class="info-icon"></div>
-                </div>
-                <div class="info-content">
-                    <div class="info-heading"></div>
-                    <div class="info-text"></div>
-                </div>
-            </div>
-            <div class="bottom-right">
-                <div class="info-icon-container">
-                    <div class="info-icon"></div>
-                </div>
-                <div class="info-content">
-                    <div class="info-heading"></div>
-                    <div class="info-text"></div>
-                </div>
-            </div>
-                </div>
-        </div> -->
-
-    <section class="bg-[aliceblue]">
-        <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 my-4">
+    <section class="container mx-auto">
+        <div class="gap-8 items-center px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 lg:px-6">
+            <img class="w-2/3 hidden dark:block mx-auto" src="assets/Grades-pana.svg" alt="dashboard image">
             <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-[#003366]">Empower Your Learning with Dedicated Doubt Clearing Sessions</h2>
-                <p class="mb-6 font-light text-[#333333] md:text-lg">StudyByU's LIVE Doubt Clearing Sessions offer a this facility to address your questions and enhance your understanding. Engage with experts in interactive sessions designed to ensure no query is left unresolved.</p>
-                <a href="#" class="inline-flex items-center text-white bg-[#28a745] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
-                    Get Started
-                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </a>
-            </div>
-            <img class="w-1/2 hidden dark:block mx-auto" src="assets/teacher.png" alt="dashboard image">
-        </div>
-    </section>
-
-    <section class="">
-        <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-            <img class="w-2/3 hidden dark:block mx-auto" src="assets/mental-health.png" alt="dashboard image">
-            <div class="mt-4 md:mt-0">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-[#003366]">Prioritize Your Well-being with Dedicated Mental Health Sessions</h2>
-                <p class="mb-6 font-light text-[#333333] md:text-lg">StudyByU's Mental Health Sessions provide a supportive environment to address your concerns and enhance your well-being. Connect with experts in interactive sessions designed to ensure your mental health needs are met with care and understanding.
-                </p>
-                <a href="#" class="inline-flex items-center text-white bg-[#28a745] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+                <h2 class="mb-4 text-4xl tracking-tight font-semibold text-[#003366]">Enhance Your Learning with Comprehensive <span class="text-primary">Study Resources</span></h2>
+                <p class="mb-6 font-light text-[#333333] md:text-lg">Explore our extensive collection of notes and explanation videos tailored to your class and curriculum. StudyByU provides high-quality, easy-to-understand resources designed to help you excel in your studies. Select your class below to get started with the best study materials available.</p>
+        
+                <a href="#" class="inline-flex items-center text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
                     Get Started
                     <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </a>
             </div>
         </div>
     </section>
+
+    <div class="mt-10 mb-20 section-padding-bottom bg-white bg-[url('assets/section-bg-14.png')] bg-center bg-no-repeat bg-cover">
+      <div class="container-custom mx-auto">
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-7">
+          <div class="bg-[url('assets/bg-ins-2.png')] bg-cover bg-no-repeat p-10 rounded-md">
+            <div class="w-2/3">
+              <div class="text-xs">Enhance Your Learning</div>
+              <div class="text-2xl font-semibold leading-[41px]">
+                Doubt <span class="text-primary">Clearing</span> Sessions
+              </div>
+              <div class="mt-6 mb-12 text-sm">
+                Resolve your queries, understand concepts better with expert help.
+              </div>
+              <a href="#" class="btn bg-black text-white">Contact Us</a>
+            </div>
+          </div>
+          
+          <div class="bg-[url('assets/bg-ins-2.png')] bg-cover bg-no-repeat p-10 rounded-md">
+            <div class="w-2/3">
+              <div class="text-xs">Prioritize Your Well-being</div>
+              <div class="text-2xl font-semibold leading-[41px]">
+                Mental
+                <span class="text-primary">Health</span>
+                Advice
+              </div>
+              <div class="mt-6 mb-12 text-sm">
+                Access professional support, take care of your mental health.
+              </div>
+              <a href="#" class="btn bg-black text-white">Contact Us</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
     <?php include('./footer.html');?>
 
 
@@ -181,3 +121,6 @@
     }
   </script>
 
+
+</body>
+</html>

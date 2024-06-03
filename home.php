@@ -18,7 +18,8 @@
 session_start();
 include('./secondary-navbar.html');
 ?>
-  <div class="bg-[url('./assets/home-banner-bg.webp')] bg-no-repeat mt-10 h-[139vh] w-[100vw] lg:px-12">
+  <!-- hero -->
+  <div class="bg-[url('./assets/home-banner-bg.webp')] relative bg-no-repeat mt-10 h-[139vh] w-[100vw] lg:px-12">
       <section class="py-10 sm:py-16 lg:py-24">
           <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div class="grid items-center justify-between grid-cols-1 gap-12 lg:grid-cols-2">
@@ -46,8 +47,9 @@ include('./secondary-navbar.html');
       </section>
   </div>
 
-  <div class="bg-[url('./assets/notebook-paper.jpg')] bg-contain py-20">
-    <div class="our-offer text-center">Our <span class="text-primary">Offerings</span></div>
+  <!-- classes -->
+  <div class="bg-[url('./assets/notebook-paper.jpg')] mt-[-53vh] bg-contain pt-[30vh] pb-[20vh]">
+    <div class="our-offer text-center">Our <span class="highlight">Offerings</span></div>
     <div class="flex justify-around gap-24">
       <div class="component">
         <div class="courses">
@@ -67,33 +69,50 @@ include('./secondary-navbar.html');
             <p class="standard">10</p>
             <button class="text-black bg-white">Explore</button>
           </div>
-          <!-- <div class="course-card bg-[#FFF0CB]">
-            <h2>LIVE</h2>
-            <h3>Doubt Clearing Sessions</h3>
-            <p>Get personalized help in our doubt clearing sessions.</p>
-            <img style="width: 70px; height: auto" src="assets/doubt.png" alt="" />
-            <button>Explore</button>
-          </div>
-          <div class="course-card new bg-[#B6FFE4]">
-            <h2>LIVE</h2>
-            <h3>Mental Health Sessions</h3>
-            <p>Enhance well-being with our mental health sessions.</p>
-            <img style="width: 70px; height: auto" src="assets/m-health.png" alt="" />
-            <button>Explore</button>
-          </div> -->
         </div>
-        <!-- <img src="assets/4-element-image.webp" class="" alt="" /> -->
       </div>
     </div>
   </div>
 
+  <!-- newsletter -->
+  <div class="bg-primary py-20">
+    <div class="container mx-auto">
+      <div class="lg:flex lg:items-center lg:space-x-[70px]">
+        <div class=" flex-none">
+          <div class="flex items-center space-x-8 text-white max-w-[327px] mx-auto lg:mb-0 md:mb-10 mb-5">
+            <div class=" flex-none ">
+              <img src="assets/big-mail.svg" alt="">
+            </div>
+            <div class="flex-1 lg:text-3xl font-semibold">
+              Subscribe to My Newsletter
+            </div>
+          </div>
+        </div>
+        <div class=" flex-1">
+          <div class="md:flex   items-center  relative md:space-x-6 md:space-y-0  space-y-4   ">
+            <div class="flex-1 relative">
+              <span class=" absolute left-0 top-1/2 -translate-y-1/2 ">
+                  <img src="assets/mail-white.svg" alt="">
+              </span>
+              <input type="text" placeholder="Enter your mail address" 
+              class="w-full border-b border-t-0 border-l-0 border-r-0 border-[#CDDEFF] ring-0 focus:ring-0 bg-transparent text-white
+                placeholder:text-[#CDDEFF] focus:outline-0 focus:border-[#CDDEFF] transition pl-8 text-lg">
+            </div>
+            <div class="flex-none">
+              <button class="btn bg-white  text-secondary md:w-auto w-full">Get Started Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- features Section -->
-  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+  <div class="mt-16 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
     <h2 class="mb-4 text-4xl tracking-tight text-center w-full font-semibold">
-        Tailored for <span class="dark-color">learners</span> like you,
+      Why <span class="highlight">Choose</span> StudyByU
     </h2>
-    <div class="services-2 section py-12 bg-white" id="services-2">
+    <div class="services-2 section pt-6 bg-white" id="services-2">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap -mx-4">
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
@@ -103,15 +122,9 @@ include('./secondary-navbar.html');
                         </div>
                         <div class="main-content">
                             <h4 class="text-xl font-semibold mb-2">Comprehensive Study Resources</h4>
-                            <li class="text-gray-700 mb-4">
-                                Access a vast library of study materials and guides.
-                            </li>
-                            <li class="text-gray-700 mb-4">
-                                Utilize practice tests and quizzes to gauge understanding.
-                            </li>
-                            <li class="text-gray-700 mb-4">
-                                Enhance your knowledge with detailed explanations and examples.
-                            </li>
+                            <p>
+                              Enhance your knowledge with detailed explanations and examples.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -121,16 +134,10 @@ include('./secondary-navbar.html');
                             <img src="assets/service-01.png" alt="doubt clearing sessions" class="w-full h-auto bg-[#02397c]" />
                         </div>
                         <div class="main-content">
-                            <h4 class="text-xl font-semibold mb-2">Doubt Clearing Sessions</h4>
-                            <li class="text-gray-700 mb-4">
-                                Schedule sessions with subject matter experts to clarify doubts.
-                            </li>
-                            <li class="text-gray-700 mb-4">
-                                Participate in Q&A forums for real-time assistance.
-                            </li>
-                            <li class="text-gray-700 mb-4">
-                                Join interactive webinars to deepen your understanding of complex topics.
-                            </li>
+                          <h4 class="text-xl font-semibold mb-2">Doubt Clearing Sessions</h4>
+                            <p>
+                              Join interactive webinars to deepen your understanding of complex topics.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -140,68 +147,23 @@ include('./secondary-navbar.html');
                             <img src="assets/service-03.png" alt="mental health support" class="w-full h-auto bg-[#02397c]" />
                         </div>
                         <div class="main-content">
-                            <h4 class="text-xl font-semibold mb-2">Mental Health Support</h4>
-                            <li class="text-gray-700 mb-4">
-                                Access resources for managing stress and anxiety.
-                            </li>
-                            <li class="text-gray-700 mb-4">
-                                Join support groups to share experiences and strategies.
-                            </li>
-                            <li class="text-gray-700 mb-4">
+                            <h4 class="text-xl font-semibold mb-2">Mental Health Consultancy</h4>
+                              <p>
                                 Consult with mental health professionals for personalized guidance.
-                            </li>
+                              </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-  <!-- Slider -->
-  <div
-    class="flex flex-col lg:flex-row items-center h-screen w-screen bg-[url('assets/video-area-bg.png')] bg-cover p-6 lg:p-0">
-    <div class="w-full lg:w-1/2 mt-14 lg:mt-0 lg:px-20 pb-10 lg:pb-40 text-center lg:text-left">
-      <div class="text-2xl md:text-4xl font-bold text-white mb-6">
-        Watch Our Trainers in Live Action
-      </div>
-      <div class="text-base md:text-lg text-white">
-        In the history of modern astronomy, there is probably no one greater
-        leap forward than the building and launch of the space telescope known
-        as the Hubble.
-      </div>
-    </div>
-
-    <div class="carousal w-full lg:w-1/2 lg:px-10">
-      <div class="swiper mySwiper rounded-xl">
-        <div class="swiper-wrapper rounded-xl">
-          <div class="swiper-slide rounded-xl">
-            <div class="overflow-hidden">
-              <img
-                src="https://st3.depositphotos.com/4218696/18211/i/450/depositphotos_182119506-stock-photo-back-to-school-conceptual-background.jpg"
-                alt="Slide Image">
-            </div>
-          </div>
-          <div class="swiper-slide rounded-xl">
-            <div class="overflow-hidden">
-              <img
-                src="https://st3.depositphotos.com/4218696/18211/i/450/depositphotos_182119506-stock-photo-back-to-school-conceptual-background.jpg"
-                alt="Slide Image">
-            </div>
-          </div>
-          <div class="swiper-slide rounded-xl">
-            <div class="overflow-hidden">
-              <img
-                src="https://st3.depositphotos.com/4218696/18211/i/450/depositphotos_182119506-stock-photo-back-to-school-conceptual-background.jpg"
-                alt="Slide Image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
+
+  <!-- Stripe -->
+  <div class="">
+    <img src="assets/stripe.webp" alt="" class="w-full">
+  </div>
 
   <!-- AboutUS -->
   <div class="about-us mt-24">
@@ -321,13 +283,55 @@ include('./secondary-navbar.html');
     </div>
   </div>
 
+  <!-- Slider -->
+  <div class="flex flex-col lg:flex-row items-center h-screen w-screen bg-[url('assets/video-area-bg.png')] bg-cover p-6 lg:p-0">
+    <div class="w-full lg:w-1/2 mt-14 lg:mt-0 lg:px-20 pb-10 lg:pb-40 text-center lg:text-left">
+      <div class="text-2xl md:text-4xl font-bold text-white mb-6">
+        Watch Our Trainers in Live Action
+      </div>
+      <div class="text-base md:text-lg text-white">
+        In the history of modern astronomy, there is probably no one greater
+        leap forward than the building and launch of the space telescope known
+        as the Hubble.
+      </div>
+    </div>
+
+    <div class="carousal w-full lg:w-1/2 lg:px-10">
+      <div class="swiper mySwiper rounded-xl">
+        <div class="swiper-wrapper rounded-xl">
+          <div class="swiper-slide rounded-xl">
+            <div class="overflow-hidden">
+              <img
+                src="https://st3.depositphotos.com/4218696/18211/i/450/depositphotos_182119506-stock-photo-back-to-school-conceptual-background.jpg"
+                alt="Slide Image">
+            </div>
+          </div>
+          <div class="swiper-slide rounded-xl">
+            <div class="overflow-hidden">
+              <img
+                src="https://st3.depositphotos.com/4218696/18211/i/450/depositphotos_182119506-stock-photo-back-to-school-conceptual-background.jpg"
+                alt="Slide Image">
+            </div>
+          </div>
+          <div class="swiper-slide rounded-xl">
+            <div class="overflow-hidden">
+              <img
+                src="https://st3.depositphotos.com/4218696/18211/i/450/depositphotos_182119506-stock-photo-back-to-school-conceptual-background.jpg"
+                alt="Slide Image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- testimonial -->
   <section class="py-12 bg-gray-50 sm:py-16 lg:py-20">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-col items-center">
             <div class="text-center">
                 <p class="text-lg font-medium text-gray-600 font-pj">Don't just take our words.</p>
-                <h2 class="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Over <span class="text-primary">1000+</span> people trust us.</h2>
+                <h2 class="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Over <span class="highlight">1000+</span> people trust us.</h2>
             </div>
 
 
@@ -501,11 +505,6 @@ include('./secondary-navbar.html');
       </figcaption>
     </figure>
   </div>
-
-  <!-- Stripe -->
-  <!-- <div class="">
-    <img src="assets/stripe.webp" alt="" class="w-full">
-  </div> -->
 
 
   <?php include('./footer.html');?>

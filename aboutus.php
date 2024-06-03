@@ -181,78 +181,58 @@
       </div>
     </div>
 
-    <div class="services-2 section py-12 bg-white" id="services-2">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap -mx-4">
-          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="service-item rounded-lg p-6">
-              <div class="icon mb-4">
-                <img
-                  src="assets/service-01.png"
-                  alt="online degrees"
-                  class="w-full h-auto"
-                />
+    <!-- features Section -->
+    <div class="mt-16 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <h2 class="mb-4 text-4xl tracking-tight text-center w-full font-semibold">
+        Why <span class="highlight">Choose</span> StudyByU
+      </h2>
+      <div class="services-2 section pt-6 bg-white" id="services-2">
+          <div class="container mx-auto px-4">
+              <div class="flex flex-wrap -mx-4">
+                  <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                      <div class="service-item rounded-lg p-6">
+                          <div class="icon mb-4 bg-[#02397c]">
+                              <img src="assets/service-02.png" alt="study resources" class="w-full h-auto bg-[#02397c]" />
+                          </div>
+                          <div class="main-content">
+                              <h4 class="text-xl font-semibold mb-2">Comprehensive Study Resources</h4>
+                              <p>
+                                Enhance your knowledge with detailed explanations and examples.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                      <div class="service-item rounded-lg p-6">
+                          <div class="icon mb-4 bg-[#02397c]">
+                              <img src="assets/service-01.png" alt="doubt clearing sessions" class="w-full h-auto bg-[#02397c]" />
+                          </div>
+                          <div class="main-content">
+                            <h4 class="text-xl font-semibold mb-2">Doubt Clearing Sessions</h4>
+                              <p>
+                                Join interactive webinars to deepen your understanding of complex topics.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                      <div class="service-item rounded-lg p-6">
+                          <div class="icon mb-4 bg-[#02397c]">
+                              <img src="assets/service-03.png" alt="mental health support" class="w-full h-auto bg-[#02397c]" />
+                          </div>
+                          <div class="main-content">
+                              <h4 class="text-xl font-semibold mb-2">Mental Health Consultancy</h4>
+                                <p>
+                                  Consult with mental health professionals for personalized guidance.
+                                </p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="main-content">
-                <h4 class="text-xl font-semibold mb-2">Global Collaboration</h4>
-                <p class="text-gray-700 mb-4">
-                  Break geographical barriers and collaborate with students worldwide.
-                </p>
-                <div class="main-button">
-                  <a href="#" class="text-blue-500 hover:text-blue-700"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
           </div>
-          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="service-item rounded-lg p-6">
-              <div class="icon mb-4">
-                <img
-                  src="assets/service-02.png"
-                  alt="short courses"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="main-content">
-                <h4 class="text-xl font-semibold mb-2">Efficient Communication</h4>
-                <p class="text-gray-700 mb-4">
-                  Streamline your study sessions with seamless communication tools.
-                </p>
-                <div class="main-button">
-                  <a href="#" class="text-blue-500 hover:text-blue-700"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="service-item rounded-lg p-6">
-              <div class="icon mb-4">
-                <img
-                  src="assets/service-03.png"
-                  alt="web experts"
-                  class="w-full h-auto"
-                />
-              </div>
-              <div class="main-content">
-                <h4 class="text-xl font-semibold mb-2">Empowering Education</h4>
-                <p class="text-gray-700 mb-4">
-                  Access resources, support, and opportunities to excel academically with StudyByU.
-                </p>
-                <div class="main-button">
-                  <a href="#" class="text-blue-500 hover:text-blue-700"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+
 
     <div class="section-2 fun-facts my-20">
       <div class="container mx-auto max-w-screen-lg px-4">
