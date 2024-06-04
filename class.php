@@ -31,19 +31,19 @@
 
     <!-- classes -->
    
-<div class="pt-10 pb-20" data-aos="fade-up">
-  <div class="text-center text-4xl font-semibold mb-5">Select Your <span class="highlight">Class</span></div>
+<div class="pt-10 pb-20">
+  <div class="text-center text-4xl font-semibold mb-5" data-aos="fade-in">Select Your <span class="highlight">Class</span></div>
   <div class="flex justify-around gap-24 bg-[url('assets/section-bg-14.png')] bg-no-repeat bg-center" style="background-size: 95%;">
     <div class="component">
       <div class="courses">
-        <div class="course-card bg-[#02397c] shadow-xl">
+        <div class="course-card bg-[#02397c] shadow-xl" data-aos="fade-up">
           <h2 class="text-white">Class IX</h2>
           <h3 class="text-[aliceblue]">All Subjects</h3>
           <p class="text-white">Join our comprehensive Class 9 course Today!</p>
           <p class="standard text-white">9</p>
           <button class="bg-white">Explore</button>
         </div>
-        <div class="course-card bg-[#CDDEFF] shadow-xl">
+        <div class="course-card bg-[#CDDEFF] shadow-xl" data-aos="fade-up">
           <h2>Class X</h2>
           <h3 class="text-[#0057ff]">All Subjects</h3>
           <p>Join our comprehensive Class 10 course Today!</p>
@@ -83,7 +83,7 @@
           <div class="mt-6 mb-12 text-sm">
             Resolve your queries, understand concepts better with expert help.
           </div>
-          <a href="#" class="btn bg-black text-white">Contact Us</a>
+          <a href="#" class="btn bg-black text-white">Book Now</a>
         </div>
       </div>
       
@@ -98,7 +98,7 @@
           <div class="mt-6 mb-12 text-sm">
             Access professional support, take care of your mental health.
           </div>
-          <a href="#" class="btn bg-black text-white">Contact Us</a>
+          <a href="#" class="btn bg-black text-white">Book Now</a>
         </div>
       </div>
     </div>

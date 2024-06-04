@@ -161,7 +161,7 @@ include('./secondary-navbar.html');
                     <div class="my-4 text-xs">
                         Resolve your queries, understand concepts better with expert help.
                     </div>
-                    <a href="#" class="btn bg-black text-white text-sm">Contact Us</a>
+                    <a href="#" class="btn bg-black text-white text-sm">Book Now</a>
                     </div>
                 </div>
 
