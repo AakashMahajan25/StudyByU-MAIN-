@@ -193,7 +193,10 @@ body {
   overflow: hidden; /* Added to ensure the background image doesn't affect the four-element-container's size */
 }
 
-
+.sub-card{
+  min-width: 22vw;
+  box-shadow: 0px 0px 20px 1px rgb(223, 223, 223);
+}
 
 h1 {
   font-size: 36px;

@@ -55,6 +55,7 @@
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 600;
+
   }
   
   .accordion-button::after {
@@ -70,12 +71,14 @@
     border-radius: 50%;
     background-color: var(--primary-color);
     color: #fff;
+    aspect-ratio: 1 !important;
   }
   
   .accordion-button:not(.collapsed)::after {
     background-image: none;
     line-height: 32px;
     content: '-';
+
   }
   
   .accordion-body {
