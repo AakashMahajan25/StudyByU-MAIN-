@@ -11,9 +11,24 @@
 <body>
 <?php
 session_start();
-include('./secondary-navbar-white.html');
+include('./secondary-navbar.html');
 ?>
-    <div class="container mx-auto p-4 mt-20">
+
+        
+    <div class="pt-[10rem] pb-[7rem] breadcrumbs bg-[url('./assets/bred.png')] bg-cover bg-center bg-no-repeat">
+        <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold">Class 9th Science</h2>
+        <nav>
+            <ol class="flex items-center justify-center space-x-3">
+            <li class="breadcrumb-item"><a href="index.html">Home </a></li>
+            <li class="breadcrumb-item">-</li>
+            <li class="text-primary">Science </li>
+            </ol>
+        </nav>
+        </div>
+    </div>
+
+    <div class="container mx-auto p-4 my-10">
         <div class="flex flex-wrap -mx-4">
             <div class="w-full lg:w-2/3 px-4">
                 
@@ -98,49 +113,59 @@ include('./secondary-navbar-white.html');
                 </section>
             </div>
 
-            <div class="w-full lg:w-1/3 px-4">
+            <div class="w-full lg:w-1/3 px-4 flex flex-col gap-4">
                 <div class="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
                     <div class="w-full px-4 py-2 text-white font-medium text-lg bg-blue-900">Other Subjects</div>
                     <div class="px-4 py-2">
                         <ul>
                             <li class="flex items-center mb-2">
                                 <div class="w-10 mr-2">
-                                    <img src="https://via.placeholder.com/40" alt="English" class="w-full h-auto rounded-lg">
+                                    <img src="assets/english-icon.png" alt="English" class="w-full h-auto rounded-lg">
                                 </div>
                                 <span>English</span>
                             </li>
                             <li class="flex items-center mb-2">
                                 <div class="w-10 mr-2">
-                                    <img src="https://via.placeholder.com/40" alt="Maths" class="w-full h-auto rounded-lg">
-                                </div>
-                                <span>Maths</span>
-                            </li>
-                            <li class="flex items-center mb-2">
-                                <div class="w-10 mr-2">
-                                    <img src="https://via.placeholder.com/40" alt="Science" class="w-full h-auto rounded-lg">
+                                    <img src="assets/science.png" alt="Science" class="w-full h-auto rounded-lg">
                                 </div>
                                 <span>Science</span>
                             </li>
                             <li class="flex items-center mb-2">
                                 <div class="w-10 mr-2">
-                                    <img src="https://via.placeholder.com/40" alt="Social Studies" class="w-full h-auto rounded-lg">
+                                    <img src="assets/biology.png" alt="Biology" class="w-full h-auto rounded-lg">
                                 </div>
-                                <span>Social Studies</span>
+                                <span>Biology</span>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <div class="w-10 mr-2">
+                                    <img src="assets/physics.png" alt="Physics" class="w-full h-auto rounded-lg">
+                                </div>
+                                <span>Physics</span>
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <div class="w-10 mr-2">
+                                    <img src="assets/chemistry.png" alt="Chemistry" class="w-full h-auto rounded-lg">
+                                </div>
+                                <span>Chemistry</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-            
-                <div class="bg-white rounded-lg overflow-hidden mb-4 shadow-lg">
-                    <img src="assets/dcs.webp" alt="DCS" class="w-full h-auto">
-                </div>
-            </div>
-            
 
-    <div class="bg-white rounded-lg overflow-hidden mb-4">
-        <img src="assets/dcs.webp" alt="DCS" class="w-full h-auto">
-    </div>
-</div>
+                <div class="bg-[url('assets/bg-ins-1.webp')] shadow-lg bg-cover bg-no-repeat p-5 rounded-md">
+                    <div class="w-2/3">
+                    <div class="text-xs">Enhance Your Learning</div>
+                    <div class="text-xl font-semibold">
+                        Doubt <span class="text-primary">Clearing</span> Sessions
+                    </div>
+                    <div class="my-4 text-xs">
+                        Resolve your queries, understand concepts better with expert help.
+                    </div>
+                    <a href="#" class="btn bg-black text-white text-sm">Contact Us</a>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </div>

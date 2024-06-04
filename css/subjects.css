@@ -3,7 +3,6 @@ body {
 }
 .subjects {
   margin: auto;
-  margin-top: -20px;
   background-color: white;
   border: 1px solid #ecedef;
   padding: 25px 25px;
@@ -202,10 +201,6 @@ h1 {
   font-weight: 600;
 }
 
-.highlight {
-  color: var(--secondary-color);
-}
-
 .our-offer{
   font-size: 40px;
   font-weight: 600;
@@ -249,7 +244,6 @@ h1 {
 
 .course-card h3 {
   font-size: 20px;
-  color: var(--secondary-color);
 }
 
 .course-card p {

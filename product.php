@@ -47,10 +47,8 @@ include('./secondary-navbar.html');
 
         <div class="description w-[90%]">
           <div class="description-heading">Description</div>
-          <div class="description-section">
-            This specialization provides a comprehensive introduction to machine
-            learning, data mining, and statistical pattern recognition. The
-            courses draw
+          <div class="description-section text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore fuga deserunt. Modi, atque nostrum officiis mollitia saepe ducimus tenetur vitae vero, fugit, omnis aliquam at totam...
           </div>
           <div class="description-content">
             Certainly! Here is a specifications list for a doubt-solving sessions
@@ -78,6 +76,7 @@ include('./secondary-navbar.html');
             Show more
           </button>
         </div>
+
         <div class="hero hero-2">
           <div class="hero-banner">
             <div class="hero-banner-content">

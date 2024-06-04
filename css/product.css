@@ -75,7 +75,7 @@ section.one:after {
 .description {
   background-color: white;
   box-shadow: 0px 0px 10px 2px rgb(230, 230, 230);
-  margin: 30px 10px 10px 40px;
+  margin: 3rem 40px;
   border-radius: 20px;
   padding: 18px 14px 18px 24px;
 }
