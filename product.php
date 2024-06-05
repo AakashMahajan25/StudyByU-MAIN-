@@ -20,21 +20,21 @@ include('./secondary-navbar.html');
 ?>
     <section class="one clearfix">
       <div class="left">
-        <div class="flex  w-full pt-10">
-          <div class="w-1/3 px-10 ">
+        <div class="flex flex-col lg:flex-row justify-center items-center w-full pt-10">
+          <div class="lg:w-1/3 w-2/3 px-10 ">
             <img src="assets/4.webp" alt="" class="rounded-lg img" />
           </div> 
 
-          <div class="  w-[60%] flex flex-col justify-around ">
+          <div class=" w-full p-8 lg:p-0 lg:w-[60%] flex flex-col justify-around ">
             <div>
-              <h1 class="text-[2.5vw] ch-title leading-10 2xl:leading-[60px]">
+              <h1 class="lg:text-[2.5vw] text-3xl ch-title leading-10 2xl:leading-[60px]">
                 <span class="  text-xl leading-none  other-ch block xl:mb-4">Chapter 4 </span>
                 Linear Equations in Two Variables
               </h1>
-              <div class="text-[1.6vw] font-semibold">₹48 <del class="text-[1vw] text-gray-500">50</del></div>
+              <div class="lg:text-[1.6vw] text-xl font-semibold">₹48 <del class="lg:text-[1vw] text-lg text-gray-500">50</del></div>
             </div>
   
-            <div class="text-[1.15vw] text-gray-600">
+            <div class="lg:text-[1.15vw] text-sm py-2  text-gray-600">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
               neque recusandae aliquid officiis dolores mollitia quod ipsam sunt
               quo dolor laudantium vero, debitis iste aut?
@@ -45,7 +45,7 @@ include('./secondary-navbar.html');
           </div>
         </div>
 
-        <div class="description w-[90%]">
+        <div class="description lg:w-[90%]  ">
           <div class="description-heading">Description</div>
           <div class="description-section text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore fuga deserunt. Modi, atque nostrum officiis mollitia saepe ducimus tenetur vitae vero, fugit, omnis aliquam at totam...

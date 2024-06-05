@@ -29,20 +29,56 @@ section.one:after {
   margin-top: 70px;
 }
 
-.right {
-  width: 33vw !important;
-  max-width: 33vw !important;
-  float: right;
-  margin-top: 70px;
+@media only screen and (max-width:1024px){
+  .left{
+    width: 100%;
+  }
+
+  .description {
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px rgb(230, 230, 230);
+    margin: 3rem 20px !important;
+    border-radius: 20px;
+    padding: 18px 14px 18px 24px;
+  }
+
+  .hero-banner{
+    margin: 10px auto !important;
+  }
+
+  .right{
+    float: none !important;
+    width: none !important;
+    max-width: none !important;
+  }
+  .right-child {
+    background: #e4ecfa;
+    /*! max-width: 33vw !important; */
+    display: block;
+    /*! float: right; */
+    /*! height: 90vh; */
+    width: 33vw;
+  }
 }
-.right-child {
-  background: #e4ecfa;
-  max-width: 33vw !important;
-  display: block;
-  float: right;
-  height: 90vh;
-  width: 33vw;
+
+@media only screen and (min-width:1024px){
+
+  .right {
+    width: 33vw !important;
+    max-width: 33vw !important;
+    float: right;
+    margin-top: 70px;
+  }
+  .right-child {
+    background: #e4ecfa;
+    max-width: 33vw !important;
+    display: block;
+    float: right;
+    height: 90vh;
+    width: 33vw;
+  }
 }
+
 
 .other-ch {
   color: var(--text-primary);
@@ -183,9 +219,13 @@ section.one:after {
   background: var(--text-primary);
   padding: 0.5rem 2rem;
   color: white;
-  font-size: 1vw;
+  
   border-radius: 1.5rem;
   transition: background-color 0.3s;
+}
+
+.buy-now-btn-text-size{
+  font-size: 1vw;
 }
 
 .buy-now-btn:hover {

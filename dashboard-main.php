@@ -38,13 +38,17 @@ include('./components/header.html');
     <div class="flex flex-wrap justify-around items-start gap-5 lg:w-[93vw] m-3">
         
         <!-- info -->
-        <div class=" md:h-[38vh] lg:h-[45vh] lg:w-[38vw] w-full md:w-[53vw] bg-white p-5 rounded-xl shadow-lg">
+        <div class=" md:h-[38vh] lg:h-[45vh] lg:w-[38vw] w-full md:w-[53vw] bg-white p-5 rounded-xl shadow-lg bg-gradient-to-b from-blue-100 to-white">
             <div class="flex flex-col justify-between h-full mx-5">
                 <div class="flex justify-between">
                     <div class="text-xs">June 30, Thursday</div>
                     <div class="text-gray-600"><i class="fa-solid fa-user-pen fa-md"></i></div>
                 </div>
-                <img class="w-[15vw] lg:w-[10vw] rounded-full" src="./assets/user.png" alt="User Profile">
+                <div class="relative  w-fit group">
+                <img class="w-[15vw] lg:w-[10vw] rounded-full hover:opacity-50 transition-all  cursor-pointer" src="./assets/user.png" alt="User Profile">
+                <div class="absolute transition-all -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-0 group-hover:opacity-100"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+
+                </div>
                 <div>
                     <div class="text-3xl font-semibold">Welcome back, User!</div>
                     <div>Unlocking potential with every step.</div>
