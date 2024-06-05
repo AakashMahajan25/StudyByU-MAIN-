@@ -71,39 +71,39 @@
 </section>
 
 
-<div class="my-20" data-aos="fade-up">
-  <div class="container-custom mx-auto">
-    <div class="grid lg:grid-cols-2 grid-cols-1 gap-7">
-      <div class="lg:bg-[url('assets/bg-ins-1.webp')] bg-blue-100 bg-cover bg-no-repeat p-10 rounded-md" data-aos="fade-right">
-        <div class="w-2/3">
-          <div class="text-xs">Enhance Your Learning</div>
-          <div class="text-2xl font-semibold leading-[41px]">
-            Doubt <span class="text-primary">Clearing</span> Sessions
-          </div>
-          <div class="mt-6 mb-12 text-sm">
-            Resolve your queries, understand concepts better with expert help.
-          </div>
-          <a href="#" class="btn bg-black text-white">Book Now</a>
+<div class="mt-10 mb-20">
+        <div class="container-custom mx-auto" data-aos="fade-up">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-7">
+                <div class="bg-[url('assets/bg-ins-1.webp')] card-respo  bg-cover  bg-no-repeat lg:p-10 p-6 rounded-md" data-aos="fade-right">
+                    <div class="w-2/3">
+                        <div class="text-xs">Enhance Your Learning</div>
+                        <div class="text-2xl font-semibold lg:leading-[41px]">
+                            Doubt <span class="text-primary">Clearing</span> Sessions
+                        </div>
+                        <div class="md:mt-6 md:mb-12 mb-4 mt-2 text-sm">
+                            Resolve your queries, understand concepts better with expert help.
+                        </div>
+                        <a href="#" class="btn bg-black text-white">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="bg-[url('assets/bg-ins-2.png')] card-respo  bg-cover bg-no-repeat lg:p-10 p-6 rounded-md" data-aos="fade-left">
+                    <div class="w-2/3">
+                        <div class="text-xs">Prioritize Your Well-being</div>
+                        <div class="text-2xl font-semibold lg:leading-[41px]">
+                            Mental
+                            <span class="text-primary">Health</span>
+                            Advice
+                        </div>
+                        <div class="md:mt-6 md:mb-12 mb-4 mt-2 text-sm">
+                            Access professional support, take care of your mental health.
+                        </div>
+                        <a href="#" class="btn bg-black text-white">Contact Us</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
-      <div class="lg:bg-[url('assets/bg-ins-2.png')] bg-teal-100 bg-cover bg-no-repeat p-10 rounded-md" data-aos="fade-left">
-        <div class="w-2/3">
-          <div class="text-xs">Prioritize Your Well-being</div>
-          <div class="text-2xl font-semibold leading-[41px]">
-            Mental
-            <span class="text-primary">Health</span>
-            Advice
-          </div>
-          <div class="mt-6 mb-12 text-sm">
-            Access professional support, take care of your mental health.
-          </div>
-          <a href="#" class="btn bg-black text-white">Book Now</a>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
 
     
     <?php include('./footer.html');?>
