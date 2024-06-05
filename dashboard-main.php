@@ -194,7 +194,7 @@ include('./components/header.html');
 
         <!-- number of sessions -->
         <div class="flex gap-4 lg:flex-col lg:h-[47vh] lg:w-[19vw] justify-around w-full">
-            <div class="h-1/2 bg-white py-3 px-5 w-[42vw] lg:w-[18vw] rounded-xl shadow-lg">
+            <div class="h-1/2 bg-white py-3 px-5 rounded-xl shadow-lg">
                 <div class="flex justify-between items-center h-[7vh]">
                     <div class="text-xl md:text-3xl lg:text-4xl text-blue-500">10+</div>
                     <i
@@ -207,7 +207,7 @@ include('./components/header.html');
                 </div>
             </div>
 
-            <div class="h-1/2 bg-white py-3 px-5 w-[42vw] lg:w-[18vw] rounded-xl shadow-lg">
+            <div class="h-1/2 bg-white py-3 px-5 rounded-xl shadow-lg">
                 <div class="flex justify-between items-center h-[7vh]">
                     <div class="text-xl md:text-3xl lg:text-4xl text-blue-500">20+</div>
                     <i
@@ -222,7 +222,7 @@ include('./components/header.html');
         </div>
 
         <!-- Daily Progress -->
-        <div class="w-full lg:w-[20.5vw] lg:h-[47vh]  p-3 bg-white border border-gray-200 rounded-lg shadow-lg">
+        <div class="w-full lg:w-[20.5vw] lg:h-[47vh]  p-3 bg-white border border-gray-200 rounded-lg shadow-lg flex flex-col justify-evenly">
             <div class="text-xl md:text-2xl lg:text-2xl 2xl:text-3xl font-semibold text-center">Daily Progress</div>
             <div class="text-sm md:text-md 2xl:text-xl text-center mt-2 mb-4">Keep improving the <br>quality of your study</div>
 
