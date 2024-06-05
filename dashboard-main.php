@@ -74,7 +74,7 @@ include('./components/header.html');
             <div class="flex justify-around mb-4">
                 <img class="selectable-image w-24 h-24 rounded-full border-2 border-transparent cursor-pointer transition-all" src="./assets/avatar1.jpg" alt="User Image 1">
                 <img class="selectable-image w-24 h-24 rounded-full border-2 border-transparent cursor-pointer transition-all" src="./assets/avatar2.jpg" alt="User Image 2">
-                <img class="selectable-image w-24 h-24 rounded-full border-2 border-transparent cursor-pointer transition-all" src="./assets/avatar3.jpg" alt="User Image 3">
+                <img class="selectable-image w-24 h-24 rounded-full border-2 border-transparent cursor-pointer transition-all" src="./assets/avatar3.avif" alt="User Image 3">
                 <img class="selectable-image w-24 h-24 rounded-full border-2 border-transparent cursor-pointer transition-all" src="./assets/avatar4.jpg" alt="User Image 4">
             </div>
             <button id="submit-image" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
