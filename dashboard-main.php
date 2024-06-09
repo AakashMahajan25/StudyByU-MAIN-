@@ -37,8 +37,41 @@ include('./components/header.html');
 
 
 .user-card-bg{
-    background-image: url('./assets/user-card-bg.webp');
+    background-image: url('./assets/user-card-bg-1.webp');
     background-size: 100% 100%;
+}
+#profile-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+#profile-image-container img {
+    display: block;
+}
+
+#profile-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent black */
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#profile-image-container:hover::after {
+    opacity: 1;
+}
+
+#profile-image-container i {
+    color: white; /* Make the icon white */
+}
+
+#profile-image-container:hover i {
+    opacity: 1;
 }
 
 </style>
@@ -56,8 +89,8 @@ include('./components/header.html');
                 <div class="text-gray-600"><i class="fa-solid fa-user-pen fa-md"></i></div>
             </div>
             <div class="relative w-fit group" id="profile-image-container">
-                <img id="profile-image" class="w-[15vw] lg:w-[10vw] rounded-full hover:opacity-50 transition-all cursor-pointer" src="./assets/avatar1.jpg" alt="User Profile">
-                <div class="absolute transition-all -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-0 group-hover:opacity-100"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+                <img id="profile-image" class="w-[15vw] lg:w-[10vw] rounded-full transition-all cursor-pointer" src="./assets/avatar1.jpg" alt="User Profile">
+                <div class="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-0 group-hover:opacity-100"><i class="fa-solid fa-pencil fa-xl"></i></div>
             </div>
             <div>
                 <div class="text-3xl font-semibold">Welcome back, User!</div>
