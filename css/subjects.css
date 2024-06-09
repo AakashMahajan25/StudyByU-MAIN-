@@ -295,9 +295,100 @@ h1 {
 
 
 
-@media only screen and (min-width:1600px){
 
+
+
+
+
+
+
+
+
+/* Container styles */
+.feature-area {
+  background: url('../images/all-img/section-bg-1.png') no-repeat center center / cover;
+  padding: 40px 0;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+/* Grid styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding-top: 10px;
+}
+
+/* Card styles */
+.feature-card {
+  padding: 2.5rem;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.feature-card:hover {
+  background: var(--text-primary);
+  transform: translateY(-4px);
+}
+
+/* Icon styles */
+.icon-container {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: aliceblue;
+  margin-bottom: 20px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.icon-container svg {
+  fill: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  transition: fill 0.15s ease;
+}
+
+.feature-card:hover .icon-container svg {
+  fill: #fff;
+}
+
+.feature-card:hover .icon-container {
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+/* Text styles */
+.feature-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  transition: color 0.15s ease;
+}
+
+.feature-card:hover .feature-title {
+  color: #fff;
+}
+
+.feature-description {
+  transition: color 0.15s ease;
+}
+
+.feature-card:hover .feature-description {
+  color: #fff;
+}
+
 
 @media only screen and (max-width:510px){
   .card-respo{

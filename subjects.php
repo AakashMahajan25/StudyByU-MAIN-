@@ -75,13 +75,32 @@
         </div>
     </section> -->
 
+    <style>
+        .subject-img-bg{
+            background-color: aliceblue;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            padding-bottom: 0.5rem;
+            overflow: hidden;
+        }
+    </style>
+
     <!-- subjects -->
-    <section class="w-[95vw] m-auto rounded-xl px-6 pb-3 my-20 bg-[var(--tertiary-color)]">
-        <div class="flex pt-8 gap-4 overflow-x-scroll pb-5">
+    <section class="w-[95vw] m-auto rounded-xl px-6 pb-3 my-20">
+        <div class="flex pt-8 gap-4 pb-5">
 
 
-            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white" data-aos="fade-up">
-                <div><img src="https://img.freepik.com/free-vector/science-laboratory-objects-design_23-2148497351.jpg" alt="" class="rounded-xl"></div>
+            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white overflow-hidden" data-aos="fade-up">
+                <div class="subject-img-bg shadow-md"><img src="assets/english.webp" alt="" class="rounded-xl"></div>
+                <div class="p-6">
+                    <div class="text-2xl font-semibold text-blue-700">English</div>
+                    <div class="text-sm text-gray-500 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, itaque.</div>
+                    <div><button class="btn bg-black text-white text-sm py-2 px-4">Explore</button></div>
+                </div>
+            </div>
+
+            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white overflow-hidden" data-aos="fade-up">
+                <div class="subject-img-bg shadow-md"><img src="assets/science.webp" alt="" class="rounded-xl"></div>
                 <div class="p-6">
                     <div class="text-2xl font-semibold text-blue-700">Science</div>
                     <div class="text-sm text-gray-500 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, itaque.</div>
@@ -89,55 +108,19 @@
                 </div>
             </div>
 
-            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white" data-aos="fade-up">
-                <div><img src="https://img.freepik.com/free-vector/science-laboratory-objects-design_23-2148497351.jpg" alt="" class="rounded-xl"></div>
+            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white overflow-hidden" data-aos="fade-up">
+                <div class="subject-img-bg shadow-md"><img src="assets/maths.webp" alt="" class="rounded-xl"></div>
                 <div class="p-6">
-                    <div class="text-2xl font-semibold text-blue-700">Science</div>
+                    <div class="text-2xl font-semibold text-blue-700">Maths</div>
                     <div class="text-sm text-gray-500 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, itaque.</div>
                     <div><button class="btn bg-black text-white text-sm py-2 px-4">Explore</button></div>
                 </div>
             </div>
 
-            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white" data-aos="fade-up">
-                <div><img src="https://img.freepik.com/free-vector/science-laboratory-objects-design_23-2148497351.jpg" alt="" class="rounded-xl"></div>
+            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white overflow-hidden" data-aos="fade-up">
+                <div class="subject-img-bg shadow-md"><img src="assets/social science.webp" alt="" class="rounded-xl"></div>
                 <div class="p-6">
-                    <div class="text-2xl font-semibold text-blue-700">Science</div>
-                    <div class="text-sm text-gray-500 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, itaque.</div>
-                    <div><button class="btn bg-black text-white text-sm py-2 px-4">Explore</button></div>
-                </div>
-            </div>
-
-            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white" data-aos="fade-up">
-                <div><img src="https://img.freepik.com/free-vector/science-laboratory-objects-design_23-2148497351.jpg" alt="" class="rounded-xl"></div>
-                <div class="p-6">
-                    <div class="text-2xl font-semibold text-blue-700">Science</div>
-                    <div class="text-sm text-gray-500 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, itaque.</div>
-                    <div><button class="btn bg-black text-white text-sm py-2 px-4">Explore</button></div>
-                </div>
-            </div>
-
-            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white" data-aos="fade-up">
-                <div><img src="https://img.freepik.com/free-vector/science-laboratory-objects-design_23-2148497351.jpg" alt="" class="rounded-xl"></div>
-                <div class="p-6">
-                    <div class="text-2xl font-semibold text-blue-700">Science</div>
-                    <div class="text-sm text-gray-500 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, itaque.</div>
-                    <div><button class="btn bg-black text-white text-sm py-2 px-4">Explore</button></div>
-                </div>
-            </div>
-
-            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white" data-aos="fade-up">
-                <div><img src="https://img.freepik.com/free-vector/science-laboratory-objects-design_23-2148497351.jpg" alt="" class="rounded-xl"></div>
-                <div class="p-6">
-                    <div class="text-2xl font-semibold text-blue-700">Science</div>
-                    <div class="text-sm text-gray-500 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, itaque.</div>
-                    <div><button class="btn bg-black text-white text-sm py-2 px-4">Explore</button></div>
-                </div>
-            </div>
-
-            <div class="rounded-xl w-1/4 min-w-[22vw] shadow-md bg-white" data-aos="fade-up">
-                <div><img src="https://img.freepik.com/free-vector/science-laboratory-objects-design_23-2148497351.jpg" alt="" class="rounded-xl"></div>
-                <div class="p-6">
-                    <div class="text-2xl font-semibold text-blue-700">Science</div>
+                    <div class="text-2xl font-semibold text-blue-700">Social Science</div>
                     <div class="text-sm text-gray-500 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, itaque.</div>
                     <div><button class="btn bg-black text-white text-sm py-2 px-4">Explore</button></div>
                 </div>
